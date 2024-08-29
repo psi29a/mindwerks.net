@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Mindwerks.net"
+description = "Mindwerks Network"
+version = "2024.8.1"
+authors = ["Bret Curtis <psi29a@gmail.com>"]
+readme = "README.md"
+license = "CC BY-SA 4.0"
+repository = "https://github.com/psi29a/mindwerks.net"
+
+[build-system]
+requires = ["poetry>=1.7"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "1.6.0"
+mkdocs-material = "9.5.33"
