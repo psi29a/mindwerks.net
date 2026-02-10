@@ -1,0 +1,2942 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Mindwerks Network">
+      
+      
+        <meta name="author" content="Bret Curtis">
+      
+      
+      
+        <link rel="prev" href="../../..">
+      
+      
+        <link rel="next" href="../../category/bash/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Blog - Mindwerks.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mindwerks.net" class="md-header__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindwerks.net
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mindwerks.net" class="md-nav__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mindwerks.net
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/cc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C/C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/debian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/laptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/operating-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/raspberrypi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspberryPi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../thirdeye/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thirdeye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../txmongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TxMongo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wildmidi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WildMIDI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../worldsynth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Worldsynth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../online-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pro-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ip-calc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnet Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../conversions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurement Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../password-cracking-calculator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Cracking Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mindwerks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mindwerks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bret-curtis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bret Curtis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="blog">Blog<a class="headerlink" href="#blog" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-03-05 00:00:00+00:00">March 5, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/bash/" class="md-meta__link">Bash</a>, 
+              <a href="../../category/hardware/" class="md-meta__link">Hardware</a>, 
+              <a href="../../category/servers/" class="md-meta__link">Servers</a>, 
+              <a href="../../category/networking/" class="md-meta__link">Networking</a>, 
+              <a href="../../category/linux/" class="md-meta__link">Linux</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              6 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="latency-simulation-over-long-fat-network"><a class="toclink" href="../../2013/03/05/latency-simulation-over-long-fat-network/">Latency simulation over long fat network</a></h2>
+<p><img align="left" alt="World Network" src="../../../assets/images/2013/02/WorldNetwork.png" width="200" /></p>
+<p>One of our clients asked us how we handle latency, and not just a few ms across racks but 2 and even 3 digit ms latency that indicates geographically separate locations across continents, not just a country. Not only that, the "pipes" involved are 10Gbps and we had to fill them. We have the theories and made models of how it would work. We perhaps might not be able to fill a 10Gbps fully with one stream, we could fill it with multiple streams but we had to validate this conclusion.
+The question now becomes, how do we test this. We've done our research and there are only a few commercial solutions available like the <a href="http://www.apposite-tech.com/products/netropy-10G2.html">Netropy 10G2</a> which is a 4 port, 2 lane hardware latency simulator for $30,000 new. Not only is that outside my budget, it is still limited to simulating 2 10Gbps pipes while we need at least 3 lanes (6 ports) and possibility to expand to more as necessary. We decided it was cheaper in terms of total cost to put the research into creating our own Latency Simulator.
+We studied what we could from google, specifically the work done by NASA on a "<a href="http://channel-emulator.grc.nasa.gov/">Channel Emulator</a>". They used <a href="http://www.lartc.org/">traffic control</a> (<a href="http://linux.die.net/man/8/tc">tc</a>) to handle delay on the egress of an interface. This means that if a packet travels through, it is delayed but the return packet is not and goes right through. Our setup means that we have one 10Gbps card with 2 ports. We then link the two interfaces with bridge control (brctl) to create a layer2 bridge. We then split the "round trip time" or RTT delay and apply that to each 10Gbps interface. All packets going to and returning from a network then have the full simulated RTT delay. This type of machine does not need much in the way of RAM as the buffers necessary are not large, 4GiB is sufficient. What is important is the CPU operating frequency, all other aspects of the CPU is not important except that there should be 1 core per 10Gbps interface. This is required because part of the network stack is being simulated with the bridge then processed. For a 3 lane setup, that is 6 ports so we need at least a 6 core CPU @ &gt;= 2.2 Ghz to handle the load.</p>
+<p><img alt="Latency Simulator" src="../../../assets/images/2013/02/LatencySimulator.png" width="300" /></p>
+<p>You may be asking why just 3 and not 4 latency lanes, this is because for us there will always be a 'local' data center and the other 3 connect to it in a star like network layout like in the above diagram. Since this is a 'flat' network in the same subnet, any ping from one of the data centers to another data center will go through the 'local' data center. In reality, these 'data center' switches are connected to the Latency Simulator which then connects to the local data center switch.
+Realistic latency from the 'local' data center in New York:
+<strong>California</strong>: 32ms
+<strong>England</strong>: 80ms
+<strong>Japan</strong>: 346ms
+Source: <a href="http://www.verizonenterprise.com/about/network/latency/">Verizon's latency table</a>
+Going from California to Ireland would involve first a hop through New York, so the compound delay would be 112ms. With that in mind you can then compute your <a href="http://en.wikipedia.org/wiki/Bandwidth-delay_product">bandwidth delay product</a> (BDP)
+Once the machine is up and running with whatever Linux distribution you like, make sure that tc and brctl are installed. Here are the scripts that can be used to bring the bridges up and down, and apply latencies and remove the latencies for the four geographically seperate datacenters.
+<strong>Files:</strong></p>
+<ul>
+<li><a href="../../../assets/images/2013/02/bridgeUp.sh">bridgeUp.sh</a></li>
+<li><a href="../../../assets/images/2013/02/bridgeDown.sh">bridgeDown.sh</a></li>
+<li><a href="../../../assets/images/2013/02/latencyOn.sh">latencyOn.sh</a></li>
+<li><a href="../../../assets/images/2013/02/latencyOff.sh">latencyOff.sh</a></li>
+</ul>
+<p>Once in place, we could ping from one side to the other and see the latency being applied. It is now time for baseline testing. First we turned off the latency and used iperf to test end to end that we can fill the 10Gbps pipes and that the Latency Simulator isn't the bottleneck. We could get around 9.50Gbps point to point. Then we turn on the latency and see the impact directly. The first thing we noticed is that when running iperf for the default 10s that the <a href="http://en.wikipedia.org/wiki/Slow-start">slow start</a> and initial <a href="http://en.wikipedia.org/wiki/TCP_window_scale_option">TCP window size</a> has an impact how much data we can send over the wire. Because of the slow start, if you want better performance in your stream then you need to test for longer than 10s. We could not fill a pipe with 120ms latency until after 25s of running iperf which time we had transferred something like 15GiB of data. So trying to send a 1GiB file will <strong>not</strong> fill pipe.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>RTT in ms   MiB/s default   MiB/s MAX
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>0       1162        1157
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>2       1053        1136
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>4       513     1076
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>8       248     1075
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>16      103     691
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>22      91      366
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>32      47      358
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>44      31      208
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>64      8.2     64
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>128     0.8     26
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>130     0.7     26
+</code></pre></div>
+<p>The MAX settings I used is the MAX TCP Window Size of 1GiB. If you try to go above that, you will find that Linux gets mad and some networking services will just not work. The sweet spot for us to set the initial window size to 8MiB which gave the algorithm enough time to shrink to either 4096 bytes or to grow in the other direction. Below are two 'key' tunables where rmem is the read buffer and wmem is the write buffer of the TCP buffer.
+<code>sysctl -w net.ipv4.tcp_rmem='4096 8388608 33554432'
+sysctl -w net.ipv4.tcp_wmem='4096 8388608 33554432'</code>
+However even with an initial 8MiB TCP Window Size, you'll never reach this potential because the Initial Congestion Window (initcwnd) is set to 10 as of 2011 per this <a href="http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=442b9635c569fef038d5367a7acd906db4677ae1">git diff</a>. This "slow start" is a congestion avoidance mechanism with exponential growth, a feature not a bug. Below is the 'slow start' in action when downloading a linux source tarball from kernel.org.
+<a href="../../../assets/images/2013/03/xplot.png"><img alt="slow star congestion control" src="../../../assets/images/2013/03/xplot.png" /></a> slow star congestion control
+What you are seeing is the an exponential growth of the congestion window that eventually grows to allow the TCP Window Size to kick in which then scales up linearly. You can however changed this per route which makes sense because congestion control works on a per network/host level.
+Examples of setting the initial congestion and receive windows:
+<code>ip route change default via x.x.x.x initcwnd 20 initrwnd 20 # update your default gateway
+ip route change dev eth0 192.168.1.0/24 proto kernel src 192.168.0.1 initcwnd 20 initrwnd 20 # if you want to apply it just to one network</code>
+Do not think of this as just updating the values and expecting fantastic results, because if you enter packet loss into the equation or real network congestion, then you are in for a painful experience with values that are too large. You'll not be as agile to respond to the pitfalls of the Internet, but if you are on a long fat network then adjusting these values can be a real boon for your throughput.
+You should now the tools necessary to implement your own "Long Fat Network" simulator and various things you can look at and adjust to get the most out of your network and applications.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-02-11 00:00:00+00:00">February 11, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/python/" class="md-meta__link">Python</a>, 
+              <a href="../../category/software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="introducing-worldsynth-for-your-world-generation-and-building-needs"><a class="toclink" href="../../2013/02/11/introducing-worldsynth-for-your-world-generation-and-building-needs/">Introducing worldsynth for your world generation and building needs</a></h2>
+<p><img align="left" alt="Rivers" src="../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p>After many years of development in my spare time, I've decided to release <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> as a <a href="http://en.wikipedia.org/wiki/Free_and_open_source_software" title="Free and Open Source Software">Free and Open Source Software</a>. As a world generator, it fills the roll and can also be rapidly extended to support additional features. The source might not be of top quality, but the main purpose of creating it has been fulfilled and I want to share it. I only hope that others will find it useful and want to build upon it.</p>
+<p>There is still much more functionality that I would like add and additional polishing to the user interface. Midway through I switched from <a href="http://en.wikipedia.org/wiki/Pygame">pygame</a> to <a href="http://en.wikipedia.org/wiki/PySide">pyside</a> or <a href="http://en.wikipedia.org/wiki/Qt_(framework)">Qt4</a> for the GUI. I consider it ready for "<a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha">Alpha</a>" at this point, meaning there might be bugs and few experimental features that may break but otherwise usable.</p>
+<p><strong>What we have so far:</strong></p>
+<ul>
+<li><em>Heightmap</em> - What we have so far is the ability to create a heightmap using three different methods: midpoint displacement, sphere slicing and diamond square. Each have their advantages and disadvantages depending on the type of terrain map you desire.</li>
+<li><em>Heatmap</em> - Based on the heightmap we generate a heatmap to get our temperature range across the terrain, either full equatorial or picking between northern or southern hemispheres.</li>
+<li><em>Weather</em> - There is wind and precipitation that are heavily influenced by the contours of the terrain. This includes rain shadows from mountains and average rainfall based on wind direction.</li>
+<li><em>Drainage</em> - The drainage dictates how fast the water is absorbed by the terrain. This has in impact on the type of geology that is there such as soft ground good for farming or hard stone that water just flows over with little erosion.</li>
+<li><em>Rivers</em> - With the rain water that collects when falling down the mountains and hills of the terrain, at a certain point to form streams that collect further into rivers. It flows either out to sea or collects into a depression of the terrain. This also has an impact on erosion on the terrain.</li>
+<li><em>Biomes</em> - With all the layers above we can then synthesize <a href="http://en.wikipedia.org/wiki/Biome">biomes</a> which give a sort of realistic habitation zones that we find in real life.</li>
+</ul>
+<p><strong>Media</strong>:
+I've made films of older versions <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> to give an idea of what is possible. The GUI has since changed from pygame as of version 0.8 to pyside in version 0.9, but the main features haven't changed. The follow video demostrates all the major features talked about above.
+http://www.youtube.com/watch?v=INfN3IXwwzg</p>
+<p>The next video is older but still gives another demonstration.
+http://www.youtube.com/watch?v=Sixm7dd9klY</p>
+<p><strong>Outside interest</strong>:
+Other projects have already taken an interest in <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> and have used the results for building their own worlds. <a href="https://openmw.org" title="OpenMW">OpenMW</a> is a FOSS remake of the <a href="http://en.wikipedia.org/wiki/The_Elder_Scrolls_III:_Morrowind">Morrowind</a> game engine that will let you play Morrowind on multiple platforms. They are also working on a OpenCS which will be better than the Morrowind Construction Set, win parallel with an OpenES or "Example Suite" that will allow anyone to use OpenMW without having to own Morrowind.</p>
+<p>They first had to generate a heightmap that fit their requirements, three relatively big islands in a 512x512 map.</p>
+<p><img alt="OpenMW Heightmap" src="../../../assets/images/2013/02/testHM.png" width="300" /></p>
+<p><img alt="Landscape" src="../../../assets/images/2013/02/Landscape.png" width="300" /></p>
+<p>Once they had a heightmap that they could work with, they did a test conversion into an usable ESM for OpenMW. They used a tool made by Lightwave called <a href="http://www.oceanlightwave.com/morrowind/TESAnnwyn.html">TESAnnwyn</a> which allow for the creation of an ESM using the heightmap. I've talked with Lightwave about open-sourcing his work, and he replied that it would love to but first needs to clean it up. He did provide Linux 32 and 64 bit versions of TESAnnwyn that I'm allowed to host until he can get around to it. <a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2013/02/tesannwyn_linux.tar.gz">tesannwyn_linux.tar</a></p>
+<p>The result is a success!</p>
+<p><img alt="Import of Heightmap Works" src="../../../assets/images/2013/02/PnPLF.jpg" width="300" /></p>
+<p><img alt="Raw Heightmap in OpenMW" src="../../../assets/images/2013/02/demo1.png" width="300" /></p>
+<p>With this they can plan out what they want to do and where things should go before editing.</p>
+<p><img alt="Landscape and Overview" src="../../../assets/images/2013/02/Landscapemap.png" width="300" /></p>
+<p>The ESM was put into the editor to mold their new world. I would love to add some of that very functionality into <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a>. The result of their modeling is this.</p>
+<p><img alt="Demo of edited Heightmap" src="../../../assets/images/2013/02/demo2.png" width="300" /></p>
+<p>They are still building and creating, but this drop in replacement for Morrowind (Example Suite) is coming along fine. You can have a look for yourself as they provided me with a demo ESM you can use. Place <a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2013/02/OpenMW.esm.tar.gz">OpenMW.esm</a> in your "Data Files" directory next to Morrowind.bsa. Rename Morrowind.esm so that it is out of the way and copy OpenMW.esm to Morrowind.esm. With OpenMW, use the launcher and select OpenMW.esm in the "Data Files" tabs. Close the Launcher then on the command line type this:
+<code>openmw --start="Town, Centre"</code>
+Once in, hit f2 to open the console and set your speed so you can fly around and view the work that is going on with the Example Suite.
+<code>player-&gt;setspeed 500</code></p>
+<p>This is very good for moral here as people are actually using <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> for their own projects. It is possible that they will ship it with their OpenCS or at least link against it for their heightmap generation needs.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-02-04 00:00:00+00:00">February 4, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../../category/operating-systems/" class="md-meta__link">Operating Systems</a>, 
+              <a href="../../category/linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="wireless-bcm4312-with-the-36-37-and-38-kernel"><a class="toclink" href="../../2013/02/04/wireless-bcm4312-with-the-36-37-and-38-kernel/">Wireless BCM4312 with the 3.6, 3.7 and 3.8 kernel</a></h2>
+<p><img align="left" alt="Broadcom Chipset BCM4312" src="../../../assets/images/2011/03/BCM4312s.jpg" width="200" /></p>
+<p>As a follow up to , I've also tested the Broadcom hybrid driver with the 3.6, 3.7 and the soon to be released 3.8 kernels with success. There have been no major changes that should effect the operation of this driver.</p>
+<p>To verify that everything is working as expected on the software side, when modprobe or insmod wl, you should get a similar dmesg output:</p>
+<blockquote>
+<p>[ 307.560347] lib80211: common routines for IEEE802.11 drivers
+[ 307.560353] lib80211_crypt: registered algorithm 'NULL'
+[ 307.564524] wl: module license 'unspecified' taints kernel.
+[ 307.564529] Disabling lock debugging due to kernel taint</p>
+</blockquote>
+<p>The only real issue at this point is this:</p>
+<blockquote>
+<p>WARNING: modpost: missing MODULE_LICENSE() in /home/bcurtis/workspace/wl/wl.o
+see include/linux/module.h for more information
+WARNING: modpost: Found 1 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+CC /home/bcurtis/workspace/wl/wl.mod.o
+LD /home/bcurtis/workspace/wl/wl.ko</p>
+</blockquote>
+<p>While these aren't errors, they are problems to be addressed upstream by Broadcom if they wish to see their driver to be used in the future. They will also need to incorporate my patch sets from my previous post. They haven't updated their driver in about two years now.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-01-30 00:00:00+00:00">January 30, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/video/" class="md-meta__link">Video</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../category/software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              6 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="properly-ripping-dvds-and-adding-subtitles-in-ubuntu"><a class="toclink" href="../../2013/01/30/properly-ripping-dvds-and-adding-subtitles-in-ubuntu/">Properly ripping DVDs and adding subtitles in Ubuntu</a></h2>
+<p><img align="left" alt="dvd::rip" src="../../../assets/images/2013/01/clip_zoom.png" width="200" /></p>
+<p>There are occasions where you legitimately need tools to help that would otherwise be considered the domain of "pirates" and "ne'er-do-wells". In this particular scenario, my grandparents send a DVD from the United States (Region1) to us in Belgium (Region2). Not only will the DVD not play back on a region locked DVD player, there are also no Dutch subtitles.</p>
+<p>There are however technological solutions to this type of problem, including such programs as <a href="http://www.exit1.org/dvdrip/" title="dvd::rip">dvd::rip</a>, <a href="https://github.com/ruediger/VobSub2SRT#readme" title="VobSub2SRT">vobsub2srt</a> and a few websites dedicted to crowdsourced subtitles.</p>
+<p>Our first task is to properly rip a DVD. There are many options here, but I chose dvd::rip because it just works. It creates a small <a href="http://en.wikipedia.org/wiki/Xvid" title="Xvid">xvid</a> (avi) file that is compatible with a set-top DVD player and it is also allows ripping of any subtitles found on the DVD. If may wish to dig into the <a href="http://www.exit1.org/dvdrip/doc/index.cipp">documentation</a> to really understand the details of dvd:rip. I'll give you a step-by-step run down on how I did things.</p>
+<p><strong>dvd::rip</strong></p>
+<ol>
+<li>Install the program and it's libraries.</li>
+<li>Following the directions and make sure the directories are set, dvd drive is found and that libraries are installed.</li>
+<li>On the left will be tabs, use this as a process. Begin with "Storage" where you set the project name, dvd drive to use and "Copy data from DVD to hard disk before encoding" which will make things faster.</li>
+</ol>
+<p><img alt="Storage" src="../../../assets/images/2013/01/Storage.png" width="200" /></p>
+<ol>
+<li>On "Rip Title" you need to read the data on the DVD and select which files to rip. First "Read DVD table of contents", select the Title or Titles you wish to rip, usually the one with the most Chapters and/or Runtime is your target. Highlight that entry, select on the right your audio track (en for English, other en entries are usually commentary tracks). Set "Specify chapter mode" to None so that it is ripped as one file and not a set of files (per chapter) and set the "Grab subtitle preview images" to All so that you can select what subtitles you wish use, if any. The last step here is to "Rip selected title(s)/chapter(s) which will take a few minutes.</li>
+</ol>
+<p><img alt="RipTitle" src="../../../assets/images/2013/01/RipTitle.png" width="200" /></p>
+<ol>
+<li>Select next the "Clip &amp; Zoom" which will allow you to set the correct format (size) that is perfect for your TV. You need to be careful here because the source (DVD) can be different such as: letterbox (widescreen) 1.85:1 ratio, anamorphic (widescreen) 16:9 ratio, or pan &amp; scan (fullscreen) 4:3 ratio. Look at the back of your DVD box to verify. To test different settings, do a grab frame and try various "Autoadjust" presets until you find something that looks right. If you are playing back on an older DVD player with USB divx/xvid/avi support, then try to pick Small Frame Size, which is about 480p. This will make playing back smother as your hardware DVD player doesn't have enough CPU power to downscale higher resolutions.</li>
+</ol>
+<p><img alt="ClipAndZoom" src="../../../assets/images/2013/01/ClipAndZoom.png" width="200" /></p>
+<ol>
+<li>Moving to the Subtitles screen, you can select the DVD title that you ripped and the correct subtitle you wish to rip. You can either "Activate this subtitle" for rendering or "Create now" which will produce separate files which you can use later. I prefer another method of handling subtitles than hard-rendering them to the rip. After "Create Now", you will have extra files that we can convert to <a href="http://en.wikipedia.org/wiki/SubRip">SubRip</a> text file format (SRT) later.</li>
+</ol>
+<p><img alt="Subtitles" src="../../../assets/images/2013/01/Subtitles.png" width="200" /></p>
+<ol>
+<li>After that we go to the "Transcode" tab which is the 'meat' of the program. We select our DVD title, select a container of AVI, make sure the "Video codec" is xvid, "By target size"'s "Target media" to One x 700MB which will create one file at an acceptable bitrate. On the Audio Options side, "Select track" to the one we ripped and select MP3. I set the Samplerate to 192kbit/s to get better audio. the rest I set to defaults. On the bottom left gives you an "Calculated storage". If you are content with your choices, go to "Operate" and select "Transcode" and wait a bit more.</li>
+</ol>
+<p><img alt="Transcode" src="../../../assets/images/2013/01/Transcode.png" width="200" /></p>
+<ol>
+<li>Success! Try out your newly made AVI file with VLC or another player to make sure it is to you liking. If you got an error, you can go to the "Logging" tab on the left and see where you went wrong.</li>
+</ol>
+<p>At this point, you should have an AVI file that you can play back in your video player or DVD player. However the job is not yet finished as we also need the subtitles for those in their native language. We saw that we could 'Rip' subtitles with dvd::rip but the files we have are in the VOB format idx/ifo/sub format which may or may not be readable by your player. We can convert this format to a SRT text-based file which is widely supported subtitle format using a tool called: <a href="https://github.com/ruediger/VobSub2SRT" title="VobSub2SRT">VobSub2SRT</a>.</p>
+<p><strong>VobSub2SRT</strong></p>
+<ol>
+<li>Download and build <a href="https://github.com/ruediger/VobSub2SRT" title="VobSub2SRT">VobSub2SRT</a> yourself or install the package via <a href="https://launchpad.net/~ruediger-c-plusplus/+archive/vobsub2srt" title="vobsub2srt">PPA</a>.</li>
+<li>You will also need to install '<a href="http://en.wikipedia.org/wiki/Tesseract_(software)">tesseract-ocr</a>' and any of the language files necessary to handle the subtitle language you ripped earlier.</li>
+<li>From the command line, go to where your ripped subtitles are and run the command to convert (OCR) them into an SRT file.</li>
+</ol>
+<blockquote>
+<p>vobsub2srt --lang en dolphinetail-001-sid00</p>
+</blockquote>
+<p>This will use english (en) from the idx/sub files to make the srt file. You can find out which languages you can pick from using the --langlist parameter.</p>
+<blockquote>
+<p>bcurtis@Wintermute:~/.dvdrip-data/dolphinetail/avi/001$ vobsub2srt --lang en dolphinetail-001-sid00
+Selected VOBSUB language: 0 language: enen
+Wrote Subtitles to 'dolphinetail-001-sid00.srt'</p>
+</blockquote>
+<p>Success! Just copy the SRT file to where your AVI is and your player should recognize and automatically use the subtitle file.</p>
+<p>There are times when you have the film but there is not subtitle for your language of choice. This is where crowd sourcing comes in as there is no shortage of people wanting to either subtitle the film for free as volunteer work or for some other altruistic or non-altruistic reason.</p>
+<p><strong>Crowdsourced Subtitles</strong></p>
+<ul>
+<li><a href="http://www.bierdopje.com/" title="Bierdopje">Bierdopje</a>: Dutch subtitles for films and series.</li>
+<li><a href="http://www.opensubtitles.org/en" title="opensubtitles">OpenSubtitles</a>: Multi-lingual subtitles for films and series</li>
+<li><a href="http://www.podnapisi.net/" title="podnapisi">Podnapisi</a>: Older Multi-lingual subtitles for films and series</li>
+</ul>
+<p><strong>Resizing Video</strong>
+There can be moments where you have a file you want to play back on your DVD player and it complains that the resolution is not supported. This because it doesn't have a CPU powerful enough to downscale your film to your TV's resolution. I found this Video <a href="http://ubuntuguide.org/wiki/Video_Conversion" title="Video Conversion">Conversion Guide</a> which helped. You just need to figure out what your TV's native resolution is, and try to match it. For example my TV is an old CRT PAL monster and the source is a 1280x720 video. The DVD player doesn't support that resolution, but it is 16:9 ratio. We then convert the mkv to an avi to stay within the same ratio and play back on an old style PanScan CRT.</p>
+<blockquote>
+<p>mencoder input.avi -ovc xvid -vf scale=648:364 -oac mp3lame -lameopts cbr:br=192 -xvidencopts pass=2:bitrate=-1400000:threads=4 -o output.avi</p>
+</blockquote>
+<p>This converts the film 648:364, however you should keep in mind your TV's resolution. The guide gives a better understanding and there is no need to repeat the information here.</p>
+<p>The end result should be a film for your USB in with a subtitle of your choice.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-01-17 00:00:00+00:00">January 17, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/mobile/" class="md-meta__link">Mobile</a>, 
+              <a href="../../category/linux/" class="md-meta__link">Linux</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="upgrade-samsung-galaxy-gio-to-cyanogenmod-72"><a class="toclink" href="../../2013/01/17/upgrade-samsung-galaxy-gio-to-cyanogenmod-72/">Upgrade Samsung Galaxy Gio to CyanogenMod 7.2</a></h2>
+<p><img align="left" alt="Android" src="../../../assets/images/2012/08/android-logo.gif" width="200" /></p>
+<p>Going from 2.3.x (Gingerbread) to <a href="http://en.wikipedia.org/wiki/CyanogenMod" title="CyanogenMod">CyanogenMod</a> 7.2 (Gingerbread) is surprisingly simple unlike upgrading from Froyo. I'll go into more detail below, but there are two necessary bits: an updated recovery rom and a custom (non-official) CyanogenMod rom. This version of CyanogenMod is specific to the <a href="http://wiki.cyanogenmod.org/index.php?title=Unofficial_Ports#Samsung_Galaxy_Gio_.28GT-S5660.29" title="cyanogenmod samsung gio">Samsung Gio</a>.</p>
+<p>Before upgrading your Samsung Gio, you must first be running at least 2.3.x (Gingerbread) before continuing because of the use of ext4 instead of rfs. Please follow my upgrade guide "<a href="https://mindwerks.net/2012/08/upgrade-samsung-galaxy-gio/" title="Upgrade Samsung Galaxy Gio from 2.2.x Froyo to 2.3.x Gingerbread">Upgrade Samsung Galaxy Gio from 2.2.x Froyo to 2.3.x Gingerbread</a>" first.</p>
+<p><strong>Warning:</strong> <em>Caveat emptor</em> - While I used to this process to update my phone, I take no responsibility if you brick your phone. Be sure to back up anything you wish to save, this procedure works best when your Gio is fully wiped of data.</p>
+<p><strong>Installation of the ClockworkMod (CWM)</strong></p>
+<ol>
+<li>Download the custom CWM "<a href="http://www.mindwerks.net/wp-content/uploads/custom/px-cwm-v2.zip" title="ClockworkMod">px-cwm-v2.zip</a>" and copy it to your sdcard.</li>
+<li>Reboot into the default recovery in your stock Gingerbread or with your Gio turned off, hold down the Home/OK (middle) button and press the Power button.</li>
+<li>In recovery mode, use the Volume buttons for navigation and the Home/OK button for selecting.</li>
+<li>Select “Update from SD card” from the recovery menu.</li>
+<li>Look for "px-cwm-v2.zip" which should be on your sdcard and press OK to flash.</li>
+<li>Reboot again like above into recovery mode and you should now have the new CWM recovery screen.</li>
+</ol>
+<p>You can read more about CWM <a href="http://www.addictivetips.com/mobile/what-is-clockworkmod-recovery-and-how-to-use-it-on-android-complete-guide/">here</a>.</p>
+<p>Here is a video that shows the process:
+http://www.youtube.com/watch?feature=player_embedded&amp;v=hxjxB8P9rSU</p>
+<p><strong>Installation of CyanogenMod 7.2 for Samsung Gio</strong></p>
+<ol>
+<li>Download <em>update-cm-7.2.0-20120710-NIGHTLY-gio-AROMA.zip</em> from either <a href="http://www.mediafire.com/?dyfx3xb03s8402b" title="update-cm-7.2.0-20120710-NIGHTLY-gio-AROMA.zip">here</a> or <a href="https://www.dropbox.com/s/48o7axrvtb451rk/update-cm-7.2.0-20120710-NIGHTLY-gio-AROMA.zip" title="update-cm-7.2.0-20120710-NIGHTLY-gio-AROMA.zip">here</a>.</li>
+<li>Copy to sdcard</li>
+<li>Reboot to Recovery Mode (CWM)</li>
+<li>Select install zip from sd card</li>
+<li>Select "update-cm-7.2.0-20120710-NIGHTLY-gio-AROMA.zip" ROM</li>
+<li>Select Yes - Install update</li>
+<li>Wait till the Installation is finish</li>
+<li>Select wipe data/factory reset</li>
+<li>Select reboot mobile and enjoy</li>
+</ol>
+<p><strong>Cyanogen Mod 7.2.0 For Galaxy Gio based on Gingerbread (2.3.7)</strong>
+<em>Working:</em></p>
+<ul>
+<li>RIL</li>
+<li>proximity sensor</li>
+<li>touchscreen with multi touch</li>
+<li>keychar</li>
+<li>storage mode</li>
+<li>gps</li>
+<li>compass</li>
+<li>accelerometer sensor</li>
+<li>microphone (both phone &amp; headset)</li>
+<li>headset button</li>
+<li>Root &amp; Busybox</li>
+<li>call,sms,mms</li>
+<li>auto rotate</li>
+<li>packet data with automatically apn detect</li>
+<li>GPRS, EDGE, 3G, HSDPA</li>
+<li>wifi</li>
+<li>hardware video acceleration</li>
+<li>secret code</li>
+<li>bluetooth</li>
+<li>camera</li>
+<li>static wifi mac address</li>
+<li>audio &amp; FM Radio</li>
+<li>wired &amp; hotspot tether</li>
+<li>Backlight Notification</li>
+</ul>
+<p><em>Not Working:</em></p>
+<ul>
+<li>Sim Toolkit (maybe)</li>
+</ul>
+<p><em>Known issues:</em></p>
+<ul>
+<li>some option are not working on setting (like: mute camera sound, etc)</li>
+<li>slow loading png image on gallery</li>
+<li>after use camera, governor force back to "ondemand"</li>
+</ul>
+<p><em>Sources:</em></p>
+<ul>
+<li><a href="https://github.com/phiexz">https://github.com/phiexz</a></li>
+<li><a href="https://github.com/phiexz">http://android.phiexz.com/</a></li>
+</ul>
+<p>All thanks should go to CyanogenMod team, phiexz and all those that have put effort into ever aspect of this ROM.</p>
+<p><strong>This is part 2 of a 3 part series about the Galaxy Gio.</strong>
+Part1: <a href="https://mindwerks.net/2012/08/upgrade-samsung-galaxy-gio/" title="Upgrade Samsung Galaxy Gio from 2.2.x Froyo to 2.3.x Gingerbread">Upgrade Samsung Galaxy Gio from 2.2.x Froyo to 2.3.x Gingerbread</a>
+Part2: <a href="https://mindwerks.net/2013/01/upgrade-samsung-galaxy-gio-to-cyanogenmod-7-2/" title="Upgrade Samsung Galaxy Gio to CyanogenMod 7.2">Upgrade Samsung Galaxy Gio to CyanogenMod 7.2</a>
+Part3: <a href="https://mindwerks.net/2013/05/upgrade-samsung-galaxy-gio-to-cyanogenmod-10-1/" title="Upgrade Samsung Galaxy Gio to CyanogenMod 10.1">Upgrade Samsung Galaxy Gio to CyanogenMod 10.1</a></p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-08-17 00:00:00+00:00">August 17, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/hardware/" class="md-meta__link">Hardware</a>, 
+              <a href="../../category/servers/" class="md-meta__link">Servers</a>, 
+              <a href="../../category/linux/" class="md-meta__link">Linux</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="the-case-of-the-non-booting-usb-thumb-drive-and-the-dell-r620"><a class="toclink" href="../../2012/08/17/the-case-of-the-non-booting-usb-thumb-drive-and-the-dell-r620/">The case of the non-booting USB thumb-drive and the Dell R620</a></h2>
+<p><img align="left" alt="dell_poweredge_r620" src="../../../assets/images/2012/06/dell_poweredge_r620.jpg" width="200" /></p>
+<p>Awhile back I wrote about '<a href="https://mindwerks.net/2012/06/doing-battle-with-a-dell-r620-and-ubuntu/" title="Doing battle with a Dell R620 and Ubuntu">Doing battle with a Dell R620 and Ubuntu</a>' where I touched on the fact that booting from USB thumb-drive was a painful problem. In short, the same USB thumb-drive that would work in the R610 would not work in the R620.</p>
+<p>It comes down BIOS support for USB and how it is handled. On the R610 there are 3 options: 'auto-detect', 'floppy emulation' and 'hard drive'. Auto was hit-or-miss, floppy would not work but 'hard drive' worked every time. On the R620 there are no options so I can only suppose that it supports 'floppy emulation' upon detection of a USB thumb-drive.</p>
+<p>To try to find the cause of this problem we tried using the 'standard' method of taking Precise 12.04 ISO from Ubuntu's website and using UNetbootin to create a USB thumb-drive that did boot on the R620. It turns out there was something wrong with our process that prevented it from booting. In comparing the partition table (with parted) of our USB thumb-drive and the Precise thumb-drive we noticed that the starting position of the first (and only) partition were different!</p>
+<p>Non-booting USB:</p>
+<blockquote>
+<p>Model: TDKMedia Trans-It Drive (scsi)
+Disk /dev/sdc: 3999MB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos</p>
+</blockquote>
+<p>Number Start End Size Type File system Flags
+1 1049kB 3998MB 3997MB primary ext4 boot</p>
+<p>Booting USB:</p>
+<blockquote>
+<p>Model: TDKMedia Trans-It Drive (scsi)
+Disk /dev/sdc: 3999MB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos</p>
+</blockquote>
+<p>Number Start End Size Type File system Flags
+1 32.9kB 3998MB 3997MB primary ext4 boot</p>
+<p>The choice to do 1MiB was to increase the lifespan of the thumb-drive by aligning the partition to the erase-block size of the thumb-drive. Doing this however renders 'floppy emulation' a non-option on both the Dell R620 and R610. Setting it to 32.9KiB also means that the drive is not properly aligned and you will get bad performance when writing, reading and health of the thumb-drive itself.</p>
+<p>In the interest of getting bootable thumbdrive we ended up doing this:
+<code>parted -a none /dev/sdb 'mkpart primary 0 -1 set 1 boot on'</code>
+What this does is create a primary partition at the start of the thumb-drive that goes all the way to the end. We ignore the alignment problems and set the partition to bootable. After that, it was easy enough to through our ext4 filesystem on top and syslinux/casper to get our custom installer working.</p>
+<p>The end result is that we now have a USB thumb-drive that boots on a R620 every time.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-08-16 00:00:00+00:00">August 16, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/bash/" class="md-meta__link">Bash</a>, 
+              <a href="../../category/servers/" class="md-meta__link">Servers</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../category/software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="dell-dset-on-ubuntu-1004-and-1204"><a class="toclink" href="../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/">Dell DSET on Ubuntu 10.04 and 12.04</a></h2>
+<p><img align="left" alt="UbuntuOnDell" src="../../../assets/images/2012/08/UbuntuOnDell.jpeg" width="200" /></p>
+<p>Dell System E-Support Tool (DSET) is an informative tool used by Dell's support engineers to help diagnose problems for their clients. It is almost a requirement now and Dell usually refuses to continue support without a DSET report.</p>
+<p>The problem is that DSET is only supported on Redhat and SuSE Linux and there isn't any information on how to get it running in Ubuntu. I've assembled a rough guide on how to get DSET up and running on Ubuntu 10.04 and 12.04 and it is tested against a Dell R610 and R620.
+<strong>First</strong> we need to install Dell's OpenManage Server Administrator (OMSA) which is one piece from Dell that does support Ubuntu.
+<a href="http://linux.dell.com/repo/community/deb/latest/">http://linux.dell.com/repo/community/deb/latest/</a></p>
+<p>You can cut and paste the following:
+<code>echo 'deb http://linux.dell.com/repo/community/deb/latest /' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list
+gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
+gpg -a --export 1285491434D8786F | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install -y srvadmin-all sblim-cmpi-base rpm alien
+sudo ln -sf /usr/bin/rpm /bin/rpm</code></p>
+<p>The above will add Dell's repository to your apt sources and grab everything necessary to install the OMSA. It does include a java/tomcat webserver for a web GUI interface, but that is not enabled by default and not necessary for our DSET. You'll need to logout and log back in again to reset your path variables.</p>
+<blockquote>
+<p>root@dmachine:~# /opt/dell/srvadmin/sbin/srvadmin-services.sh start
+Starting Systems Management Device Drivers:
+Starting dell_rbu: *
+Starting ipmi driver: * Already started
+Starting Systems Management Data Engine:
+Starting dsm_sa_datamgrd: *
+Starting dsm_sa_eventmgrd: *
+Starting dsm_sa_snmpd: *
+Starting DSM SA Connection Service: *</p>
+</blockquote>
+<p><strong>Secondly</strong>, if you are using an 'OEM Ready' Dell server then OMSA dataeng (Systems Management Data Engine) might complain with "Failed to start because system is not supported". There isn't any 'official' support for OMSA on these systems but you can contact Dell's OEM wing for custom solutions here: <a href="http://content.dell.com/us/en/enterprise/d/oem/oem-engineering-services.aspx">http://content.dell.com/us/en/enterprise/d/oem/oem-engineering-services.aspx</a></p>
+<p>To get OMSA working on an OEM system, we need to modify this file: /opt/dell/srvadmin/sbin/CheckSystemType which calls the file: /usr/sbin/smbios-sys-info-lite which does not return back the expected value. I've modified it to key off the 'Is Dell' flag which is 1 (True). The patch can be found here: <a href="../../../assets/images/2012/08/checksystem.patch">checksystem.patch</a>
+<code>patch -p0 &lt; checksystem.patch</code>
+Once the patch is applied, Systems Management Data Engine should start without problems.</p>
+<p><strong>Thirdly</strong> you need to download the 32 or 64 bit Linux version of DSET. You then need to edit the bin file to not run the install.sh file and to also not delete /tmp/dell_advdiags when it is finished running. You'll need the rpm files that it extracts to install DSET on Ubuntu.</p>
+<p>Example from dell-dset-3.2.0.141_x64_A01.bin: ( the # comments out the none necessary bits )</p>
+<blockquote>
+<h2 id="source-installsh"><a class="toclink" href="../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/#source-installsh">source install.sh</a></h2>
+</blockquote>
+<p>cd $CDIR</p>
+<h2 id="rm-rf-tmpdir"><a class="toclink" href="../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/#rm-rf-tmpdir">rm -rf $TMPDIR</a></h2>
+<p>The only ones that we need are these:</p>
+<blockquote>
+<p>dell-dset-collector-3.2.0.141-1.x86_64.rpm
+dell-dset-common-3.2.0.141-1.x86_64.rpm
+dell-dset-provider-3.2.0.141-1.x86_64.rpm</p>
+</blockquote>
+<p>DSET binaries can be found here: <a href="http://support.dell.com/dset/" title="http://support.dell.com/dset/">http://support.dell.com/dset/</a></p>
+<p><strong>Fourthly</strong> you'll need to verify that /bin/sh points to bash instead of dash because Dell's scripts rely on bash's functionality.
+<code>sudo su -
+ln -sf /bin/bash /bin/sh
+sh dell-dset*.bin
+mv /tmp/dell_advdiags ~
+cd ~/dell_advdiags/rpms
+alien --scripts dell-dset*.rpm
+dpkg -i --force all *.deb
+dellsysteminfo</code></p>
+<p>You might have to do these steps one at a time, but that is the flow of things. Alien sometimes complains about 'unknown flags' and dpkg will likely also complain about overwriting existing files. The first problem has bothered me so far, but the last is DSET overwriting existing OMSA files which as far as I can tell are the same files.</p>
+<p>When you run dellsysteminfo, you need to give it a password. This is your typical Linux account password. You should now have something to hand over to the Dell Support people.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-08-09 00:00:00+00:00">August 9, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/mobile/" class="md-meta__link">Mobile</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="upgrade-samsung-galaxy-gio-from-22x-froyo-to-23x-gingerbread"><a class="toclink" href="../../2012/08/09/upgrade-samsung-galaxy-gio-from-22x-froyo-to-23x-gingerbread/">Upgrade Samsung Galaxy Gio from 2.2.x Froyo to 2.3.x Gingerbread</a></h2>
+<p><img align="left" alt="Android" src="../../../assets/images/2012/08/android-logo.gif" width="200" /></p>
+<p>Going from 2.2.x (Froyo) to 2.3.x (Gingerbread) is an involved process as there is always the fear that you will 'brick' your phone. This fear usually keeps most people away from upgrading. I've found a process, with Google's help and trial/error, that managed to get process done painlessly and without a dead mobile.</p>
+<p>Here is a little back story: I was lucky enough to come across the Galaxy Gio in a bad state while at work. The mobile would turn on, give the Samsung logo then black-screen and would not boot any further. It wouldn't have made a good paperweight but if I could salvage it, it was mine.</p>
+<p>Note: This process is a requirement before upgrading to a Cyanogenmod release.</p>
+<p><strong>What you need</strong> </p>
+<ul>
+<li>Galaxy Gio</li>
+<li>Micro USB Cable</li>
+<li><a href="http://www.mindwerks.net/wp-content/uploads/custom/samsung_usb.zip" title="Samsung's USB driver">Samsung's USB Driver</a></li>
+<li><a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2012/08/odin.zip">Odin with 'pit and ops' file for Gio</a></li>
+<li>Windows OS to run ODIN on</li>
+<li><a href="http://www.sammobile.com/firmware/?page=3&amp;model=GT-S5660&amp;pcode=0&amp;os=1&amp;type=1#firmware">Gingerbread Rom</a></li>
+</ul>
+<p>You will need to download the Odin installer with the 'pit and ops' file which is specific to the Galaxy Gio. This process requires Windows and I have yet to find a process that will work under Linux. When browsing above for a 'Gingerbread Rom' be sure to pick one for your country or region. The latest revision as of this writing is: 2.3.6</p>
+<p><strong>The upgrade process</strong></p>
+<ol>
+<li>If you have not already, you will need to install Samsung's USB Driver.</li>
+<li>Power off your Gio and remove your SIM and SD cards.</li>
+<li>Unzip/extract your rom, the result should be a 250MiB MD5 file. As an example: S5660XXKTL_S5660XXKT7_S5660XENLT1_HOME.tar.md5</li>
+<li>Unzip/extract odin.zip somewhere and run the ODIN executable.</li>
+<li>Select OPS file that you just extracted from odin.zip. Select 'One Package' under Option and then a few options will be greyed out. Keep 'Protect OPS' and 'Auto Reboot' checked. Select your 'One Package' at the bottom to be the 250MiB tar.md5 file.</li>
+</ol>
+<p><img alt="Click to Enlarge" src="../../../assets/images/2012/08/mw-odin.png" width="300" /></p>
+<ul>
+<li>Set your Gio to 'Download Mode' by pressing 'Volume Down + OK + Power' at the same time.</li>
+</ul>
+<p><img alt="Click to Enlarge" src="../../../assets/images/2012/08/galaxy-gio-download.png" width="200" /></p>
+<ul>
+<li>Connect the phone to the PC with your USB cable. Your COM port mapping will turn yellow when the device is properly detected and connected.</li>
+<li>Press 'Start' and do not turn off your mobile!</li>
+<li>Wait about 5 minutes ( could take longer ), when finished the 'PASS' will show up on the left when the upgrade was successful. Your Gio will reboot automatically.</li>
+</ul>
+<p>You should now have a Gio with Gingerbread. You'll need this you wish to try the latest Cyanogenmod releases.</p>
+<p><strong>This is part 1 of a 3 part series about the Galaxy Gio.</strong>
+Part1: <a href="https://mindwerks.net/2012/08/upgrade-samsung-galaxy-gio/" title="Upgrade Samsung Galaxy Gio from 2.2.x Froyo to 2.3.x Gingerbread">Upgrade Samsung Galaxy Gio from 2.2.x Froyo to 2.3.x Gingerbread</a>
+Part2: <a href="https://mindwerks.net/2013/01/upgrade-samsung-galaxy-gio-to-cyanogenmod-7-2/" title="Upgrade Samsung Galaxy Gio to CyanogenMod 7.2">Upgrade Samsung Galaxy Gio to CyanogenMod 7.2</a>
+Part3: <a href="https://mindwerks.net/2013/05/upgrade-samsung-galaxy-gio-to-cyanogenmod-10-1/" title="Upgrade Samsung Galaxy Gio to CyanogenMod 10.1">Upgrade Samsung Galaxy Gio to CyanogenMod 10.1</a></p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-18 00:00:00+00:00">June 18, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../category/software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="skype-40-on-ubuntu-precise-1204-64-bit"><a class="toclink" href="../../2012/06/18/skype-40-on-ubuntu-precise-1204-64-bit/">Skype 4.0 on Ubuntu Precise (12.04) 64-bit</a></h2>
+<p><img align="left" alt="skype" src="../../../assets/images/2011/09/skype.png" width="200" /></p>
+<p>There is a new version of skype out for Linux, version 4.0 which has interesting <a href="http://blogs.skype.com/linux/2012/06/skype_40_for_linux.html">changelog</a> entries:</p>
+<blockquote>
+<p>* Much lower chance Skype for Linux will crash or freeze
+* chat history loading is now much faster
+* ...several investments we made in improving audio quality ... and improving video call quality
+* ...extended support for more cameras
+* and more</p>
+</blockquote>
+<p>Good enough for me! There is still no true 64 bit binary/package from Skype. The result is that their fake "64 bit" Skype needs an additional 100MB of i386 packages in order for it to run properly.
+The rundown:</p>
+<ol>
+<li>Remove old skype packages if they exist: <code>sudo apt-get purge skype skype-bin</code></li>
+<li>Download latest <a href="http://www.skype.com/intl/en/get-skype/on-your-computer/linux/downloading.ubuntu64">Skype (4.0)</a> (fake) 64-bit package for Ubuntu 10.04+. It might say skype 2.2 beta on the screen, they have yet to update the page. The download link goes to the 4.0 version.</li>
+<li>Install the necessary support libraries: <code>sudo apt-get install ia32-libs lib32stdc++6 lib32asound2</code></li>
+<li>Install the skype binary package itself: <code>sudo dpkg -i skype-ubuntu_4.0.0.7-1_amd64.deb</code></li>
+</ol>
+<p>Enjoy the ad-free Linux version of Skype thanks to... Microsoft.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-18 00:00:00+00:00">June 18, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../../category/operating-systems/" class="md-meta__link">Operating Systems</a>, 
+              <a href="../../category/linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="wireless-bcm4312-with-the-34-and-35-kernel"><a class="toclink" href="../../2012/06/18/wireless-bcm4312-with-the-34-and-35-kernel/">Wireless BCM4312 with the 3.4 and 3.5 kernel</a></h2>
+<p><img align="left" alt="Broadcom Chipset BCM4312" src="../../../assets/images/2011/03/BCM4312s.jpg" width="200" /></p>
+<p>The hybrid driver from Broadcom is still a bit behind in terms of support for the latest kernels but there are workarounds. This particular issue also effects other kernel modules such as the out of tree Nvidia and ATI blobs that require the <strong><em>asm/system.h</em></strong> file in their includes.</p>
+<p>I've had success with replacing it with <strong><em>asm/switch_to.h</em></strong> which seems to have fixed things for now. The cause for this can be found on the <a href="https://lkml.org/lkml/2012/3/29/360">LKML</a>.</p>
+<p>Chipsets supported by "Broadcom’s IEEE 802.11a/b/g/n hybrid Linux® device driver" are: BCM4311, BCM4312, BCM4313, BCM4321, BCM4322, BCM43224, and BCM43225, BCM43227 and BCM43228.</p>
+<p><strong>Errors:</strong></p>
+<blockquote>
+<p>bcurtis@ronin:~/workspace/wl$ make
+KBUILD_NOPEDANTIC=1 make -C /lib/modules/<code>uname -r</code>/build M=<code>pwd</code>
+make[1]: Entering directory <code>/usr/src/linux-headers-3.5.0-030500rc3-generic'
+Wireless Extension is the only possible API for this kernel version
+Using Wireless Extension API
+LD /home/bcurtis/workspace/wl/built-in.o
+CC /home/bcurtis/workspace/wl/src/shared/linux\_osl.o
+CC /home/bcurtis/workspace/wl/src/wl/sys/wl\_linux.o
+/home/bcurtis/workspace/wl/src/wl/sys/wl\_linux.c:43:24: fatal error: asm/system.h: No such file or directory
+compilation terminated.
+make[2]: \*\*\* Error 1
+make[1]: \*\*\* Error 2
+make[1]: Leaving directory</code>/usr/src/linux-headers-3.5.0-030500rc3-generic'
+make: *** Error 2</p>
+</blockquote>
+<p><strong>The rundown:</strong></p>
+<ol>
+<li>Download the 32 or 64-bit version:
+   <code>http://www.broadcom.com/support/802.11/linux_sta.php</code></li>
+<li>Download my patches: <a href="../../../assets/images/2011/11/bc_wl_abiupdate.patch">bc_wl_abiupdate.patch</a> and <a href="../../../assets/images/2012/06/switch_to.patch">switch_to.patch</a></li>
+<li>Extract the sources:
+   <code>cd ~/Downloads; mkdir -p wl; cd wl; tar xf ../hybrid-portsrc*.tar.gz</code></li>
+<li>Patch and compile the sources:
+   <code>patch -p0 src/wl/sys/wl_linux.c &lt; ~/Downloads/switch_to.patch; patch -p0 src/wl/sys/wl_linux.c &lt; ~/Downloads/bc_wl_abiupdate.patch;
+   make; sudo make install; sudo depmod; sudo modprobe wl</code></li>
+</ol>
+<p>Give Ubuntu a few seconds after loading the "wl" kernel module, then eventually the Network Manager will start looking for wireless networks.</p>
+<p>TL;DR: These patches are required for a working wl kernel module for the 3.4 and 3.5 kernel series.</p>
+<p><strong>Update:</strong> Also verified to work with Linux 3.6 series.</p>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  <a class="md-pagination__link" href="../../">1</a> <a class="md-pagination__link" href="../2/">2</a> <span class="md-pagination__current">3</span> <a class="md-pagination__link" href="../4/">4</a> <a class="md-pagination__link" href="../5/">5</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../7/">7</a>
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../category/bash/" class="md-footer__link md-footer__link--next" aria-label="Next: Bash">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Bash
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

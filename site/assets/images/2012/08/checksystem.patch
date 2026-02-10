@@ -1,0 +1,11 @@
+--- /opt/dell/srvadmin/sbin/CheckSystemType.orig	2012-08-17 04:10:49.639558366 -0400
++++ /opt/dell/srvadmin/sbin/CheckSystemType	2012-08-17 04:13:52.179816598 -0400
+@@ -80,7 +80,7 @@
+ #############
+ IsDELLSystem() 
+ {
+-   "$SMBIOS_UTIL" | egrep "(Vendor|OEM String 1)" | awk -F":" '{print $2}' | grep -qi "Dell"
++   "$SMBIOS_UTIL" | egrep "Is Dell" | awk -F":" '{print $2}' | grep -qi 1
+    if [ "$?" = "0" ]; then
+        return $TRUE
+    else

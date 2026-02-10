@@ -1,0 +1,2995 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Mindwerks Network">
+      
+      
+        <meta name="author" content="Bret Curtis">
+      
+      
+      
+        <link rel="prev" href="../storage/">
+      
+      
+        <link rel="next" href="../video/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Ubuntu - Mindwerks.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ubuntu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mindwerks.net" class="md-header__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindwerks.net
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ubuntu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mindwerks.net" class="md-nav__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mindwerks.net
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../cc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C/C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../debian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../laptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../raspberrypi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspberryPi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../thirdeye/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thirdeye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../txmongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TxMongo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wildmidi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WildMIDI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../worldsynth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Worldsynth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../online-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pro-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ip-calc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnet Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../conversions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurement Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../password-cracking-calculator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Cracking Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mindwerks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mindwerks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bret-curtis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bret Curtis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="ubuntu">Ubuntu<a class="headerlink" href="#ubuntu" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2017-07-17 00:00:00+00:00">July 17, 2017</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../debian/" class="md-meta__link">Debian</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../software/" class="md-meta__link">Software</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="running-webex-on-ubuntu"><a class="toclink" href="../../2017/07/17/running-webex-on-ubuntu/">Running Webex on Ubuntu</a></h2>
+<p><img align="left" alt="Webex Logo" src="../../../assets/images/2017/07/unnamed.png" width="200" /></p>
+<p>Webex running on Ubuntu and other non-Windows platforms is literally a click away, in this case the CMR (Collaboration Meeting Room).</p>
+<p>Webex is a fact of life for many people and for many Linux (BSD and other non-Windows) users, it has been a thorn in the side with people going so far as to set up virtual machines just to run Cisco’s collaboration software. While Webex is written in Java, it isn’t so simple to get running everywhere and apparently not all features are available for non-Windows users.</p>
+<p>Most likely you are running up against the following message after logging into *.webex.com</p>
+<blockquote>
+<p>Your browser,browser version, or operating system is currently unsupported</p>
+</blockquote>
+<p>This requires the intervention of whoever is administrating the *.webex.com account and they can modify it in the following way.</p>
+<p>Directions for disabling CMR</p>
+<ol>
+<li>Log into “xxxxx.webex.com/admin” using a site admin level account</li>
+<li>Click “Edit user list” on the left navigation Window.</li>
+<li>Search for the account you want to change</li>
+<li>Click on the account and uncheck “Collaboration Meeting Room”</li>
+<li>Click “Update”</li>
+</ol>
+<p>Once this has happened, then you can log in and start Webex. Usually this is enough, but in case you hit the next wall which is runnig Java from a web-browser then there is always <a href="https://www.mozilla.org/en-US/firefox/organizations/faq/">Firefox ESR</a> (Extended Support Release). This version will allow you to still run the Java (or IcedTea) NPAPI plugin. I usually download and extract to /opt then run a symlink over the system’s version of firefox in /usr/bin/firefox which is enough for my needs.</p>
+<p>You can check to see if the Java plugin is installed in Firefox by going to the URL bar and typing:<br />
+<code>about:plugins</code><br />
+Should you not see it, but you’re sure the plugin exists on the system you can make a symlink yourself:<br />
+<code>ln -vs /usr/lib/jvm/java-8-oracle/jre/lib/amd64/libnpjp2.so ~/.mozilla/plugins/</code><br />
+or<br />
+<code>ln -vs /usr/lib/jvm/java-8-openjdk-i386/jre/lib/i386/IcedTeaPlugin.so ~/.mozilla/plugins/</code><br />
+depending on your implementation, 32/64-bit or library location.</p>
+<p>Ultimately regardless of which bit-ness of Java you use, Webex uses 32-bit libraries as well. Which ones? Here is list, not complete, of all the ones I needed to get it working:</p>
+<p><code>apt-get install libasound2:i386 libasound2-plugins:i386 libfontconfig1:i386 libfreetype6:i386 libgtk2.0-0:i386 libglib2.0-0:i386 libglib2.0-0:i386 libglib2.0-0:i386 libgtk2.0-0:i386 libgcj14-awt:i386 libpango-1.0-0:i386 libpangoft2-1.0-0:i386 libpangox-1.0-0:i386 gcj-4.8-jre-headless libpangoxft-1.0-0:i386 libpng12-0:i386 lib32stdc++6: libuuid1:i386 libx11-6:i386 libxext6:i386 libxft2:i386 libxi6:i386 libxmu6:i386 libxrender1:i386 libxt6:i386 libxtst6:i386 libxv1:i386 libcanberra-gtk-module:i386 gtk2-engines-murrine:i386</code></p>
+<p>To find which libraries you are still missing, you can go to your Webex directory and ldd through all the ‘so’ files to see what is missing.</p>
+<p><code>cd ~/.webex/  
+find | grep so | xargs ldd | grep 'not found' | sort | uniq</code></p>
+<p>If the result is something like this:</p>
+<blockquote>
+<p>libjawt.so =&gt; not found</p>
+</blockquote>
+<p>then you’re ready to go. Otherwise you’ll need to track down all the libraries in order to get the most out Webex.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2015-11-05 00:00:00+00:00">November 5, 2015</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../software/" class="md-meta__link">Software</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="vagrant-virtualbox-and-ubuntu-wily-weerwolf-getting-them-to-play-along"><a class="toclink" href="../../2015/11/05/vagrant-virtualbox-and-ubuntu-wily-weerwolf-getting-them-to-play-along/">Vagrant, Virtualbox and Ubuntu Wily Weerwolf: Getting them to play along</a></h2>
+<p><img align="left" alt="Vagrant" src="../../../assets/images/2015/11/Vagrant.png" width="200" /></p>
+<p>I recently upgraded to Ubuntu 15.10 (Wily Weerwolf) which automatically upgraded VirtualBox from 4.3 to 5.0 and broke compatibility with Vagrant 1.6 in the process. Thinking that Vagrant knows about this and they claim VBox 5.0 compatbility, I upgraded to 1.7 and came across the same error!</p>
+<blockquote>
+<p><a href="https://github.com/mitchellh/vagrant/issues/6426">Vagrant attempted to execute the capability ‘configure_networks’ on the detect guest OS ‘linux’</a></p>
+</blockquote>
+<p>There is a workaround!</p>
+<p>Apparently it hasn’t been fixed yet and others are also running into this problem. Being pragmatic, I reverted Vagrant back to 1.6 and purged VirtualBox from my system. I manually downloaded an older 4.3 build of VBox from here: https://www.virtualbox.org/wiki/Download_Old_Builds_4_3</p>
+<p>Of course these builds are only supported up to Ubuntu 14.10, so we have a bit more work to get back to work. The first bit is that the VBox deb package won’t install until <strong><em>libvpx1</em></strong> is installed. The problem here is that this package no longer exists in Ubuntu 15.10, but it’s later revision libvpx2 does. So we have to create a temporary empty deb package to allow installation without forcing anything.</p>
+<p>You can follow the directions here to create your own package here: <a href="https://www.brain-dump.org/blog/entry/40/Creating_dummy_packages_to_fullfill_dependencies_in_Debian">Creating_dummy_packages_to_fullfill_dependencies_in_Debian</a>.</p>
+<p>Or you can download it from me here: <a href="https://web.archive.org/web/20170920181652/https://www.mindwerks.net/wp-content/uploads/2015/11/libvpx1_1.0.0_all.deb">libvpx1_1.0.0_all.deb</a></p>
+<p>Now you can install your VBox 4.3 without it complaining. However if you try to do this:</p>
+<blockquote>
+<p><code>vagrant up</code></p>
+</blockquote>
+<p>You’ll get this:</p>
+<blockquote>
+<p>Bringing machine ‘default’ up with ‘virtualbox’ provider…<br />
+There was an error while executing <code>VBoxManage</code>, a CLI used by Vagrant<br />
+for controlling VirtualBox. The command and stderr is shown below.</p>
+<p>Command: [“list”, “hostonlyifs”]</p>
+<p>Stderr: VBoxManage: error: Failed to create a session object!<br />
+VBoxManage: error: Code NS_ERROR_FACTORY_NOT_REGISTERED (0x80040154) – Class not registered (extended info not available)<br />
+VBoxManage: error: Most likely, the VirtualBox COM server is not running or failed to start.</p>
+</blockquote>
+<p>This is solved by making a symlink from <strong><em>libvpx.so.2</em></strong> to <strong><em>libvpx.so.1</em></strong> and it should be solved. We’re back to normal, until the original problem with Virtualbox 5.0 and Vagrant are fixed.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2015-05-07 00:00:00+00:00">May 7, 2015</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Ubuntu</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../operating-systems/" class="md-meta__link">Operating Systems</a>, 
+              <a href="../raspberrypi/" class="md-meta__link">RaspberryPi</a>, 
+              <a href="../hardware/" class="md-meta__link">Hardware</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="cross-compiling-for-raspberry-pi-on-ubuntu"><a class="toclink" href="../../2015/05/07/cross-compiling-for-raspberry-pi-on-ubuntu/">Cross-compiling for Raspberry Pi on Ubuntu</a></h2>
+<p><img align="left" alt="RaspberryPi Logo" src="../../../assets/images/2014/08/RaspberryPi_Logo.png" width="200" /></p>
+<p>While the Raspberry Pi 2 has four cores to churn through code, it still takes longer to compile than on most workstations and laptops. If you are feeling adventurous, you can try cross-compiling which has become easier to set up and get working.
+Cross-compiling is when binaries created are for another target architecture than the one you are compiling on. This kind of set up is very typical when creating Android applications. The end result is that you can take the resulting binary and place on its target platform, and it will run there.
+There are even tricks to getting the cross-compiled binary to also run on your native system!
+In this guide, I'll walk you through:</p>
+<ul>
+<li>Setting up a cross-compile toolchain in Ubuntu (15.04 Vivid)</li>
+<li>Setting up the proper exports</li>
+<li>Compiling a test program for your native and target armhf platform</li>
+<li>Compiling the latest Raspberry Pi 2 kernel with VC4 support.</li>
+</ul>
+<p>The first thing we need to do is set up your Ubuntu to be able to compile software for a Raspberry Pi (1 and 2). You'll need at least Ubuntu Vivid (15.04) installed. From there, you'll need to install the following packages.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo apt-get install binutils-arm-linux-gnueabihf \
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>cpp-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>cpp-arm-linux-gnueabihf \
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>g++-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>g++-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>g++-arm-linux-gnueabihf \
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>gcc-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>gcc-4.9-arm-linux-gnueabihf-base \
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>gcc-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>gcc-arm-linux-gnueabihf \
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>pkg-config-arm-linux-gnueabihf \
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>binutils-arm-linux-gnueabihf \
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>cmake \
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>cpp-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>cross-gcc-dev \
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>dpkg-cross \
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>g++-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>g++-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>gcc-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>gcc-4.9-arm-linux-gnueabihf-base \
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>gcc-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>libasan1-armhf-cross \
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>libatomic1-armhf-cross \
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>libc6-armel-armhf-cross \
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>libc6-armel-cross \
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>libc6-armhf-cross \
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>libc6-dev-armel-armhf-cross \
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>libc6-dev-armel-cross \
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>libc6-dev-armhf-cross \
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>libdebian-dpkgcross-perl \
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>libfile-homedir-perl \
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>libgcc-4.9-dev-armhf-cross \
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>libgcc1-armhf-cross \
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>libgomp1-armhf-cross \
+<a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a>libsfasan1-armhf-cross \
+<a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a>libsfatomic1-armhf-cross \
+<a id="__codelineno-15-37" name="__codelineno-15-37" href="#__codelineno-15-37"></a>libsfgcc-4.9-dev-armhf-cross \
+<a id="__codelineno-15-38" name="__codelineno-15-38" href="#__codelineno-15-38"></a>libsfgcc1-armhf-cross \
+<a id="__codelineno-15-39" name="__codelineno-15-39" href="#__codelineno-15-39"></a>libsfgomp1-armhf-cross \
+<a id="__codelineno-15-40" name="__codelineno-15-40" href="#__codelineno-15-40"></a>libsfstdc++-4.9-dev-armhf-cross \
+<a id="__codelineno-15-41" name="__codelineno-15-41" href="#__codelineno-15-41"></a>libsfstdc++6-armhf-cross \
+<a id="__codelineno-15-42" name="__codelineno-15-42" href="#__codelineno-15-42"></a>libsfubsan0-armhf-cross \
+<a id="__codelineno-15-43" name="__codelineno-15-43" href="#__codelineno-15-43"></a>libstdc++-4.9-dev-armhf-cross \
+<a id="__codelineno-15-44" name="__codelineno-15-44" href="#__codelineno-15-44"></a>libstdc++6-armhf-cross \
+<a id="__codelineno-15-45" name="__codelineno-15-45" href="#__codelineno-15-45"></a>libubsan0-armhf-cross \
+<a id="__codelineno-15-46" name="__codelineno-15-46" href="#__codelineno-15-46"></a>linux-libc-dev-armhf-cross \
+<a id="__codelineno-15-47" name="__codelineno-15-47" href="#__codelineno-15-47"></a>pdebuild-cross \
+<a id="__codelineno-15-48" name="__codelineno-15-48" href="#__codelineno-15-48"></a>xapt \
+</code></pre></div>
+<p>The last package in the list is xapt, a wrapper around apt so that we can install packages specifically for other architectures like <code>armhf</code>. This includes things like *-dev packages with headers which will likely be required if you compile other software.
+Once those are installed, you need to tell the terminal you are targeting the <code>armhf</code> architecture. The CROSS_COMPILE flag will make your toolchain (gcc and friends) and your software aware that you are using a cross-compiler.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>export $(dpkg-architecture -aarmhf) 
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>export CROSS_COMPILE=arm-linux-gnueabihf-
+</code></pre></div>
+<p>You might get this warning:</p>
+<blockquote>
+<p>dpkg-architecture: warning: specified GNU system type arm-linux-gnueabihf does not match gcc system type x86_64-linux-gnu, try setting a correct CC environment variable</p>
+</blockquote>
+<p>This message is harmless and you can ignore it.
+Now to test this, create a file called <code>main.c</code> and copy this Hello World code into it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>#include &lt;stdio .h&gt;
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>#include &lt;stdlib .h&gt;
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>int main(int argc, char **argv)
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>{
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    printf(&quot;Hello world\
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>&quot;);
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>}
+</code></pre></div>
+<p>You'll then compile it twice, first natively and second for your target platform.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>gcc -o hello_x86 main.c -static
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>arm-linux-gnueabihf-gcc -o hello_arm main.c -static
+</code></pre></div>
+<p>You can then use <code>file</code> to test the resulting output and it should match below:</p>
+<blockquote>
+<p>bcurtis@Redqueen:~/workspace/RPi$ file hello_x86
+hello_x86: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID=217c28644cf5be3ea4d24bea79c3da3bbdd9a2a9, not stripped
+bcurtis@Redqueen:~/workspace/RPi$ file hello_arm
+hello_arm: ELF 32-bit LSB executable, ARM, EABI5 version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID=3a5e42174d6b72ddf8b0265a9b76b3cea0668623, not stripped</p>
+</blockquote>
+<p>Notice how the last one is <code>ARM, EABI5 version 1</code>, this indicates that the binary is compiled for armhf, your Raspberry Pi. Next we are going to try to run them:</p>
+<blockquote>
+<p>bcurtis@Redqueen:~/workspace/RPi$ ./hello_x86
+Hello world
+bcurtis@Redqueen:~/workspace/RPi$ ./hello_arm
+Hello world</p>
+</blockquote>
+<p>You might asking you how the <code>hello_arm</code> binary can run on an x86 system. This is thanks to <code>-static</code> flag during compilation that shoves all the required libraries into your binary. The ones that you included are specifically crafted multi-libs that can used on both your host and your target platform (both x86 and arm). The resulting binaries are larger as a result. You can remove the <code>-static</code> flag and see that it will no longer run on your host machine, but much smaller and will run on your target RPi2.
+Aiming higher, we will try to get Linux kernel built using Eric Anholt's VC4 branch. Go ahead and checkout Eric's branch: <a href="https://github.com/anholt/linux/tree/vc4-kms-v3d-rpi2">https://github.com/anholt/linux/tree/vc4-kms-v3d-rpi2</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>git clone git@github.com:anholt/linux.git -b vc4-kms-v3d-rpi2 --depth 10
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>cd linux
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>export $(dpkg-architecture -aarmhf); export CROSS_COMPILE=arm-linux-gnueabihf-
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>make ARCH=arm -j`nproc` bcm2709_defconfig
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>make ARCH=arm -j`nproc`
+</code></pre></div>
+<p>It will spawn a number of processes in parallel, <code>nproc</code> will return back how many cores you have. After a few minutes of tea sipping, you'll have your newly minted <code>arch/arm/boot/zImage</code> that you can then copy over to your sdcard. Take a moment to make sure your setup.cfg is pointing to the right kernel, then give it a try. You should now have your RPi2 online with Linux 4.0!
+Please note, at the time of this post, while the option to compile in VC4 support is there, it currently isn't functioning. Eric is still busy getting RPi2 back to the same state as the original RPi. Cheers!</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-10-03 00:00:00+00:00">October 3, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="wireless-bcm4312-with-the-310-311-312-and-313-kernels"><a class="toclink" href="../../2013/10/03/wireless-bcm4312-with-the-310-311-312-and-313-kernels/">Wireless BCM4312 with the 3.10, 3.11, 3.12 and 3.13 kernels</a></h2>
+<p><img align="left" alt="Broadcom Chipset BCM4312" src="../../../assets/images/2011/03/BCM4312s.jpg" width="200" /></p>
+<p>The hybrid driver from Broadcom was updated again in September (2013) with all the previous patches and a few other fixes as well. This brings them up to support linux kernel 3.9, which is very much welcome.</p>
+<p>Sadly it breaks again with &gt;= 3.10 with many warnings and errors which isn't good considering that Ubuntu (13.10) Saucy Salamander is about to be released.</p>
+<p>We do have a patch for you though that gets us working again up to the 3.11 kernel.</p>
+<p>Chipsets supported by "Broadcom’s IEEE 802.11a/b/g/n hybrid Linux® device driver" are: BCM4311, BCM4312, BCM4313, BCM4321, BCM4322, BCM43224, BCM43225, BCM43227 and BCM43228.</p>
+<p><strong>The error you will run into:</strong></p>
+<blockquote>
+<p>bcurtis@Aria:~/Workspace/wl.orig$ make
+KBUILD_NOPEDANTIC=1 make -C /lib/modules/<code>uname -r</code>/build M=<code>pwd</code>
+make[1]: Entering directory <code>/usr/src/linux-headers-3.11.0-11-generic'
+CFG80211 API is prefered for this kernel version
+Using CFG80211 API
+LD /home/bcurtis/Workspace/wl.orig/built-in.o
+CC /home/bcurtis/Workspace/wl.orig/src/shared/linux\_osl.o
+CC /home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.o
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c: In function ‘wl\_tkip\_printstats’:
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3246:7: warning: passing argument 1 of ‘wl-&gt;tkipmodops-&gt;print\_stats’ from incompatible pointer type
+wl-&gt;tkip\_bcast\_data);
+^
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3246:7: note: expected ‘struct seq\_file \*’ but argument is of type ‘char \*’
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3249:4: warning: passing argument 1 of ‘wl-&gt;tkipmodops-&gt;print\_stats’ from incompatible pointer type
+wl-&gt;tkipmodops-&gt;print\_stats(debug\_buf, wl-&gt;tkip\_ucast\_data);
+^
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3249:4: note: expected ‘struct seq\_file \*’ but argument is of type ‘char \*’
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c: In function ‘wl\_reg\_proc\_entry’:
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3470:2: error: implicit declaration of function ‘create\_proc\_entry’ [-Werror=implicit-function-declaration]
+if ((wl-&gt;proc\_entry = create\_proc\_entry(tmp, 0644, NULL)) == NULL) {
+^
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3470:22: warning: assignment makes pointer from integer without a cast
+if ((wl-&gt;proc\_entry = create\_proc\_entry(tmp, 0644, NULL)) == NULL) {
+^
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3475:16: error: dereferencing pointer to incomplete type
+wl-&gt;proc\_entry-&gt;read\_proc = wl\_proc\_read;
+^
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3476:16: error: dereferencing pointer to incomplete type
+wl-&gt;proc\_entry-&gt;write\_proc = wl\_proc\_write;
+^
+/home/bcurtis/Workspace/wl.orig/src/wl/sys/wl\_linux.c:3477:16: error: dereferencing pointer to incomplete type
+wl-&gt;proc\_entry-&gt;data = wl;
+^
+cc1: some warnings being treated as errors
+make[2]: \*\*\* Error 1
+make[1]: \*\*\* Error 2
+make[1]: Leaving directory</code>/usr/src/linux-headers-3.11.0-11-generic'
+make: *** Error 2</p>
+</blockquote>
+<p><strong>The rundown:</strong></p>
+<ol>
+<li>Download the 32 or 64-bit version:
+   <code>http://www.broadcom.com/support/802.11/linux_sta.php</code></li>
+<li>Download the patch: <a href="../../../assets/images/2013/10/wl_3.10.patch">wl_3.10.patch</a></li>
+<li>Extract the sources:
+   <code>cd ~/Downloads; mkdir -p wl; cd wl; tar xf ../hybrid-*.tar.gz</code></li>
+<li>Patch and compile the sources: <code>patch -p2 &lt; ~/Downloads/wl_3.10.patch; make; sudo make install; sudo depmod; sudo modprobe wl</code></li>
+</ol>
+<p>Give Ubuntu a few seconds after loading the "wl" kernel module, then eventually the Network Manager will start looking for wireless networks.</p>
+<p>TL;DR: These patches are required for a working wl kernel module for the 3.10 and 3.11 kernel series.</p>
+<p><strong>Update (2014-04-22):</strong> Known to also work with Raring (14.04) that uses the 3.13 kernel.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-02-04 00:00:00+00:00">February 4, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../operating-systems/" class="md-meta__link">Operating Systems</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="wireless-bcm4312-with-the-36-37-and-38-kernel"><a class="toclink" href="../../2013/02/04/wireless-bcm4312-with-the-36-37-and-38-kernel/">Wireless BCM4312 with the 3.6, 3.7 and 3.8 kernel</a></h2>
+<p><img align="left" alt="Broadcom Chipset BCM4312" src="../../../assets/images/2011/03/BCM4312s.jpg" width="200" /></p>
+<p>As a follow up to , I've also tested the Broadcom hybrid driver with the 3.6, 3.7 and the soon to be released 3.8 kernels with success. There have been no major changes that should effect the operation of this driver.</p>
+<p>To verify that everything is working as expected on the software side, when modprobe or insmod wl, you should get a similar dmesg output:</p>
+<blockquote>
+<p>[ 307.560347] lib80211: common routines for IEEE802.11 drivers
+[ 307.560353] lib80211_crypt: registered algorithm 'NULL'
+[ 307.564524] wl: module license 'unspecified' taints kernel.
+[ 307.564529] Disabling lock debugging due to kernel taint</p>
+</blockquote>
+<p>The only real issue at this point is this:</p>
+<blockquote>
+<p>WARNING: modpost: missing MODULE_LICENSE() in /home/bcurtis/workspace/wl/wl.o
+see include/linux/module.h for more information
+WARNING: modpost: Found 1 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+CC /home/bcurtis/workspace/wl/wl.mod.o
+LD /home/bcurtis/workspace/wl/wl.ko</p>
+</blockquote>
+<p>While these aren't errors, they are problems to be addressed upstream by Broadcom if they wish to see their driver to be used in the future. They will also need to incorporate my patch sets from my previous post. They haven't updated their driver in about two years now.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-01-30 00:00:00+00:00">January 30, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../video/" class="md-meta__link">Video</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              6 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="properly-ripping-dvds-and-adding-subtitles-in-ubuntu"><a class="toclink" href="../../2013/01/30/properly-ripping-dvds-and-adding-subtitles-in-ubuntu/">Properly ripping DVDs and adding subtitles in Ubuntu</a></h2>
+<p><img align="left" alt="dvd::rip" src="../../../assets/images/2013/01/clip_zoom.png" width="200" /></p>
+<p>There are occasions where you legitimately need tools to help that would otherwise be considered the domain of "pirates" and "ne'er-do-wells". In this particular scenario, my grandparents send a DVD from the United States (Region1) to us in Belgium (Region2). Not only will the DVD not play back on a region locked DVD player, there are also no Dutch subtitles.</p>
+<p>There are however technological solutions to this type of problem, including such programs as <a href="http://www.exit1.org/dvdrip/" title="dvd::rip">dvd::rip</a>, <a href="https://github.com/ruediger/VobSub2SRT#readme" title="VobSub2SRT">vobsub2srt</a> and a few websites dedicted to crowdsourced subtitles.</p>
+<p>Our first task is to properly rip a DVD. There are many options here, but I chose dvd::rip because it just works. It creates a small <a href="http://en.wikipedia.org/wiki/Xvid" title="Xvid">xvid</a> (avi) file that is compatible with a set-top DVD player and it is also allows ripping of any subtitles found on the DVD. If may wish to dig into the <a href="http://www.exit1.org/dvdrip/doc/index.cipp">documentation</a> to really understand the details of dvd:rip. I'll give you a step-by-step run down on how I did things.</p>
+<p><strong>dvd::rip</strong></p>
+<ol>
+<li>Install the program and it's libraries.</li>
+<li>Following the directions and make sure the directories are set, dvd drive is found and that libraries are installed.</li>
+<li>On the left will be tabs, use this as a process. Begin with "Storage" where you set the project name, dvd drive to use and "Copy data from DVD to hard disk before encoding" which will make things faster.</li>
+</ol>
+<p><img alt="Storage" src="../../../assets/images/2013/01/Storage.png" width="200" /></p>
+<ol>
+<li>On "Rip Title" you need to read the data on the DVD and select which files to rip. First "Read DVD table of contents", select the Title or Titles you wish to rip, usually the one with the most Chapters and/or Runtime is your target. Highlight that entry, select on the right your audio track (en for English, other en entries are usually commentary tracks). Set "Specify chapter mode" to None so that it is ripped as one file and not a set of files (per chapter) and set the "Grab subtitle preview images" to All so that you can select what subtitles you wish use, if any. The last step here is to "Rip selected title(s)/chapter(s) which will take a few minutes.</li>
+</ol>
+<p><img alt="RipTitle" src="../../../assets/images/2013/01/RipTitle.png" width="200" /></p>
+<ol>
+<li>Select next the "Clip &amp; Zoom" which will allow you to set the correct format (size) that is perfect for your TV. You need to be careful here because the source (DVD) can be different such as: letterbox (widescreen) 1.85:1 ratio, anamorphic (widescreen) 16:9 ratio, or pan &amp; scan (fullscreen) 4:3 ratio. Look at the back of your DVD box to verify. To test different settings, do a grab frame and try various "Autoadjust" presets until you find something that looks right. If you are playing back on an older DVD player with USB divx/xvid/avi support, then try to pick Small Frame Size, which is about 480p. This will make playing back smother as your hardware DVD player doesn't have enough CPU power to downscale higher resolutions.</li>
+</ol>
+<p><img alt="ClipAndZoom" src="../../../assets/images/2013/01/ClipAndZoom.png" width="200" /></p>
+<ol>
+<li>Moving to the Subtitles screen, you can select the DVD title that you ripped and the correct subtitle you wish to rip. You can either "Activate this subtitle" for rendering or "Create now" which will produce separate files which you can use later. I prefer another method of handling subtitles than hard-rendering them to the rip. After "Create Now", you will have extra files that we can convert to <a href="http://en.wikipedia.org/wiki/SubRip">SubRip</a> text file format (SRT) later.</li>
+</ol>
+<p><img alt="Subtitles" src="../../../assets/images/2013/01/Subtitles.png" width="200" /></p>
+<ol>
+<li>After that we go to the "Transcode" tab which is the 'meat' of the program. We select our DVD title, select a container of AVI, make sure the "Video codec" is xvid, "By target size"'s "Target media" to One x 700MB which will create one file at an acceptable bitrate. On the Audio Options side, "Select track" to the one we ripped and select MP3. I set the Samplerate to 192kbit/s to get better audio. the rest I set to defaults. On the bottom left gives you an "Calculated storage". If you are content with your choices, go to "Operate" and select "Transcode" and wait a bit more.</li>
+</ol>
+<p><img alt="Transcode" src="../../../assets/images/2013/01/Transcode.png" width="200" /></p>
+<ol>
+<li>Success! Try out your newly made AVI file with VLC or another player to make sure it is to you liking. If you got an error, you can go to the "Logging" tab on the left and see where you went wrong.</li>
+</ol>
+<p>At this point, you should have an AVI file that you can play back in your video player or DVD player. However the job is not yet finished as we also need the subtitles for those in their native language. We saw that we could 'Rip' subtitles with dvd::rip but the files we have are in the VOB format idx/ifo/sub format which may or may not be readable by your player. We can convert this format to a SRT text-based file which is widely supported subtitle format using a tool called: <a href="https://github.com/ruediger/VobSub2SRT" title="VobSub2SRT">VobSub2SRT</a>.</p>
+<p><strong>VobSub2SRT</strong></p>
+<ol>
+<li>Download and build <a href="https://github.com/ruediger/VobSub2SRT" title="VobSub2SRT">VobSub2SRT</a> yourself or install the package via <a href="https://launchpad.net/~ruediger-c-plusplus/+archive/vobsub2srt" title="vobsub2srt">PPA</a>.</li>
+<li>You will also need to install '<a href="http://en.wikipedia.org/wiki/Tesseract_(software)">tesseract-ocr</a>' and any of the language files necessary to handle the subtitle language you ripped earlier.</li>
+<li>From the command line, go to where your ripped subtitles are and run the command to convert (OCR) them into an SRT file.</li>
+</ol>
+<blockquote>
+<p>vobsub2srt --lang en dolphinetail-001-sid00</p>
+</blockquote>
+<p>This will use english (en) from the idx/sub files to make the srt file. You can find out which languages you can pick from using the --langlist parameter.</p>
+<blockquote>
+<p>bcurtis@Wintermute:~/.dvdrip-data/dolphinetail/avi/001$ vobsub2srt --lang en dolphinetail-001-sid00
+Selected VOBSUB language: 0 language: enen
+Wrote Subtitles to 'dolphinetail-001-sid00.srt'</p>
+</blockquote>
+<p>Success! Just copy the SRT file to where your AVI is and your player should recognize and automatically use the subtitle file.</p>
+<p>There are times when you have the film but there is not subtitle for your language of choice. This is where crowd sourcing comes in as there is no shortage of people wanting to either subtitle the film for free as volunteer work or for some other altruistic or non-altruistic reason.</p>
+<p><strong>Crowdsourced Subtitles</strong></p>
+<ul>
+<li><a href="http://www.bierdopje.com/" title="Bierdopje">Bierdopje</a>: Dutch subtitles for films and series.</li>
+<li><a href="http://www.opensubtitles.org/en" title="opensubtitles">OpenSubtitles</a>: Multi-lingual subtitles for films and series</li>
+<li><a href="http://www.podnapisi.net/" title="podnapisi">Podnapisi</a>: Older Multi-lingual subtitles for films and series</li>
+</ul>
+<p><strong>Resizing Video</strong>
+There can be moments where you have a file you want to play back on your DVD player and it complains that the resolution is not supported. This because it doesn't have a CPU powerful enough to downscale your film to your TV's resolution. I found this Video <a href="http://ubuntuguide.org/wiki/Video_Conversion" title="Video Conversion">Conversion Guide</a> which helped. You just need to figure out what your TV's native resolution is, and try to match it. For example my TV is an old CRT PAL monster and the source is a 1280x720 video. The DVD player doesn't support that resolution, but it is 16:9 ratio. We then convert the mkv to an avi to stay within the same ratio and play back on an old style PanScan CRT.</p>
+<blockquote>
+<p>mencoder input.avi -ovc xvid -vf scale=648:364 -oac mp3lame -lameopts cbr:br=192 -xvidencopts pass=2:bitrate=-1400000:threads=4 -o output.avi</p>
+</blockquote>
+<p>This converts the film 648:364, however you should keep in mind your TV's resolution. The guide gives a better understanding and there is no need to repeat the information here.</p>
+<p>The end result should be a film for your USB in with a subtitle of your choice.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-08-16 00:00:00+00:00">August 16, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../bash/" class="md-meta__link">Bash</a>, 
+              <a href="../servers/" class="md-meta__link">Servers</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="dell-dset-on-ubuntu-1004-and-1204"><a class="toclink" href="../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/">Dell DSET on Ubuntu 10.04 and 12.04</a></h2>
+<p><img align="left" alt="UbuntuOnDell" src="../../../assets/images/2012/08/UbuntuOnDell.jpeg" width="200" /></p>
+<p>Dell System E-Support Tool (DSET) is an informative tool used by Dell's support engineers to help diagnose problems for their clients. It is almost a requirement now and Dell usually refuses to continue support without a DSET report.</p>
+<p>The problem is that DSET is only supported on Redhat and SuSE Linux and there isn't any information on how to get it running in Ubuntu. I've assembled a rough guide on how to get DSET up and running on Ubuntu 10.04 and 12.04 and it is tested against a Dell R610 and R620.
+<strong>First</strong> we need to install Dell's OpenManage Server Administrator (OMSA) which is one piece from Dell that does support Ubuntu.
+<a href="http://linux.dell.com/repo/community/deb/latest/">http://linux.dell.com/repo/community/deb/latest/</a></p>
+<p>You can cut and paste the following:
+<code>echo 'deb http://linux.dell.com/repo/community/deb/latest /' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list
+gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
+gpg -a --export 1285491434D8786F | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install -y srvadmin-all sblim-cmpi-base rpm alien
+sudo ln -sf /usr/bin/rpm /bin/rpm</code></p>
+<p>The above will add Dell's repository to your apt sources and grab everything necessary to install the OMSA. It does include a java/tomcat webserver for a web GUI interface, but that is not enabled by default and not necessary for our DSET. You'll need to logout and log back in again to reset your path variables.</p>
+<blockquote>
+<p>root@dmachine:~# /opt/dell/srvadmin/sbin/srvadmin-services.sh start
+Starting Systems Management Device Drivers:
+Starting dell_rbu: *
+Starting ipmi driver: * Already started
+Starting Systems Management Data Engine:
+Starting dsm_sa_datamgrd: *
+Starting dsm_sa_eventmgrd: *
+Starting dsm_sa_snmpd: *
+Starting DSM SA Connection Service: *</p>
+</blockquote>
+<p><strong>Secondly</strong>, if you are using an 'OEM Ready' Dell server then OMSA dataeng (Systems Management Data Engine) might complain with "Failed to start because system is not supported". There isn't any 'official' support for OMSA on these systems but you can contact Dell's OEM wing for custom solutions here: <a href="http://content.dell.com/us/en/enterprise/d/oem/oem-engineering-services.aspx">http://content.dell.com/us/en/enterprise/d/oem/oem-engineering-services.aspx</a></p>
+<p>To get OMSA working on an OEM system, we need to modify this file: /opt/dell/srvadmin/sbin/CheckSystemType which calls the file: /usr/sbin/smbios-sys-info-lite which does not return back the expected value. I've modified it to key off the 'Is Dell' flag which is 1 (True). The patch can be found here: <a href="../../../assets/images/2012/08/checksystem.patch">checksystem.patch</a>
+<code>patch -p0 &lt; checksystem.patch</code>
+Once the patch is applied, Systems Management Data Engine should start without problems.</p>
+<p><strong>Thirdly</strong> you need to download the 32 or 64 bit Linux version of DSET. You then need to edit the bin file to not run the install.sh file and to also not delete /tmp/dell_advdiags when it is finished running. You'll need the rpm files that it extracts to install DSET on Ubuntu.</p>
+<p>Example from dell-dset-3.2.0.141_x64_A01.bin: ( the # comments out the none necessary bits )</p>
+<blockquote>
+<h2 id="source-installsh"><a class="toclink" href="../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/#source-installsh">source install.sh</a></h2>
+</blockquote>
+<p>cd $CDIR</p>
+<h2 id="rm-rf-tmpdir"><a class="toclink" href="../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/#rm-rf-tmpdir">rm -rf $TMPDIR</a></h2>
+<p>The only ones that we need are these:</p>
+<blockquote>
+<p>dell-dset-collector-3.2.0.141-1.x86_64.rpm
+dell-dset-common-3.2.0.141-1.x86_64.rpm
+dell-dset-provider-3.2.0.141-1.x86_64.rpm</p>
+</blockquote>
+<p>DSET binaries can be found here: <a href="http://support.dell.com/dset/" title="http://support.dell.com/dset/">http://support.dell.com/dset/</a></p>
+<p><strong>Fourthly</strong> you'll need to verify that /bin/sh points to bash instead of dash because Dell's scripts rely on bash's functionality.
+<code>sudo su -
+ln -sf /bin/bash /bin/sh
+sh dell-dset*.bin
+mv /tmp/dell_advdiags ~
+cd ~/dell_advdiags/rpms
+alien --scripts dell-dset*.rpm
+dpkg -i --force all *.deb
+dellsysteminfo</code></p>
+<p>You might have to do these steps one at a time, but that is the flow of things. Alien sometimes complains about 'unknown flags' and dpkg will likely also complain about overwriting existing files. The first problem has bothered me so far, but the last is DSET overwriting existing OMSA files which as far as I can tell are the same files.</p>
+<p>When you run dellsysteminfo, you need to give it a password. This is your typical Linux account password. You should now have something to hand over to the Dell Support people.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-18 00:00:00+00:00">June 18, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Ubuntu</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="skype-40-on-ubuntu-precise-1204-64-bit"><a class="toclink" href="../../2012/06/18/skype-40-on-ubuntu-precise-1204-64-bit/">Skype 4.0 on Ubuntu Precise (12.04) 64-bit</a></h2>
+<p><img align="left" alt="skype" src="../../../assets/images/2011/09/skype.png" width="200" /></p>
+<p>There is a new version of skype out for Linux, version 4.0 which has interesting <a href="http://blogs.skype.com/linux/2012/06/skype_40_for_linux.html">changelog</a> entries:</p>
+<blockquote>
+<p>* Much lower chance Skype for Linux will crash or freeze
+* chat history loading is now much faster
+* ...several investments we made in improving audio quality ... and improving video call quality
+* ...extended support for more cameras
+* and more</p>
+</blockquote>
+<p>Good enough for me! There is still no true 64 bit binary/package from Skype. The result is that their fake "64 bit" Skype needs an additional 100MB of i386 packages in order for it to run properly.
+The rundown:</p>
+<ol>
+<li>Remove old skype packages if they exist: <code>sudo apt-get purge skype skype-bin</code></li>
+<li>Download latest <a href="http://www.skype.com/intl/en/get-skype/on-your-computer/linux/downloading.ubuntu64">Skype (4.0)</a> (fake) 64-bit package for Ubuntu 10.04+. It might say skype 2.2 beta on the screen, they have yet to update the page. The download link goes to the 4.0 version.</li>
+<li>Install the necessary support libraries: <code>sudo apt-get install ia32-libs lib32stdc++6 lib32asound2</code></li>
+<li>Install the skype binary package itself: <code>sudo dpkg -i skype-ubuntu_4.0.0.7-1_amd64.deb</code></li>
+</ol>
+<p>Enjoy the ad-free Linux version of Skype thanks to... Microsoft.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-18 00:00:00+00:00">June 18, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../operating-systems/" class="md-meta__link">Operating Systems</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="wireless-bcm4312-with-the-34-and-35-kernel"><a class="toclink" href="../../2012/06/18/wireless-bcm4312-with-the-34-and-35-kernel/">Wireless BCM4312 with the 3.4 and 3.5 kernel</a></h2>
+<p><img align="left" alt="Broadcom Chipset BCM4312" src="../../../assets/images/2011/03/BCM4312s.jpg" width="200" /></p>
+<p>The hybrid driver from Broadcom is still a bit behind in terms of support for the latest kernels but there are workarounds. This particular issue also effects other kernel modules such as the out of tree Nvidia and ATI blobs that require the <strong><em>asm/system.h</em></strong> file in their includes.</p>
+<p>I've had success with replacing it with <strong><em>asm/switch_to.h</em></strong> which seems to have fixed things for now. The cause for this can be found on the <a href="https://lkml.org/lkml/2012/3/29/360">LKML</a>.</p>
+<p>Chipsets supported by "Broadcom’s IEEE 802.11a/b/g/n hybrid Linux® device driver" are: BCM4311, BCM4312, BCM4313, BCM4321, BCM4322, BCM43224, and BCM43225, BCM43227 and BCM43228.</p>
+<p><strong>Errors:</strong></p>
+<blockquote>
+<p>bcurtis@ronin:~/workspace/wl$ make
+KBUILD_NOPEDANTIC=1 make -C /lib/modules/<code>uname -r</code>/build M=<code>pwd</code>
+make[1]: Entering directory <code>/usr/src/linux-headers-3.5.0-030500rc3-generic'
+Wireless Extension is the only possible API for this kernel version
+Using Wireless Extension API
+LD /home/bcurtis/workspace/wl/built-in.o
+CC /home/bcurtis/workspace/wl/src/shared/linux\_osl.o
+CC /home/bcurtis/workspace/wl/src/wl/sys/wl\_linux.o
+/home/bcurtis/workspace/wl/src/wl/sys/wl\_linux.c:43:24: fatal error: asm/system.h: No such file or directory
+compilation terminated.
+make[2]: \*\*\* Error 1
+make[1]: \*\*\* Error 2
+make[1]: Leaving directory</code>/usr/src/linux-headers-3.5.0-030500rc3-generic'
+make: *** Error 2</p>
+</blockquote>
+<p><strong>The rundown:</strong></p>
+<ol>
+<li>Download the 32 or 64-bit version:
+   <code>http://www.broadcom.com/support/802.11/linux_sta.php</code></li>
+<li>Download my patches: <a href="../../../assets/images/2011/11/bc_wl_abiupdate.patch">bc_wl_abiupdate.patch</a> and <a href="../../../assets/images/2012/06/switch_to.patch">switch_to.patch</a></li>
+<li>Extract the sources:
+   <code>cd ~/Downloads; mkdir -p wl; cd wl; tar xf ../hybrid-portsrc*.tar.gz</code></li>
+<li>Patch and compile the sources:
+   <code>patch -p0 src/wl/sys/wl_linux.c &lt; ~/Downloads/switch_to.patch; patch -p0 src/wl/sys/wl_linux.c &lt; ~/Downloads/bc_wl_abiupdate.patch;
+   make; sudo make install; sudo depmod; sudo modprobe wl</code></li>
+</ol>
+<p>Give Ubuntu a few seconds after loading the "wl" kernel module, then eventually the Network Manager will start looking for wireless networks.</p>
+<p>TL;DR: These patches are required for a working wl kernel module for the 3.4 and 3.5 kernel series.</p>
+<p><strong>Update:</strong> Also verified to work with Linux 3.6 series.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-08 00:00:00+00:00">June 8, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../hardware/" class="md-meta__link">Hardware</a>, 
+              <a href="../servers/" class="md-meta__link">Servers</a>, 
+              <a href="../networking/" class="md-meta__link">Networking</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="./" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="doing-battle-with-a-dell-r620-and-ubuntu"><a class="toclink" href="../../2012/06/08/doing-battle-with-a-dell-r620-and-ubuntu/">Doing battle with a Dell R620 and Ubuntu</a></h2>
+<p><img align="left" alt="dell_poweredge_r620" src="../../../assets/images/2012/06/dell_poweredge_r620.jpg" width="200" /></p>
+<p>We recently got sent a <a href="http://www.dell.com/us/enterprise/p/poweredge-r620/pd">Dell R620</a> to evaluate and while its technical specification is amazing there are a few things that need to be handled first.</p>
+<p>As far as Ubuntu and the Dell R620 go, Precise (12.04) is the only way to go here. Every release before Precise has issues with this hardware in one way or another. This is new hardware of after all.</p>
+<p>For our "use case" we downgraded the PERC H710P controller to a H310 controller so we can have direct access to the drives via pass-through. The H310 allows TRIM support for SSDs and SMART data via smartctl to be used without any problems. If you are interested in SMART information and PERC H700 series RAID controller, I posted about possible workarounds at <a href="http://en.community.dell.com/support-forums/disk-drives/f/3534/p/19431245/20029690.aspx">Dell's customer support site</a>.</p>
+<p>Let's begin:
+<strong>USB Booting</strong>: try as we might, we could not get any usb stick to boot on the R620. We've gone through the iDRAC to do virtual drives and looked at BIOS/UEFI methods. The usb stick is recognized, but the R620 just shows us a blank screen. The same stick works in the R610, VM and other machines. We have a ticket with Dell support and they have yet to resolve the problem. Booting over PXE or CD/DVD are our only options at this point.</p>
+<p><img align="left" alt="Bad MAC Addresses" src="../../../assets/images/2012/06/Date2012-06-06-time14-18-10-0969.jpg" width="200" /></p>
+<p><strong>Intel® Ethernet Server Adapter I350-T4</strong>: The igb kernel module for 2.6.35 and 2.6.38 will detect this card and it will get you connectivity, but it will behave funny. For example, 3 to 4 ports will have the same MAC address. You need download, compile, and install the latest sources for the <a href="http://sourceforge.net/projects/e1000/files/igb%20stable/">igb</a> from Intel before you get full functionality out of your I350-T4. The other option is to install Ubuntu Precise (12.04) as the 3.2 kernel has the updated drivers from Intel.</p>
+<p><strong>DRHD: handling fault status reg</strong>: at some point during booting of a freshly installed Ubuntu with the 2.6.35 kernel, we ran into this error that would effectively loop endlessly and cause the R620 to become unresponsive. We got this:</p>
+<p><img align="left" alt="DRHD INTR-REMAP problems" src="../../../assets/images/2012/06/Date2012-06-06-time16-57-03-0407.jpg" width="200" /></p>
+<blockquote>
+<p>DRHD: handling fault status reg 502
+INTR-REMAP: Request device[[42:00.1] fault index b0
+INTR-REMAP:[] Present field in the IRTE entry is clear</p>
+</blockquote>
+<p>and it would endlessly print that to the console. This apparently has something to do with the IO-MMU part of the kernel dealing with interrupt remapping. Whatever the problem was, it was fixed in the 2.6.38 kernel and caused no more problems.</p>
+<p><strong>Dell SSD</strong>: the SSDs are rebranded Samsung drives which do not support TRIM but are at least over provisioned. These drives have a problem with smartctl in that while there is SMART information, the drive itself doesn't (yet) exist in the drivedb.h file. You have to use the latest <a href="http://sourceforge.net/projects/smartmontools/files/smartmontools/">smartctl</a> version (5.42) to get anything usefull out of the drive. Older versions give you things like this:</p>
+<blockquote>
+<p>Log Sense failed, IE page</p>
+</blockquote>
+<p><strong>hdparm</strong>: and other tools like smartctl, lshw and others have issues when getting the required data from over the PERC H310, even if it is pass-through. You have to use the latest versions of each to even read the serial number off a HDD or SSD. <a href="http://sourceforge.net/projects/hdparm/files/hdparm/">Hdparm</a> versions &gt;= 9.37 work, otherwise you get this:</p>
+<blockquote>
+<p>root@node:~# hdparm -I /dev/sda</p>
+</blockquote>
+<p>/dev/sda:
+HDIO_DRIVE_CMD(identify) failed: Invalid exchange</p>
+<p>Once we got all the little inconveniences out of the way, we got down to benchmarking and performance testing. In comparison to the Dell R610's 2x Xeon(R) E5606, the R620's 2x Xeon(R) CPU E5-2643 has double the CPU performance in our testing. The obvious bottleneck here are the 2x 2port 10Gbps NICs in that even at a theoretical max of 40Gbps, for our purposes, we would be network bound. Thankfully there is another PCI-Express available, just in case.</p>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  <span class="md-pagination__current">1</span> <a class="md-pagination__link" href="page/2/">2</a> <a class="md-pagination__link" href="page/3/">3</a>
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../storage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Storage">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Storage
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../video/" class="md-footer__link md-footer__link--next" aria-label="Next: Video">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Video
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

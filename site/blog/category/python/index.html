@@ -1,0 +1,2719 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Mindwerks Network">
+      
+      
+        <meta name="author" content="Bret Curtis">
+      
+      
+      
+        <link rel="prev" href="../operating-systems/">
+      
+      
+        <link rel="next" href="../raspberrypi/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Python - Mindwerks.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mindwerks.net" class="md-header__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindwerks.net
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mindwerks.net" class="md-nav__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mindwerks.net
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../cc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C/C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../debian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../laptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../raspberrypi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspberryPi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../thirdeye/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thirdeye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../txmongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TxMongo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wildmidi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WildMIDI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../worldsynth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Worldsynth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../online-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pro-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ip-calc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnet Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../conversions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurement Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../password-cracking-calculator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Cracking Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mindwerks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mindwerks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bret-curtis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bret Curtis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2016-04-08 00:00:00+00:00">April 8, 2016</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="new-releases-of-worldengine-openmw-and-tesannwyn"><a class="toclink" href="../../2016/04/08/new-releases-of-worldengine-openmw-and-tesannwyn/">New releases of WorldEngine, OpenMW and TESAnnwyn</a></h2>
+<p><img align="left" alt="Rivers" src="../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p><a href="https://github.com/Mindwerks/worldengine">WorldEngine</a> 0.19 has been released! In case you’re wondering, WorldEngine is the combination of two projects: Lands and WorldSynth. The biggest gain in the merge is that we’re now two developers on the same wavelength and we’ve added plate tectonic simulations! As things have become more serious and complicated, we’ve had to write tests suites to cover our bases. We’re currently about 86% code coverage and the tests guarantee reproducibility which aids us in finding regressions. We’ve got many contributions, so having these in place are crucial for project stability.</p>
+<p><strong><em>What’s new in WorldEngine 0.19:</em></strong></p>
+<ul>
+<li>Speed of generation increased by almost a factor of 3 (due to update to Platec and making heavy use of numpy).</li>
+<li>World-generation is now deterministic, i.e. generation is 100% reproducible.</li>
+<li>Added support for exporting heightmaps using libgdal (see http://www.gdal.org/formats_list.html for possible formats).</li>
+<li>Added the ability to modify temperature and humidity ranges as well as the temperature/precipitation curve.</li>
+<li>Added the ability to generate scatter plots showing temperature and humidity of all terrestrial cells.</li>
+<li>Added small variations to the temperature-map based on basic orbital parameters.</li>
+<li>Added a satellite-like view of the world.</li>
+<li>Added support to save/load worlds in/from HDF5-format.</li>
+</ul>
+<p><strong>Exposure!</strong></p>
+<p>In addition to a new release, <a href="https://www.smashingmagazine.com/">Smashing Magazine</a> published an article that I co-authored with Federico titled “<a href="https://www.smashingmagazine.com/2016/03/procedural-content-generation-introduction/">Diving Into Procedural Content Generation</a>” which goes into detail about our motivations in creating WorldEngine (originally WorldSynth and Lands) and how by simulating real world phenomenon we can “create” realistic worlds, the results of which have been used by others for their own projects.</p>
+<p><strong>Speaking of own projects…</strong></p>
+<p>I’ve been a member of <a href="https://openmw.org/en/">OpenMW</a> for a while now and with the recent advances in the OpenMW-CS (construction set), it has made it possible to create your own “game” and not have to rely on Morrowind or any other Bethesda IP. In this particular case, I’ve been working on the <a href="https://forum.openmw.org/viewtopic.php?f=27&amp;t=2522">OpenMW-Template</a> and <a href="https://forum.openmw.org/viewtopic.php?f=28&amp;t=3451&amp;p=38578&amp;hilit=example+suite#p38578">OpenMW-Example-Suite</a>. The Template is fully CC-BY 3.0 and can be used by anyone wanting to have something akin to a starter kit or SDK when using OpenMW and its CS. The Example-Suite is OpenMW’s own game using the Template as a basis but going further in demonstrating what the engine can do.</p>
+<p>One of the things I’ve been working on is getting height data (DEM) into OpenMW, such as ones created by WorldEngine. Introducing <a href="https://github.com/psi29a/tesannwyn">TESAnnwyn</a>, originally open-sourced by Lightwave, I’ve been working to turn it into a library with a CLI and improving it even further by adding features and fixing bugs. The result is that you can use <a href="https://www.gdal.org/">GDAL</a> to convert whatever DEM you might have, into a 32-bit signed raw (ENVI) file that can be read by TESAnnwyn and converted to an ESP full of terrain data! My hope is that one day it will have Python bindings so it can be used directly by OpenMW-CS.</p>
+<p>Here is an example of the result of a DEM that was reduced by 50% in terms of resolution and size running in OpenMW with all the setting cranked to max, including view distance.</p>
+<p>https://www.youtube.com/watch?v=4LmzpdhNHds</p>
+<p>As you can see, we’ve come a long way and many of the projects I’ve been working on are cross pollinating. There is so much left to do! If you’re interested in any of the projects, please feel free to leave a comment and/or help!</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2015-11-06 00:00:00+00:00">November 6, 2015</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="deadlines-and-timeouts-for-realtime-mongodb-access-with-txmongo"><a class="toclink" href="../../2015/11/06/deadlines-and-timeouts-for-realtime-mongodb-access-with-txmongo/">Deadlines and Timeouts for Realtime MongoDB Access with TxMongo</a></h2>
+<p><img align="left" alt="2000px-Twisted_Logo_(software).svg" src="../../../assets/images/2014/12/2000px-Twisted_Logo_software.svg_.png" width="200" /></p>
+<p>Murphey had an adage: “Anything that can go wrong, will go wrong.” The best we can do is attempt to anticipate any problems that might come up and keep ‘the machine’ running. From an end-user perspective that means being responsive, even with errors. If there is a network error, we want to know as soon as possible with the guarantee that state of ‘the machine’ was not effected by the error.</p>
+<p>With the release of <a href="https://pypi.python.org/pypi/txmongo/15.3.1">TxMongo 15.3.1</a> we’ve introduced a few things that are useful when creating <a href="https://en.wikipedia.org/wiki/Real-time_computing#Near_real-time">real-time</a> applications.</p>
+<p><strong>We now have per-call deadline and timeouts!</strong></p>
+<p><strong><em>Deadline</em></strong>: The latest time (in the future) by which the call should be completed. Useful when your application has a deadline to complete a task and you pass the same deadline to all MongoDB calls.</p>
+<p><strong><em>Timeout</em></strong>: How much time the call has to complete itself. Useful when each call in your application is allowed a certain amount of time to complete itself.</p>
+<p>If these are ever exceeded, an error <code>TimeExceeded</code> is raised that you can trap. The guarantee is that when the error is raised, the call will not have modified MongoDB.</p>
+<p>Here are two examples of how to implement these in your application:  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>yield conn.db.coll.insert({&#39;x&#39;: 42}, safe=True, timeout=10)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>yield conn.db.coll.insert({&#39;x&#39;: 42}, safe=True, deadline=time()+10)
+</code></pre></div>
+<p>We also have additional features that will be useful as well:</p>
+<ul>
+<li>When dealing with <code>connection.ConnectionPool</code>, <code>max\_delay</code> is now exposed which is used to set the maximum number of seconds between connection attempts. The default is set to 60.</li>
+<li>When dealing with <code>connection.ConnectionPool</code>, <code>initial\_delay</code> is now exposed which is used to set the initial backoff retry delay. The default is set to 1.</li>
+<li>NotMaster instead of AutoReconnect error will be returned when a call can be safely</li>
+<li>Python3 support!</li>
+</ul>
+<p>If you have any feature requests or problems, you can use our <a href="https://github.com/twisted/txmongo/issues">txmongo github issue tracker</a>!</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2015-01-30 00:00:00+00:00">January 30, 2015</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../networking/" class="md-meta__link">Networking</a>, 
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../code/" class="md-meta__link">Code</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="txmongo-your-asynchronous-mongodb-twisted-client"><a class="toclink" href="../../2015/01/30/txmongo---your-asynchronous-mongodb-twisted-client/">TxMongo - Your Asynchronous MongoDB Twisted Client</a></h2>
+<p><img align="left" alt="2000px-Twisted_Logo_(software).svg" src="../../../assets/images/2014/12/2000px-Twisted_Logo_software.svg_.png" width="200" /></p>
+<p>We're proud to announce the release of 0.6 of <a href="https://pypi.python.org/pypi/txmongo" title="TxMongo">TxMongo</a>, which brings SSL support using Twisted's SSL context factory, "find with cursor" support just like PyMongo, bug fixes and updated unit tests! TxMongo is an asynchronous MongoDB client written for <a href="https://twistedmatrix.com" title="Twisted Matrix">Twisted</a> in Python.
+The biggest change is that TxMongo is now sponsored by <a href="http://amplidata.com/" title="Amplidata">Amplidata</a>. Through them we were able to get development, bug fixes and Twisted first-party sponsorship online. We now have continuous integration (CI) with a wide matrix of support for py26/py27/pypy using Twisted 12.1 to 14.0 (and trunk). We also now have 78% code coverage with unit testing as a result!
+This is also the very last release in the 0.x series before we step over to the "year.release" model used by Twisted, it will also eventually find its way into Twisted's github organization as a first class library.
+You can download TxMongo 0.6.0 and other releases here: <a href="https://github.com/psi29a/txmongo/releases" title="TxMongo Github Releases">TxMongo Github Releases</a></p>
+<p><strong><em>What to expect</em></strong>
+We have a list of priorities:</p>
+<ul>
+<li>Switch documentation over to sphinx for readthedocs.org supports.</li>
+<li>Get TxMongo moved over to Twisted's org, with Travis-CI and Coveralls.</li>
+<li>Get coverage to at least 80%.</li>
+<li>Research functions found in PyMongo that are missing TxMongo.</li>
+<li>Contact various TxMongo forks and gather up bugs/issues/patches from various distros.</li>
+</ul>
+<p><strong><em>Backstory</em></strong>
+In evaluating various options for using MongoDB with Twisted, there where two options:</p>
+<ol>
+<li>PyMongo</li>
+<li>TxMongo</li>
+</ol>
+<p>The first option, supported by MongoDB themselves, is up to date in form of features but is synchronous and blocking. To get around this behaviour, you'll need to defer it thread. The second option is TxMongo that lacks a lot of the features of PyMongo, but is made for Twisted. Amplidata's only concern was the lack of SSL support in TxMongo, but all the main features that we needed are there. Thankfully the original author Alexandre Fiori, who is now in maintenance mode, accepted our patch.
+We talked a bit about the future of TxMongo and as it turns out, he is no longer developing TxMongo but he would love to give it to the community to see it furthered developed and maintained since he no longer has the time. We included Glyph of Twisted into the conversation to see about a new home, with the driving development work coming from Amplidata.
+The rest, is how they say, history.
+<strong><em>Example code using TxMongo and SSL</em></strong>
+<em>First we startup mongodb:</em></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>#!/bin/bash
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a># create the path
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>mkdir -p /tmp/mongodb
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a># start mongodb process
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>mongod --dbpath /tmp/mongodb --sslMode requireSSL --sslPEMKeyFile mongodb.pem
+</code></pre></div>
+<p><em>Second we run this code:</em></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>
+</code></pre></div>
+from OpenSSL import SSL
+from txmongo.connection import ConnectionPool
+from twisted.internet import defer, reactor, ssl</p>
+<p>class ServerTLSContext(ssl.DefaultOpenSSLContextFactory):
+    def <strong>init</strong>(self, <em>args, </em><em>kw):
+        kw['sslmethod'] = SSL.TLSv1_METHOD
+        ssl.DefaultOpenSSLContextFactory.<strong>init</strong>(self, </em>args, **kw)</p>
+<p>@defer.inlineCallbacks
+def example():
+    tls_ctx = ServerTLSContext(privateKeyFileName='./mongodb.key', certificateFileName='./mongodb.crt')
+    mongodb_uri = "mongodb://localhost:27017"</p>
+<div class="highlight"><pre><span></span><code>mongo = yield ConnectionPool(mongodb_uri, ssl_context_factory=tls_ctx)
+
+foo = mongo.foo  # `foo` database
+test = foo.test  # `test` collection
+
+# fetch some documents
+docs = yield test.find(limit=10)
+for doc in docs:
+    print doc
+</code></pre></div>
+<p>if <strong>name</strong> == '<strong>main</strong>':
+    example().addCallback(lambda ign: reactor.stop())
+    reactor.run()
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>
+</code></pre></div></p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2014-12-22 00:00:00+00:00">December 22, 2014</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../windows/" class="md-meta__link">Windows</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../code/" class="md-meta__link">Code</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="enterprise-all-your-twisted-applications-with-ldaptor"><a class="toclink" href="../../2014/12/22/enterprise-all-your-twisted-applications-with-ldaptor/">Enterprise all your Twisted applications with Ldaptor</a></h2>
+<p><img align="left" alt="2000px-Twisted_Logo_(software).svg" src="../../../assets/images/2014/12/2000px-Twisted_Logo_software.svg_.png" width="200" /></p>
+<p>We're proud to announce the release of 14.0.0 of <a href="https://github.com/twisted/ldaptor" title="Ldaptor">Ldaptor</a>, now a first party <a href="https://twistedmatrix.com" title="Twisted Matrix">Twisted</a> project! Ldaptor is an asynchronous <a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="LDAP">LDAP</a> (Lightweight Directory Access Protocol) client and server implementation written for Twisted in Python.
+The biggest change is that Ldaptor is now sponsored by <a href="http://amplidata.com/" title="Amplidata">Amplidata</a>. Through them we were able to get development, bug fixes and Twisted first-party sponsorship back online. We now have continuous integration (CI) with a wide matrix of support for py26/py27/pypy using Twisted 12.1 to 14.0 (and trunk). We also have about 75% code coverage with unit testing!
+You can download 14.0.0 and other releases here: <a href="https://github.com/psi29a/ldaptor/releases" title="Ldaptor Github Releases">Ldaptor Github Releases</a>
+For a full review of what has changed, feel free to take a look at our live documentation over at ReadTheDocs: <a href="http://ldaptor.readthedocs.org/en/latest/" title="Ldaptor Documentation">Ldaptor Documentation</a> and the <a href="http://ldaptor.readthedocs.org/en/latest/NEWS.html" title="Ldaptor Changelog">Changelog</a> itself.
+<strong><em>Backstory</em></strong>
+That is quite a jump from the last official release of 0.0.43 back in 2012 and from all the unofficial forks that have popped up to fill the void in between. Here is a bit of back story on how we got to where we are now.
+It was originally written and carried by Tommi Virtanen until 2012, since then Ldaptor was forked many ways to solve various problems and each distro of Linux and BSD had their own patches building up dust. In the spring of 2014, an internal project at Amplidata required an OpenLDAP client for their Twisted services and the only one that offered the most promise was Ldaptor.
+We got in touch with Tommi (tv42) and Glyph of Twisted to work out an arrangement where Amplidata would sponsor continued work on Twisted, Tommi would re-license Ldaptor under the <a href="https://en.wikipedia.org/wiki/MIT_License" title="MIT License">MIT Expat License</a> and it would be hosted as a first party library with Twisted.
+Since then we've consolidated the bug-fixes of other forks and distributions, improved the unit tests, cleaned up the code-base and managed to recover the PyPI Ldaptor entry. Once Travis was all green, we made our first release 14.0 (on Halloween) and are now seeing development picking up with pull requests for more tests and features!
+<strong><em>Usage and Example</em></strong>
+This particular example also includes how to connect to OpenLDAP with StartTLS. This particular feature is critical to Amplidata and there isn't any Ldaptor information about it. Now there is!</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>
+</code></pre></div>
+from OpenSSL import SSL
+from twisted.internet import reactor, defer, ssl
+from ldaptor.protocols.ldap import ldapclient, ldapsyntax, ldapconnector</p>
+<p>class ServerTLSContext(ssl.DefaultOpenSSLContextFactory):
+    def <strong>init</strong>(self, <em>args, </em><em>kw):
+        kw['sslmethod'] = SSL.TLSv1_METHOD
+        ssl.DefaultOpenSSLContextFactory.<strong>init</strong>(self, </em>args, **kw)</p>
+<p>@defer.inlineCallbacks
+def example():
+    serverip = '192.168.128.21'
+    basedn = 'dc=example,dc=com'
+    binddn = 'bjensen'
+    bindpw = 'secret'
+    ssl = True
+    query = '(cn=*)'
+    c = ldapconnector.LDAPClientCreator(reactor, ldapclient.LDAPClient)
+    overrides = {basedn: (serverip, 389)}
+    client = yield c.connect(basedn, overrides=overrides)</p>
+<div class="highlight"><pre><span></span><code># do you want SSL/TLS, then you need to create a context for startTLS
+if ssl:
+    tls_ctx = ServerTLSContext(
+        privateKeyFileName=&#39;your.key&#39;,
+        certificateFileName=&#39;your.crt&#39;
+    )
+    yield client.startTLS(tls_ctx)
+
+yield client.bind(binddn, bindpw)
+o = ldapsyntax.LDAPEntry(client, basedn)
+results = yield o.search(filterText=query)
+for entry in results:
+    print entry
+</code></pre></div>
+<p>if <strong>name</strong> == '<strong>main</strong>':
+    df = example()
+    df.addErrback(lambda err: err.printTraceback())
+    df.addCallback(lambda _: reactor.stop())
+    reactor.run()
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>
+</code></pre></div></p>
+<p>The above should work as-is, but you'll need to change the IPs, basedn, binddn, certs and keys. If you don't need SSL/TLS, then just ssl to False and you should be ready to go!</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-06-23 00:00:00+00:00">June 23, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="worldsynth-0110-released"><a class="toclink" href="../../2013/06/23/worldsynth-0110-released/">Worldsynth 0.11.0 released</a></h2>
+<p><img align="left" alt="Rivers" src="../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p>Worldsynth version 0.11.0 is released and can be found on <a href="https://github.com/psi29a/worldsynth/tags" title="Tagged Releases">github</a>.</p>
+<p>In this release we've added an additional algorithm for heightmap generation based on <a href="http://en.wikipedia.org/wiki/Ken_Perlin" title="Ken_Perlin">Ken Perlin</a>'s work in <a href="http://en.wikipedia.org/wiki/Simplex_noise" title="Simplex_noise">noise</a> generation. We decoupled the sea-level to be configurable based on percentage, which in addition to <a href="http://en.wikipedia.org/wiki/Image_mask#Image_masks">masks</a> we can now create islands. You can also save your world and open it up later since we use pytables to store our settings, metadata and our data in an open <a href="http://en.wikipedia.org/wiki/Hierarchical_Data_Format">hdf5</a> format. You can also export your heightmap in 16-bit PNG greyscale or even import from a wide array of images formats as a heightmap. Importing from an image creates a 16-bit precision greyscale heightmap. In addition to this, one commenter ask about Python3 support, well now you have it.</p>
+<p>The immediate future of Worldsynth has the following: fluvial erosion, better river erosion, better river flow/snaking and editing properties of world.</p>
+<p>Here are some screenshots of some of the latest features:</p>
+<p><img alt="noise" src="../../../assets/images/2013/06/noise.png" width="200" /></p>
+<p><img alt="options" src="../../../assets/images/2013/06/options.png" width="200" /></p>
+<p><img alt="island" src="../../../assets/images/2013/06/island.png" width="300" /></p>
+<p><img alt="seaLevel" src="../../../assets/images/2013/06/seaLevel.png" width="200" /></p>
+<p><img alt="elevation" src="../../../assets/images/2013/06/elevation.png" width="200" /></p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-03-07 00:00:00+00:00">March 7, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../windows/" class="md-meta__link">Windows</a>, 
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="worldsynth-0100-released"><a class="toclink" href="../../2013/03/07/worldsynth-0100-released/">Worldsynth 0.10.0 released</a></h2>
+<p><img align="left" alt="Rivers" src="../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p>Worldsynth version 0.10.0 is released and can be found on <a href="https://github.com/psi29a/worldsynth/tags" title="Tagged Releases">github</a>. This is our first "official" release in which the result should work, out of the box, with a usable and familiar GUI instead of the pygame environment. This is provided by Qt4 via PySide. We have even tested Worldsynth on Windows XP to validate that it is indeed cross platform.</p>
+<p>As for 0.11.0, we are looking to unlock size of terrain to be of any variable width and height instead of the basic power of two. We are also investigating fluvial erosion.</p>
+<p>Here is a demo of the latest release:
+https://www.youtube.com/watch?v=xgxS1MpVBeY</p>
+<p>Some of the things changed in this release are:</p>
+<p>Improved our just-in-time library loading so that only libraries are loaded as needed and were needed. This also helped to reduce the number of dependencies necessary for running Worldsynth.</p>
+<p>We implemented an erosion model so that we can use it as an overlay over the original heightmap.</p>
+<p>There is also now an overflow flag that treats the terrain generated as one that wraps. Rivers, for example, can flow off edges of maps, overflow into other side. This make the world seamless and one step closer to being able to wrap the terrain to a globe and having a world.</p>
+<p>We also have a demonstration of Worldsynth running on Windows.
+https://www.youtube.com/watch?v=QaHid9-etzo</p>
+<p>Here are the files and libraries necessary to run Worldsynth on Windows:</p>
+<ul>
+<li><a href="http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi" title="python-2.7.3.msi">python-2.7.3.msi</a></li>
+<li><a href="https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11.win32-py2.7.exe#md5=57e1e64f6b7c7f1d2eddfc9746bbaf20" title="setuptools-0.6c11.win32-py2.7.exe">setuptools-0.6c11.win32-py2.7.exe</a></li>
+<li><a href="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/pywin32-218.win32-py2.7.exe/download" title="pywin32-218.win32-py2.7.exe">pywin32-218.win32-py2.7.exe</a></li>
+<li><a href="http://numexpr.googlecode.com/files/numexpr-2.0.1.win32-py2.7.exe" title="numexpr-2.0.1.win32-py2.7.exe">numexpr-2.0.1.win32-py2.7.exe</a></li>
+<li><a href="https://pypi.python.org/packages/2.7/n/numpy/numpy-1.7.0.win32-py2.7.exe#md5=7ad31a61947cb91915eb0bfdb01d2ab8" title="numpy-1.7.0.win32-py2.7.exe">numpy-1.7.0.win32-py2.7.exe</a></li>
+<li><a href="http://sourceforge.net/projects/pytables/files/pytables/2.2.1/tables-2.2.1.win32-py2.7.exe/download" title="tables-2.2.1.win32-py2.7.exe">tables-2.2.1.win32-py2.7.exe</a></li>
+<li><a href="http://releases.qt-project.org/pyside/PySide-1.1.2.win32-py2.7.exe" title="PySide-1.1.2.win32-py2.7.exe">PySide-1.1.2.win32-py2.7.exe</a></li>
+</ul>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-02-11 00:00:00+00:00">February 11, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="introducing-worldsynth-for-your-world-generation-and-building-needs"><a class="toclink" href="../../2013/02/11/introducing-worldsynth-for-your-world-generation-and-building-needs/">Introducing worldsynth for your world generation and building needs</a></h2>
+<p><img align="left" alt="Rivers" src="../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p>After many years of development in my spare time, I've decided to release <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> as a <a href="http://en.wikipedia.org/wiki/Free_and_open_source_software" title="Free and Open Source Software">Free and Open Source Software</a>. As a world generator, it fills the roll and can also be rapidly extended to support additional features. The source might not be of top quality, but the main purpose of creating it has been fulfilled and I want to share it. I only hope that others will find it useful and want to build upon it.</p>
+<p>There is still much more functionality that I would like add and additional polishing to the user interface. Midway through I switched from <a href="http://en.wikipedia.org/wiki/Pygame">pygame</a> to <a href="http://en.wikipedia.org/wiki/PySide">pyside</a> or <a href="http://en.wikipedia.org/wiki/Qt_(framework)">Qt4</a> for the GUI. I consider it ready for "<a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha">Alpha</a>" at this point, meaning there might be bugs and few experimental features that may break but otherwise usable.</p>
+<p><strong>What we have so far:</strong></p>
+<ul>
+<li><em>Heightmap</em> - What we have so far is the ability to create a heightmap using three different methods: midpoint displacement, sphere slicing and diamond square. Each have their advantages and disadvantages depending on the type of terrain map you desire.</li>
+<li><em>Heatmap</em> - Based on the heightmap we generate a heatmap to get our temperature range across the terrain, either full equatorial or picking between northern or southern hemispheres.</li>
+<li><em>Weather</em> - There is wind and precipitation that are heavily influenced by the contours of the terrain. This includes rain shadows from mountains and average rainfall based on wind direction.</li>
+<li><em>Drainage</em> - The drainage dictates how fast the water is absorbed by the terrain. This has in impact on the type of geology that is there such as soft ground good for farming or hard stone that water just flows over with little erosion.</li>
+<li><em>Rivers</em> - With the rain water that collects when falling down the mountains and hills of the terrain, at a certain point to form streams that collect further into rivers. It flows either out to sea or collects into a depression of the terrain. This also has an impact on erosion on the terrain.</li>
+<li><em>Biomes</em> - With all the layers above we can then synthesize <a href="http://en.wikipedia.org/wiki/Biome">biomes</a> which give a sort of realistic habitation zones that we find in real life.</li>
+</ul>
+<p><strong>Media</strong>:
+I've made films of older versions <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> to give an idea of what is possible. The GUI has since changed from pygame as of version 0.8 to pyside in version 0.9, but the main features haven't changed. The follow video demostrates all the major features talked about above.
+http://www.youtube.com/watch?v=INfN3IXwwzg</p>
+<p>The next video is older but still gives another demonstration.
+http://www.youtube.com/watch?v=Sixm7dd9klY</p>
+<p><strong>Outside interest</strong>:
+Other projects have already taken an interest in <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> and have used the results for building their own worlds. <a href="https://openmw.org" title="OpenMW">OpenMW</a> is a FOSS remake of the <a href="http://en.wikipedia.org/wiki/The_Elder_Scrolls_III:_Morrowind">Morrowind</a> game engine that will let you play Morrowind on multiple platforms. They are also working on a OpenCS which will be better than the Morrowind Construction Set, win parallel with an OpenES or "Example Suite" that will allow anyone to use OpenMW without having to own Morrowind.</p>
+<p>They first had to generate a heightmap that fit their requirements, three relatively big islands in a 512x512 map.</p>
+<p><img alt="OpenMW Heightmap" src="../../../assets/images/2013/02/testHM.png" width="300" /></p>
+<p><img alt="Landscape" src="../../../assets/images/2013/02/Landscape.png" width="300" /></p>
+<p>Once they had a heightmap that they could work with, they did a test conversion into an usable ESM for OpenMW. They used a tool made by Lightwave called <a href="http://www.oceanlightwave.com/morrowind/TESAnnwyn.html">TESAnnwyn</a> which allow for the creation of an ESM using the heightmap. I've talked with Lightwave about open-sourcing his work, and he replied that it would love to but first needs to clean it up. He did provide Linux 32 and 64 bit versions of TESAnnwyn that I'm allowed to host until he can get around to it. <a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2013/02/tesannwyn_linux.tar.gz">tesannwyn_linux.tar</a></p>
+<p>The result is a success!</p>
+<p><img alt="Import of Heightmap Works" src="../../../assets/images/2013/02/PnPLF.jpg" width="300" /></p>
+<p><img alt="Raw Heightmap in OpenMW" src="../../../assets/images/2013/02/demo1.png" width="300" /></p>
+<p>With this they can plan out what they want to do and where things should go before editing.</p>
+<p><img alt="Landscape and Overview" src="../../../assets/images/2013/02/Landscapemap.png" width="300" /></p>
+<p>The ESM was put into the editor to mold their new world. I would love to add some of that very functionality into <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a>. The result of their modeling is this.</p>
+<p><img alt="Demo of edited Heightmap" src="../../../assets/images/2013/02/demo2.png" width="300" /></p>
+<p>They are still building and creating, but this drop in replacement for Morrowind (Example Suite) is coming along fine. You can have a look for yourself as they provided me with a demo ESM you can use. Place <a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2013/02/OpenMW.esm.tar.gz">OpenMW.esm</a> in your "Data Files" directory next to Morrowind.bsa. Rename Morrowind.esm so that it is out of the way and copy OpenMW.esm to Morrowind.esm. With OpenMW, use the launcher and select OpenMW.esm in the "Data Files" tabs. Close the Launcher then on the command line type this:
+<code>openmw --start="Town, Centre"</code>
+Once in, hit f2 to open the console and set your speed so you can fly around and view the work that is going on with the Example Suite.
+<code>player-&gt;setspeed 500</code></p>
+<p>This is very good for moral here as people are actually using <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> for their own projects. It is possible that they will ship it with their OpenCS or at least link against it for their heightmap generation needs.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-10-07 00:00:00+00:00">October 7, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Python</a>, 
+              <a href="../servers/" class="md-meta__link">Servers</a>, 
+              <a href="../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="threadingthread-vs-multiprocessingprocess"><a class="toclink" href="../../2010/10/07/threadingthread-vs-multiprocessingprocess/">threading.Thread vs. multiprocessing.Process</a></h2>
+<h2 id="the-feather-or-the-anvil"><a class="toclink" href="../../2010/10/07/threadingthread-vs-multiprocessingprocess/#the-feather-or-the-anvil">The Feather or the Anvil?</a></h2>
+<h2 id="_1"><a class="toclink" href="../../2010/10/07/threadingthread-vs-multiprocessingprocess/#_1"></a></h2>
+<p>First a bit of background: I was tasked with created a high level tester for my company's system. The idea is create 1 or more monkeys to pound away at the company's product for a very long time. A concurrent parallel programming project with the requirement that it needed to be compatible with 2.6.2 version of Python.</p>
+<p>With threading, you get real posix threads (pthread) which works pretty well. They implicitly share state with the parent thread and do not use IPC or messaging. They have low latency and low overall resource footprint.</p>
+<p>However there are drawbacks that made further development using threads a real problem. that is the use of signals. Such as threads not handling signals, working with the global interpreter lock (GIL, only one thread allowed to run at a time), and more.</p>
+<p>This particular implementation of Python is used as a wrapper to binaries on the system, the benefit of understanding signals and passing them back to Python. The threading module simply does not like this:</p>
+<blockquote>
+<p>failed to set child signal, error signal only works in main thread</p>
+</blockquote>
+<p>According to the <a href="http://docs.python.org/release/2.5.2/lib/module-signal.html">documentation</a>:</p>
+<blockquote>
+<p>Some care must be taken if both signals and threads are used in the same program. The fundamental thing to remember in using signals and threads simultaneously is: always perform signal() operations in the main thread of execution. Any thread can perform an alarm(), getsignal(), or pause(); only the main thread can set a new signal handler, and the main thread will be the only one to receive signals (this is enforced by the Python signal module, even if the underlying thread implementation supports sending signals to individual threads).</p>
+</blockquote>
+<p>My hands are tied: I cannot upgrade Python, modify the execute() method being used nor can I trap the signal being sent to the thread by the execute().</p>
+<p>There is one heavy handed solution and that is to use <a href="http://docs.python.org/library/multiprocessing.html">multiprocessing</a>. It is almost a 1 to 1 replacement for the threading module, including the same API. However it has drawbacks in comparison to threads like: large resource footprint (big heavy process), processes do not share state and must use some form of message passing such as IPC to communicate.</p>
+<p>If you can do this:
+<code>Thread(target=func, args=(args,)).start()</code>
+Then it is trivial to convert to:
+<code>Process(target=func, args=(args,)).start()</code></p>
+<p>There are benefits to the anvil approach however. Processes automatically run on multiple cores which helps make distributive systems easier, processes are safer to use as they do not share any state implicitly and they make high-throughput processing trivial. It has the additional benefit of not needing locks which means you get to side-step the GIL.</p>
+<p>I managed to replace all instance with threading with multiprocesser and suddenly I am no longer in GIL hell nor having issues with handling signals in my child processes. The only downside is that we require more resources to run the same test and slower initial start-up due to process creation. No one ever said it was light weight.</p>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../operating-systems/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Operating Systems">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Operating Systems
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../raspberrypi/" class="md-footer__link md-footer__link--next" aria-label="Next: RaspberryPi">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                RaspberryPi
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

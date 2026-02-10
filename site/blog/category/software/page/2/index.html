@@ -1,0 +1,2820 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Mindwerks Network">
+      
+      
+        <meta name="author" content="Bret Curtis">
+      
+      
+      
+        <link rel="prev" href="../../../servers/">
+      
+      
+        <link rel="next" href="../../../storage/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Software - Mindwerks.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#software" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Mindwerks.net" class="md-header__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindwerks.net
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Mindwerks.net" class="md-nav__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mindwerks.net
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C/C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../debian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../laptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../operating-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../raspberrypi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspberryPi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="../../" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../exita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../thirdeye/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thirdeye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../txmongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TxMongo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../wildmidi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WildMIDI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../worldsynth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Worldsynth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../online-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../pro-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../ip-calc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnet Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../conversions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurement Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../password-cracking-calculator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Cracking Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../mindwerks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mindwerks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../bret-curtis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bret Curtis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="software">Software<a class="headerlink" href="#software" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2014-01-26 00:00:00+00:00">January 26, 2014</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../code/" class="md-meta__link">Code</a>, 
+              <a href="../../../cc/" class="md-meta__link">C/C++</a>, 
+              <a href="../../../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../../windows/" class="md-meta__link">Windows</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="introducing-wildmidi-version-032"><a class="toclink" href="../../../../2014/01/26/introducing-wildmidi-version-032/">Introducing WildMIDI version 0.3.2</a></h2>
+<p><img align="left" alt="WildMIDI" src="../../../../../assets/images/2014/01/WildMIDI.png" width="200" /></p>
+<p>After several years of silence, There is now a new version of <a href="https://mindwerks.net/projects/wildmidi/" title="WildMIDI">WildMIDI</a>! Chris "Wildcode" Ison seems to have fallen off the planet around February of 2012 and the bug reports and patches have been accumulating on his <a href="http://sourceforge.net/projects/wildmidi/">SourceForge</a> page. I decided to dump his <a href="http://sourceforge.net/p/wildmidi/svn/HEAD/tree/">SVN repository</a> to <a href="https://github.com/psi29a/wildmidi">github</a> and continue hacking where he left off. We are still very much 100% API/ABI compatible and new versions can be considered drop-in replacements. We will continue to be open to developers that wish to improve <a href="https://mindwerks.net/projects/wildmidi/" title="WildMIDI">WildMIDI</a> but keep in mind that our goal is to be small and fast. We also wish Chris the very best and want very much for him to rejoin the project.</p>
+<p><strong>What's new?</strong></p>
+<p>There have been a lot of changes since WildMIDI 0.2.3.5, mostly involving our new build system.</p>
+<ul>
+<li>Switched build system away from autotools and now using cmake</li>
+<li>We can build natively on: Linux, FreeBSD, Windows and OSX</li>
+<li>We support GCC, Clang, XCode and Visual Studio</li>
+<li>Pulled in all out-standing patches from SourceForge, Debian and FreeBSD</li>
+<li>Compile without warnings using enforced -Werrors</li>
+<li>Found and fixed additional bugs</li>
+</ul>
+<p><strong>What we need</strong>:
+We still need people with other platforms to test <a href="https://mindwerks.net/projects/wildmidi/" title="WildMIDI">WildMIDI</a> and file <a href="https://github.com/psi29a/wildmidi/issues">bug reports</a> and patches so that we can support more platforms as well. This includes both the library and the player.</p>
+<p>We are also looking into adding new features, such as: XMI playback support, SF2 and DLS support.</p>
+<p><strong>Downloads</strong>:</p>
+<ul>
+<li>Win32 Binaries (exe, dll, lib): <a href="https://github.com/Mindwerks/wildmidi/releases/download/wildmidi-0.3.2/WildMIDI-0.3.2-win32.zip">WildMIDI-0.3.2-win32.zip</a></li>
+<li>OSX Binaries: Not currently available, they can be built from source but there is currently no sound-code for the wildmidi player. You can however dump music to a WAV file.</li>
+<li>Source: <a href="https://github.com/psi29a/wildmidi/archive/wildmidi-0.3.2.tar.gz" title="WildMIDI 0.3.2">wildmidi-0.3.2.tar.gz</a></li>
+<li>Free Patches (GUS):<a href="http://ftp.de.debian.org/debian/pool/main/f/freepats/freepats_20060219.orig.tar.gz" title="freepats_20060219.orig.tar.gz">freepats_20060219.orig.tar.gz</a> (extract the 'freepats' directory to where you want and adjust the 'dir' in wildmidi.cfg to point to it)</li>
+</ul>
+<p><strong>For more information</strong>:
+If you wish to read more about the History and the Future of the library, please read our <a href="https://mindwerks.net/projects/wildmidi/" title="WildMIDI">WildMIDI Project</a> page.</p>
+<p><strong>Screenshots running on Windows and Linux</strong>:</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-06-23 00:00:00+00:00">June 23, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../python/" class="md-meta__link">Python</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="worldsynth-0110-released"><a class="toclink" href="../../../../2013/06/23/worldsynth-0110-released/">Worldsynth 0.11.0 released</a></h2>
+<p><img align="left" alt="Rivers" src="../../../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p>Worldsynth version 0.11.0 is released and can be found on <a href="https://github.com/psi29a/worldsynth/tags" title="Tagged Releases">github</a>.</p>
+<p>In this release we've added an additional algorithm for heightmap generation based on <a href="http://en.wikipedia.org/wiki/Ken_Perlin" title="Ken_Perlin">Ken Perlin</a>'s work in <a href="http://en.wikipedia.org/wiki/Simplex_noise" title="Simplex_noise">noise</a> generation. We decoupled the sea-level to be configurable based on percentage, which in addition to <a href="http://en.wikipedia.org/wiki/Image_mask#Image_masks">masks</a> we can now create islands. You can also save your world and open it up later since we use pytables to store our settings, metadata and our data in an open <a href="http://en.wikipedia.org/wiki/Hierarchical_Data_Format">hdf5</a> format. You can also export your heightmap in 16-bit PNG greyscale or even import from a wide array of images formats as a heightmap. Importing from an image creates a 16-bit precision greyscale heightmap. In addition to this, one commenter ask about Python3 support, well now you have it.</p>
+<p>The immediate future of Worldsynth has the following: fluvial erosion, better river erosion, better river flow/snaking and editing properties of world.</p>
+<p>Here are some screenshots of some of the latest features:</p>
+<p><img alt="noise" src="../../../../../assets/images/2013/06/noise.png" width="200" /></p>
+<p><img alt="options" src="../../../../../assets/images/2013/06/options.png" width="200" /></p>
+<p><img alt="island" src="../../../../../assets/images/2013/06/island.png" width="300" /></p>
+<p><img alt="seaLevel" src="../../../../../assets/images/2013/06/seaLevel.png" width="200" /></p>
+<p><img alt="elevation" src="../../../../../assets/images/2013/06/elevation.png" width="200" /></p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-03-07 00:00:00+00:00">March 7, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../../windows/" class="md-meta__link">Windows</a>, 
+              <a href="../../../python/" class="md-meta__link">Python</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="worldsynth-0100-released"><a class="toclink" href="../../../../2013/03/07/worldsynth-0100-released/">Worldsynth 0.10.0 released</a></h2>
+<p><img align="left" alt="Rivers" src="../../../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p>Worldsynth version 0.10.0 is released and can be found on <a href="https://github.com/psi29a/worldsynth/tags" title="Tagged Releases">github</a>. This is our first "official" release in which the result should work, out of the box, with a usable and familiar GUI instead of the pygame environment. This is provided by Qt4 via PySide. We have even tested Worldsynth on Windows XP to validate that it is indeed cross platform.</p>
+<p>As for 0.11.0, we are looking to unlock size of terrain to be of any variable width and height instead of the basic power of two. We are also investigating fluvial erosion.</p>
+<p>Here is a demo of the latest release:
+https://www.youtube.com/watch?v=xgxS1MpVBeY</p>
+<p>Some of the things changed in this release are:</p>
+<p>Improved our just-in-time library loading so that only libraries are loaded as needed and were needed. This also helped to reduce the number of dependencies necessary for running Worldsynth.</p>
+<p>We implemented an erosion model so that we can use it as an overlay over the original heightmap.</p>
+<p>There is also now an overflow flag that treats the terrain generated as one that wraps. Rivers, for example, can flow off edges of maps, overflow into other side. This make the world seamless and one step closer to being able to wrap the terrain to a globe and having a world.</p>
+<p>We also have a demonstration of Worldsynth running on Windows.
+https://www.youtube.com/watch?v=QaHid9-etzo</p>
+<p>Here are the files and libraries necessary to run Worldsynth on Windows:</p>
+<ul>
+<li><a href="http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi" title="python-2.7.3.msi">python-2.7.3.msi</a></li>
+<li><a href="https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11.win32-py2.7.exe#md5=57e1e64f6b7c7f1d2eddfc9746bbaf20" title="setuptools-0.6c11.win32-py2.7.exe">setuptools-0.6c11.win32-py2.7.exe</a></li>
+<li><a href="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/pywin32-218.win32-py2.7.exe/download" title="pywin32-218.win32-py2.7.exe">pywin32-218.win32-py2.7.exe</a></li>
+<li><a href="http://numexpr.googlecode.com/files/numexpr-2.0.1.win32-py2.7.exe" title="numexpr-2.0.1.win32-py2.7.exe">numexpr-2.0.1.win32-py2.7.exe</a></li>
+<li><a href="https://pypi.python.org/packages/2.7/n/numpy/numpy-1.7.0.win32-py2.7.exe#md5=7ad31a61947cb91915eb0bfdb01d2ab8" title="numpy-1.7.0.win32-py2.7.exe">numpy-1.7.0.win32-py2.7.exe</a></li>
+<li><a href="http://sourceforge.net/projects/pytables/files/pytables/2.2.1/tables-2.2.1.win32-py2.7.exe/download" title="tables-2.2.1.win32-py2.7.exe">tables-2.2.1.win32-py2.7.exe</a></li>
+<li><a href="http://releases.qt-project.org/pyside/PySide-1.1.2.win32-py2.7.exe" title="PySide-1.1.2.win32-py2.7.exe">PySide-1.1.2.win32-py2.7.exe</a></li>
+</ul>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-02-11 00:00:00+00:00">February 11, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../python/" class="md-meta__link">Python</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="introducing-worldsynth-for-your-world-generation-and-building-needs"><a class="toclink" href="../../../../2013/02/11/introducing-worldsynth-for-your-world-generation-and-building-needs/">Introducing worldsynth for your world generation and building needs</a></h2>
+<p><img align="left" alt="Rivers" src="../../../../../assets/images/2013/02/Rivers.png" width="200" /></p>
+<p>After many years of development in my spare time, I've decided to release <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> as a <a href="http://en.wikipedia.org/wiki/Free_and_open_source_software" title="Free and Open Source Software">Free and Open Source Software</a>. As a world generator, it fills the roll and can also be rapidly extended to support additional features. The source might not be of top quality, but the main purpose of creating it has been fulfilled and I want to share it. I only hope that others will find it useful and want to build upon it.</p>
+<p>There is still much more functionality that I would like add and additional polishing to the user interface. Midway through I switched from <a href="http://en.wikipedia.org/wiki/Pygame">pygame</a> to <a href="http://en.wikipedia.org/wiki/PySide">pyside</a> or <a href="http://en.wikipedia.org/wiki/Qt_(framework)">Qt4</a> for the GUI. I consider it ready for "<a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha">Alpha</a>" at this point, meaning there might be bugs and few experimental features that may break but otherwise usable.</p>
+<p><strong>What we have so far:</strong></p>
+<ul>
+<li><em>Heightmap</em> - What we have so far is the ability to create a heightmap using three different methods: midpoint displacement, sphere slicing and diamond square. Each have their advantages and disadvantages depending on the type of terrain map you desire.</li>
+<li><em>Heatmap</em> - Based on the heightmap we generate a heatmap to get our temperature range across the terrain, either full equatorial or picking between northern or southern hemispheres.</li>
+<li><em>Weather</em> - There is wind and precipitation that are heavily influenced by the contours of the terrain. This includes rain shadows from mountains and average rainfall based on wind direction.</li>
+<li><em>Drainage</em> - The drainage dictates how fast the water is absorbed by the terrain. This has in impact on the type of geology that is there such as soft ground good for farming or hard stone that water just flows over with little erosion.</li>
+<li><em>Rivers</em> - With the rain water that collects when falling down the mountains and hills of the terrain, at a certain point to form streams that collect further into rivers. It flows either out to sea or collects into a depression of the terrain. This also has an impact on erosion on the terrain.</li>
+<li><em>Biomes</em> - With all the layers above we can then synthesize <a href="http://en.wikipedia.org/wiki/Biome">biomes</a> which give a sort of realistic habitation zones that we find in real life.</li>
+</ul>
+<p><strong>Media</strong>:
+I've made films of older versions <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> to give an idea of what is possible. The GUI has since changed from pygame as of version 0.8 to pyside in version 0.9, but the main features haven't changed. The follow video demostrates all the major features talked about above.
+http://www.youtube.com/watch?v=INfN3IXwwzg</p>
+<p>The next video is older but still gives another demonstration.
+http://www.youtube.com/watch?v=Sixm7dd9klY</p>
+<p><strong>Outside interest</strong>:
+Other projects have already taken an interest in <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> and have used the results for building their own worlds. <a href="https://openmw.org" title="OpenMW">OpenMW</a> is a FOSS remake of the <a href="http://en.wikipedia.org/wiki/The_Elder_Scrolls_III:_Morrowind">Morrowind</a> game engine that will let you play Morrowind on multiple platforms. They are also working on a OpenCS which will be better than the Morrowind Construction Set, win parallel with an OpenES or "Example Suite" that will allow anyone to use OpenMW without having to own Morrowind.</p>
+<p>They first had to generate a heightmap that fit their requirements, three relatively big islands in a 512x512 map.</p>
+<p><img alt="OpenMW Heightmap" src="../../../../../assets/images/2013/02/testHM.png" width="300" /></p>
+<p><img alt="Landscape" src="../../../../../assets/images/2013/02/Landscape.png" width="300" /></p>
+<p>Once they had a heightmap that they could work with, they did a test conversion into an usable ESM for OpenMW. They used a tool made by Lightwave called <a href="http://www.oceanlightwave.com/morrowind/TESAnnwyn.html">TESAnnwyn</a> which allow for the creation of an ESM using the heightmap. I've talked with Lightwave about open-sourcing his work, and he replied that it would love to but first needs to clean it up. He did provide Linux 32 and 64 bit versions of TESAnnwyn that I'm allowed to host until he can get around to it. <a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2013/02/tesannwyn_linux.tar.gz">tesannwyn_linux.tar</a></p>
+<p>The result is a success!</p>
+<p><img alt="Import of Heightmap Works" src="../../../../../assets/images/2013/02/PnPLF.jpg" width="300" /></p>
+<p><img alt="Raw Heightmap in OpenMW" src="../../../../../assets/images/2013/02/demo1.png" width="300" /></p>
+<p>With this they can plan out what they want to do and where things should go before editing.</p>
+<p><img alt="Landscape and Overview" src="../../../../../assets/images/2013/02/Landscapemap.png" width="300" /></p>
+<p>The ESM was put into the editor to mold their new world. I would love to add some of that very functionality into <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a>. The result of their modeling is this.</p>
+<p><img alt="Demo of edited Heightmap" src="../../../../../assets/images/2013/02/demo2.png" width="300" /></p>
+<p>They are still building and creating, but this drop in replacement for Morrowind (Example Suite) is coming along fine. You can have a look for yourself as they provided me with a demo ESM you can use. Place <a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2013/02/OpenMW.esm.tar.gz">OpenMW.esm</a> in your "Data Files" directory next to Morrowind.bsa. Rename Morrowind.esm so that it is out of the way and copy OpenMW.esm to Morrowind.esm. With OpenMW, use the launcher and select OpenMW.esm in the "Data Files" tabs. Close the Launcher then on the command line type this:
+<code>openmw --start="Town, Centre"</code>
+Once in, hit f2 to open the console and set your speed so you can fly around and view the work that is going on with the Example Suite.
+<code>player-&gt;setspeed 500</code></p>
+<p>This is very good for moral here as people are actually using <a href="https://mindwerks.net/projects/worldsynth/" title="Worldsynth: A World Synthesizer">Worldsynth</a> for their own projects. It is possible that they will ship it with their OpenCS or at least link against it for their heightmap generation needs.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-01-30 00:00:00+00:00">January 30, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../video/" class="md-meta__link">Video</a>, 
+              <a href="../../../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              6 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="properly-ripping-dvds-and-adding-subtitles-in-ubuntu"><a class="toclink" href="../../../../2013/01/30/properly-ripping-dvds-and-adding-subtitles-in-ubuntu/">Properly ripping DVDs and adding subtitles in Ubuntu</a></h2>
+<p><img align="left" alt="dvd::rip" src="../../../../../assets/images/2013/01/clip_zoom.png" width="200" /></p>
+<p>There are occasions where you legitimately need tools to help that would otherwise be considered the domain of "pirates" and "ne'er-do-wells". In this particular scenario, my grandparents send a DVD from the United States (Region1) to us in Belgium (Region2). Not only will the DVD not play back on a region locked DVD player, there are also no Dutch subtitles.</p>
+<p>There are however technological solutions to this type of problem, including such programs as <a href="http://www.exit1.org/dvdrip/" title="dvd::rip">dvd::rip</a>, <a href="https://github.com/ruediger/VobSub2SRT#readme" title="VobSub2SRT">vobsub2srt</a> and a few websites dedicted to crowdsourced subtitles.</p>
+<p>Our first task is to properly rip a DVD. There are many options here, but I chose dvd::rip because it just works. It creates a small <a href="http://en.wikipedia.org/wiki/Xvid" title="Xvid">xvid</a> (avi) file that is compatible with a set-top DVD player and it is also allows ripping of any subtitles found on the DVD. If may wish to dig into the <a href="http://www.exit1.org/dvdrip/doc/index.cipp">documentation</a> to really understand the details of dvd:rip. I'll give you a step-by-step run down on how I did things.</p>
+<p><strong>dvd::rip</strong></p>
+<ol>
+<li>Install the program and it's libraries.</li>
+<li>Following the directions and make sure the directories are set, dvd drive is found and that libraries are installed.</li>
+<li>On the left will be tabs, use this as a process. Begin with "Storage" where you set the project name, dvd drive to use and "Copy data from DVD to hard disk before encoding" which will make things faster.</li>
+</ol>
+<p><img alt="Storage" src="../../../../../assets/images/2013/01/Storage.png" width="200" /></p>
+<ol>
+<li>On "Rip Title" you need to read the data on the DVD and select which files to rip. First "Read DVD table of contents", select the Title or Titles you wish to rip, usually the one with the most Chapters and/or Runtime is your target. Highlight that entry, select on the right your audio track (en for English, other en entries are usually commentary tracks). Set "Specify chapter mode" to None so that it is ripped as one file and not a set of files (per chapter) and set the "Grab subtitle preview images" to All so that you can select what subtitles you wish use, if any. The last step here is to "Rip selected title(s)/chapter(s) which will take a few minutes.</li>
+</ol>
+<p><img alt="RipTitle" src="../../../../../assets/images/2013/01/RipTitle.png" width="200" /></p>
+<ol>
+<li>Select next the "Clip &amp; Zoom" which will allow you to set the correct format (size) that is perfect for your TV. You need to be careful here because the source (DVD) can be different such as: letterbox (widescreen) 1.85:1 ratio, anamorphic (widescreen) 16:9 ratio, or pan &amp; scan (fullscreen) 4:3 ratio. Look at the back of your DVD box to verify. To test different settings, do a grab frame and try various "Autoadjust" presets until you find something that looks right. If you are playing back on an older DVD player with USB divx/xvid/avi support, then try to pick Small Frame Size, which is about 480p. This will make playing back smother as your hardware DVD player doesn't have enough CPU power to downscale higher resolutions.</li>
+</ol>
+<p><img alt="ClipAndZoom" src="../../../../../assets/images/2013/01/ClipAndZoom.png" width="200" /></p>
+<ol>
+<li>Moving to the Subtitles screen, you can select the DVD title that you ripped and the correct subtitle you wish to rip. You can either "Activate this subtitle" for rendering or "Create now" which will produce separate files which you can use later. I prefer another method of handling subtitles than hard-rendering them to the rip. After "Create Now", you will have extra files that we can convert to <a href="http://en.wikipedia.org/wiki/SubRip">SubRip</a> text file format (SRT) later.</li>
+</ol>
+<p><img alt="Subtitles" src="../../../../../assets/images/2013/01/Subtitles.png" width="200" /></p>
+<ol>
+<li>After that we go to the "Transcode" tab which is the 'meat' of the program. We select our DVD title, select a container of AVI, make sure the "Video codec" is xvid, "By target size"'s "Target media" to One x 700MB which will create one file at an acceptable bitrate. On the Audio Options side, "Select track" to the one we ripped and select MP3. I set the Samplerate to 192kbit/s to get better audio. the rest I set to defaults. On the bottom left gives you an "Calculated storage". If you are content with your choices, go to "Operate" and select "Transcode" and wait a bit more.</li>
+</ol>
+<p><img alt="Transcode" src="../../../../../assets/images/2013/01/Transcode.png" width="200" /></p>
+<ol>
+<li>Success! Try out your newly made AVI file with VLC or another player to make sure it is to you liking. If you got an error, you can go to the "Logging" tab on the left and see where you went wrong.</li>
+</ol>
+<p>At this point, you should have an AVI file that you can play back in your video player or DVD player. However the job is not yet finished as we also need the subtitles for those in their native language. We saw that we could 'Rip' subtitles with dvd::rip but the files we have are in the VOB format idx/ifo/sub format which may or may not be readable by your player. We can convert this format to a SRT text-based file which is widely supported subtitle format using a tool called: <a href="https://github.com/ruediger/VobSub2SRT" title="VobSub2SRT">VobSub2SRT</a>.</p>
+<p><strong>VobSub2SRT</strong></p>
+<ol>
+<li>Download and build <a href="https://github.com/ruediger/VobSub2SRT" title="VobSub2SRT">VobSub2SRT</a> yourself or install the package via <a href="https://launchpad.net/~ruediger-c-plusplus/+archive/vobsub2srt" title="vobsub2srt">PPA</a>.</li>
+<li>You will also need to install '<a href="http://en.wikipedia.org/wiki/Tesseract_(software)">tesseract-ocr</a>' and any of the language files necessary to handle the subtitle language you ripped earlier.</li>
+<li>From the command line, go to where your ripped subtitles are and run the command to convert (OCR) them into an SRT file.</li>
+</ol>
+<blockquote>
+<p>vobsub2srt --lang en dolphinetail-001-sid00</p>
+</blockquote>
+<p>This will use english (en) from the idx/sub files to make the srt file. You can find out which languages you can pick from using the --langlist parameter.</p>
+<blockquote>
+<p>bcurtis@Wintermute:~/.dvdrip-data/dolphinetail/avi/001$ vobsub2srt --lang en dolphinetail-001-sid00
+Selected VOBSUB language: 0 language: enen
+Wrote Subtitles to 'dolphinetail-001-sid00.srt'</p>
+</blockquote>
+<p>Success! Just copy the SRT file to where your AVI is and your player should recognize and automatically use the subtitle file.</p>
+<p>There are times when you have the film but there is not subtitle for your language of choice. This is where crowd sourcing comes in as there is no shortage of people wanting to either subtitle the film for free as volunteer work or for some other altruistic or non-altruistic reason.</p>
+<p><strong>Crowdsourced Subtitles</strong></p>
+<ul>
+<li><a href="http://www.bierdopje.com/" title="Bierdopje">Bierdopje</a>: Dutch subtitles for films and series.</li>
+<li><a href="http://www.opensubtitles.org/en" title="opensubtitles">OpenSubtitles</a>: Multi-lingual subtitles for films and series</li>
+<li><a href="http://www.podnapisi.net/" title="podnapisi">Podnapisi</a>: Older Multi-lingual subtitles for films and series</li>
+</ul>
+<p><strong>Resizing Video</strong>
+There can be moments where you have a file you want to play back on your DVD player and it complains that the resolution is not supported. This because it doesn't have a CPU powerful enough to downscale your film to your TV's resolution. I found this Video <a href="http://ubuntuguide.org/wiki/Video_Conversion" title="Video Conversion">Conversion Guide</a> which helped. You just need to figure out what your TV's native resolution is, and try to match it. For example my TV is an old CRT PAL monster and the source is a 1280x720 video. The DVD player doesn't support that resolution, but it is 16:9 ratio. We then convert the mkv to an avi to stay within the same ratio and play back on an old style PanScan CRT.</p>
+<blockquote>
+<p>mencoder input.avi -ovc xvid -vf scale=648:364 -oac mp3lame -lameopts cbr:br=192 -xvidencopts pass=2:bitrate=-1400000:threads=4 -o output.avi</p>
+</blockquote>
+<p>This converts the film 648:364, however you should keep in mind your TV's resolution. The guide gives a better understanding and there is no need to repeat the information here.</p>
+<p>The end result should be a film for your USB in with a subtitle of your choice.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-08-16 00:00:00+00:00">August 16, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../bash/" class="md-meta__link">Bash</a>, 
+              <a href="../../../servers/" class="md-meta__link">Servers</a>, 
+              <a href="../../../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="dell-dset-on-ubuntu-1004-and-1204"><a class="toclink" href="../../../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/">Dell DSET on Ubuntu 10.04 and 12.04</a></h2>
+<p><img align="left" alt="UbuntuOnDell" src="../../../../../assets/images/2012/08/UbuntuOnDell.jpeg" width="200" /></p>
+<p>Dell System E-Support Tool (DSET) is an informative tool used by Dell's support engineers to help diagnose problems for their clients. It is almost a requirement now and Dell usually refuses to continue support without a DSET report.</p>
+<p>The problem is that DSET is only supported on Redhat and SuSE Linux and there isn't any information on how to get it running in Ubuntu. I've assembled a rough guide on how to get DSET up and running on Ubuntu 10.04 and 12.04 and it is tested against a Dell R610 and R620.
+<strong>First</strong> we need to install Dell's OpenManage Server Administrator (OMSA) which is one piece from Dell that does support Ubuntu.
+<a href="http://linux.dell.com/repo/community/deb/latest/">http://linux.dell.com/repo/community/deb/latest/</a></p>
+<p>You can cut and paste the following:
+<code>echo 'deb http://linux.dell.com/repo/community/deb/latest /' | sudo tee -a /etc/apt/sources.list.d/linux.dell.com.sources.list
+gpg --keyserver pool.sks-keyservers.net --recv-key 1285491434D8786F
+gpg -a --export 1285491434D8786F | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install -y srvadmin-all sblim-cmpi-base rpm alien
+sudo ln -sf /usr/bin/rpm /bin/rpm</code></p>
+<p>The above will add Dell's repository to your apt sources and grab everything necessary to install the OMSA. It does include a java/tomcat webserver for a web GUI interface, but that is not enabled by default and not necessary for our DSET. You'll need to logout and log back in again to reset your path variables.</p>
+<blockquote>
+<p>root@dmachine:~# /opt/dell/srvadmin/sbin/srvadmin-services.sh start
+Starting Systems Management Device Drivers:
+Starting dell_rbu: *
+Starting ipmi driver: * Already started
+Starting Systems Management Data Engine:
+Starting dsm_sa_datamgrd: *
+Starting dsm_sa_eventmgrd: *
+Starting dsm_sa_snmpd: *
+Starting DSM SA Connection Service: *</p>
+</blockquote>
+<p><strong>Secondly</strong>, if you are using an 'OEM Ready' Dell server then OMSA dataeng (Systems Management Data Engine) might complain with "Failed to start because system is not supported". There isn't any 'official' support for OMSA on these systems but you can contact Dell's OEM wing for custom solutions here: <a href="http://content.dell.com/us/en/enterprise/d/oem/oem-engineering-services.aspx">http://content.dell.com/us/en/enterprise/d/oem/oem-engineering-services.aspx</a></p>
+<p>To get OMSA working on an OEM system, we need to modify this file: /opt/dell/srvadmin/sbin/CheckSystemType which calls the file: /usr/sbin/smbios-sys-info-lite which does not return back the expected value. I've modified it to key off the 'Is Dell' flag which is 1 (True). The patch can be found here: <a href="../../../../../assets/images/2012/08/checksystem.patch">checksystem.patch</a>
+<code>patch -p0 &lt; checksystem.patch</code>
+Once the patch is applied, Systems Management Data Engine should start without problems.</p>
+<p><strong>Thirdly</strong> you need to download the 32 or 64 bit Linux version of DSET. You then need to edit the bin file to not run the install.sh file and to also not delete /tmp/dell_advdiags when it is finished running. You'll need the rpm files that it extracts to install DSET on Ubuntu.</p>
+<p>Example from dell-dset-3.2.0.141_x64_A01.bin: ( the # comments out the none necessary bits )</p>
+<blockquote>
+<h2 id="source-installsh"><a class="toclink" href="../../../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/#source-installsh">source install.sh</a></h2>
+</blockquote>
+<p>cd $CDIR</p>
+<h2 id="rm-rf-tmpdir"><a class="toclink" href="../../../../2012/08/16/dell-dset-on-ubuntu-1004-and-1204/#rm-rf-tmpdir">rm -rf $TMPDIR</a></h2>
+<p>The only ones that we need are these:</p>
+<blockquote>
+<p>dell-dset-collector-3.2.0.141-1.x86_64.rpm
+dell-dset-common-3.2.0.141-1.x86_64.rpm
+dell-dset-provider-3.2.0.141-1.x86_64.rpm</p>
+</blockquote>
+<p>DSET binaries can be found here: <a href="http://support.dell.com/dset/" title="http://support.dell.com/dset/">http://support.dell.com/dset/</a></p>
+<p><strong>Fourthly</strong> you'll need to verify that /bin/sh points to bash instead of dash because Dell's scripts rely on bash's functionality.
+<code>sudo su -
+ln -sf /bin/bash /bin/sh
+sh dell-dset*.bin
+mv /tmp/dell_advdiags ~
+cd ~/dell_advdiags/rpms
+alien --scripts dell-dset*.rpm
+dpkg -i --force all *.deb
+dellsysteminfo</code></p>
+<p>You might have to do these steps one at a time, but that is the flow of things. Alien sometimes complains about 'unknown flags' and dpkg will likely also complain about overwriting existing files. The first problem has bothered me so far, but the last is DSET overwriting existing OMSA files which as far as I can tell are the same files.</p>
+<p>When you run dellsysteminfo, you need to give it a password. This is your typical Linux account password. You should now have something to hand over to the Dell Support people.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-18 00:00:00+00:00">June 18, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="skype-40-on-ubuntu-precise-1204-64-bit"><a class="toclink" href="../../../../2012/06/18/skype-40-on-ubuntu-precise-1204-64-bit/">Skype 4.0 on Ubuntu Precise (12.04) 64-bit</a></h2>
+<p><img align="left" alt="skype" src="../../../../../assets/images/2011/09/skype.png" width="200" /></p>
+<p>There is a new version of skype out for Linux, version 4.0 which has interesting <a href="http://blogs.skype.com/linux/2012/06/skype_40_for_linux.html">changelog</a> entries:</p>
+<blockquote>
+<p>* Much lower chance Skype for Linux will crash or freeze
+* chat history loading is now much faster
+* ...several investments we made in improving audio quality ... and improving video call quality
+* ...extended support for more cameras
+* and more</p>
+</blockquote>
+<p>Good enough for me! There is still no true 64 bit binary/package from Skype. The result is that their fake "64 bit" Skype needs an additional 100MB of i386 packages in order for it to run properly.
+The rundown:</p>
+<ol>
+<li>Remove old skype packages if they exist: <code>sudo apt-get purge skype skype-bin</code></li>
+<li>Download latest <a href="http://www.skype.com/intl/en/get-skype/on-your-computer/linux/downloading.ubuntu64">Skype (4.0)</a> (fake) 64-bit package for Ubuntu 10.04+. It might say skype 2.2 beta on the screen, they have yet to update the page. The download link goes to the 4.0 version.</li>
+<li>Install the necessary support libraries: <code>sudo apt-get install ia32-libs lib32stdc++6 lib32asound2</code></li>
+<li>Install the skype binary package itself: <code>sudo dpkg -i skype-ubuntu_4.0.0.7-1_amd64.deb</code></li>
+</ol>
+<p>Enjoy the ad-free Linux version of Skype thanks to... Microsoft.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-04 00:00:00+00:00">June 4, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../networking/" class="md-meta__link">Networking</a>, 
+              <a href="../../../code/" class="md-meta__link">Code</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="finding-and-making-a-network-subnet-calculator"><a class="toclink" href="../../../../2012/06/04/finding-and-making-a-network-subnet-calculator/">Finding and making a network subnet calculator</a></h2>
+<p><img align="left" alt="subnet ip calculator" src="../../../../../assets/images/2012/06/ip-calculator.png" width="150" /></p>
+<p>Doing subnet calculations by hand can be tedious and thankfully there are tools available online to help with that. One in particular <a href="http://www.subnet-calculator.com/" title="Subnet Calculator">Subnet Calculator</a> with a PHP backend was handy and compact.</p>
+<p>I've sent a few requests asking if I could re-write it to be client side so that it could be used in intranet applications or even possibly be ported as an hand-held application. After a few months of waiting and no response, I repurposed some of their CSS and layout and wrote the javascript equivalent.</p>
+<p><a href="https://mindwerks.net/online-tools/ip-calc/" title="Subnet Calculator">Mindwerks's Subnet Calculator</a></p>
+<p>The code is released as open source and can be reused as per terms of the license. It is part of the WP-Mindwerks wordpress plugin, but you can use it also as a standalone webpage.</p>
+<p>ipcalc</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2011-12-15 00:00:00+00:00">December 15, 2011</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../" class="md-meta__link">Software</a>, 
+              <a href="../../../networking/" class="md-meta__link">Networking</a>, 
+              <a href="../../../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../../security/" class="md-meta__link">Security</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="a-poor-mans-https-using-ssh-to-secure-web-traffic"><a class="toclink" href="../../../../2011/12/15/a-poor-mans-https-using-ssh-to-secure-web-traffic/">A poor man's https, using ssh to secure web traffic</a></h2>
+<p><img align="left" alt="HTTPS_Everywhere_new_logo" src="../../../../../assets/images/2011/12/HTTPS_Everywhere_new_logo.jpg" width="200" /></p>
+<p>Sometimes you get a web-hosting environment that only serves non-ssl (http) content. If you need to do any type of management through tools like phpMyAdmin, then you can see the problem with this. All it would take is someone on your network or on the Internet to sniff the traffic and retrieve your username and password, then they too can do a bit of "management" on your site.</p>
+<p>If you also have secure shell (SSH) access, then there is a way to manage your site securely by using SSH's venerable port forwarding (SOCKS). The trick is to tell your management tools to only listen or respond to connections coming in over SSH instead of normal traffic.
+First you need to set up your SSH connection and configure your browser to use your newly made SOCKS proxy. Please refer to my post about <a href="https://mindwerks.net/2011/12/ssh-as-a-socks-proxy/" title="ssh as a socks proxy">SSH Proxies</a> for more information.</p>
+<p>The second part is to secure your application to only accept connections from itself, which is where your browser requests travels through your secure tunnel. We can mask it a bit so that you will have to look hard to see that there is something of interest going on there. It will also be ignored by Google and other search engines.</p>
+<p>You can add this to your php code:
+<code>/* custom code to deny access to world */
+if ($_SERVER["SERVER_ADDR"] != $_SERVER["REMOTE_ADDR"]){
+header('HTTP/1.1 404 Not Found');
+exit();</code></p>
+<p>If the remote IP (your request) is not he same as the server IP, then we give the 404 error message in return, otherwise you get to your application.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2011-09-30 00:00:00+00:00">September 30, 2011</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="build-environments-using-chroot"><a class="toclink" href="../../../../2011/09/30/build-environments-using-chroot/">Build environments using chroot</a></h2>
+<p><img align="left" alt="i386 or amd64" src="../../../../../assets/images/2011/09/figure1.png" width="200" /></p>
+<p>The need was simple enough: make deb packages from source for multiple architectures on the same system. This needed to be done without the overhead of a virtual machine and without using something like <a href="https://launchpad.net/" title="Launchpad">launchpad</a>.</p>
+<p>I've used chroot in the past and it seemed like a perfect fit for the problem. The idea is to have at least two chroot-able directories with the bare essentials from Ubuntu Natty (10.04) to compile and build deb packages.
+<strong>Here is a simple way to accomplish this:</strong>
+<code>sudo apt-get install dchroot debootstrap
+sudo debootstrap --arch i386 natty /opt/chroot_i386/ http://archive.ubuntu.com/ubuntu
+sudo debootstrap --arch amd64 natty /opt/chroot_amd64/ http://archive.ubuntu.com/ubuntu
+sudo chroot /opt/chroot_amd64
+locale-gen en_US en_US.UTF-8
+dpkg-reconfigure locales
+exit
+sudo chroot /opt/chroot_i386
+locale-gen en_US en_US.UTF-8
+dpkg-reconfigure locales
+exit</code></p>
+<p>The next step is to update your apt repositories and get the latest updates and upgrades. Overwrite /etc/apt/sources.list in your respective chroots with the following:
+<code>deb http://be.archive.ubuntu.com/ubuntu/ natty main universe multiverse restricted
+deb http://be.archive.ubuntu.com/ubuntu/ natty-updates main universe multiverse restricted
+deb http://be.archive.ubuntu.com/ubuntu/ natty-backports main universe multiverse restricted
+deb http://archive.canonical.com/ubuntu natty partner
+deb http://security.ubuntu.com/ubuntu natty-security main universe multiverse restricted</code></p>
+<p>In each chroot we update to latest packages and install our build environment.
+<code>apt-get update
+apt-get dist-upgrade -y
+apt-get install build-essential</code></p>
+<p>While you are setting up one chroot environment and you want to mirror the installed packages in another chroot, then you can do the following.</p>
+<p><strong>Make a list:</strong>
+<code>dpkg --get-selections &gt; installed-software</code></p>
+<p><strong>Use list to install necessary packages:</strong>
+<code>dpkg --set-selections &lt; installed-software
+dselect install</code></p>
+<p>This should get you going for compiling and building in separate environments. This technique could also be used for non-debian based distributions as well.</p>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  <a class="md-pagination__link" href="../../">1</a> <span class="md-pagination__current">2</span> <a class="md-pagination__link" href="../3/">3</a> <a class="md-pagination__link" href="../4/">4</a>
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../../servers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Servers">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Servers
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../../storage/" class="md-footer__link md-footer__link--next" aria-label="Next: Storage">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Storage
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.sections", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

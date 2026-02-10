@@ -1,0 +1,2770 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Mindwerks Network">
+      
+      
+        <meta name="author" content="Bret Curtis">
+      
+      
+      
+        <link rel="prev" href="../../..">
+      
+      
+        <link rel="next" href="../../category/bash/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Blog - Mindwerks.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mindwerks.net" class="md-header__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindwerks.net
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mindwerks.net" class="md-nav__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mindwerks.net
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/cc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C/C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/debian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/laptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/operating-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/raspberrypi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspberryPi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../thirdeye/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thirdeye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../txmongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TxMongo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wildmidi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WildMIDI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../worldsynth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Worldsynth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../online-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pro-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ip-calc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnet Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../conversions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurement Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../password-cracking-calculator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Cracking Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mindwerks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mindwerks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bret-curtis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bret Curtis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="blog">Blog<a class="headerlink" href="#blog" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-10-07 00:00:00+00:00">October 7, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/python/" class="md-meta__link">Python</a>, 
+              <a href="../../category/servers/" class="md-meta__link">Servers</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../category/software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="threadingthread-vs-multiprocessingprocess"><a class="toclink" href="../../2010/10/07/threadingthread-vs-multiprocessingprocess/">threading.Thread vs. multiprocessing.Process</a></h2>
+<h2 id="the-feather-or-the-anvil"><a class="toclink" href="../../2010/10/07/threadingthread-vs-multiprocessingprocess/#the-feather-or-the-anvil">The Feather or the Anvil?</a></h2>
+<h2 id="_1"><a class="toclink" href="../../2010/10/07/threadingthread-vs-multiprocessingprocess/#_1"></a></h2>
+<p>First a bit of background: I was tasked with created a high level tester for my company's system. The idea is create 1 or more monkeys to pound away at the company's product for a very long time. A concurrent parallel programming project with the requirement that it needed to be compatible with 2.6.2 version of Python.</p>
+<p>With threading, you get real posix threads (pthread) which works pretty well. They implicitly share state with the parent thread and do not use IPC or messaging. They have low latency and low overall resource footprint.</p>
+<p>However there are drawbacks that made further development using threads a real problem. that is the use of signals. Such as threads not handling signals, working with the global interpreter lock (GIL, only one thread allowed to run at a time), and more.</p>
+<p>This particular implementation of Python is used as a wrapper to binaries on the system, the benefit of understanding signals and passing them back to Python. The threading module simply does not like this:</p>
+<blockquote>
+<p>failed to set child signal, error signal only works in main thread</p>
+</blockquote>
+<p>According to the <a href="http://docs.python.org/release/2.5.2/lib/module-signal.html">documentation</a>:</p>
+<blockquote>
+<p>Some care must be taken if both signals and threads are used in the same program. The fundamental thing to remember in using signals and threads simultaneously is: always perform signal() operations in the main thread of execution. Any thread can perform an alarm(), getsignal(), or pause(); only the main thread can set a new signal handler, and the main thread will be the only one to receive signals (this is enforced by the Python signal module, even if the underlying thread implementation supports sending signals to individual threads).</p>
+</blockquote>
+<p>My hands are tied: I cannot upgrade Python, modify the execute() method being used nor can I trap the signal being sent to the thread by the execute().</p>
+<p>There is one heavy handed solution and that is to use <a href="http://docs.python.org/library/multiprocessing.html">multiprocessing</a>. It is almost a 1 to 1 replacement for the threading module, including the same API. However it has drawbacks in comparison to threads like: large resource footprint (big heavy process), processes do not share state and must use some form of message passing such as IPC to communicate.</p>
+<p>If you can do this:
+<code>Thread(target=func, args=(args,)).start()</code>
+Then it is trivial to convert to:
+<code>Process(target=func, args=(args,)).start()</code></p>
+<p>There are benefits to the anvil approach however. Processes automatically run on multiple cores which helps make distributive systems easier, processes are safer to use as they do not share any state implicitly and they make high-throughput processing trivial. It has the additional benefit of not needing locks which means you get to side-step the GIL.</p>
+<p>I managed to replace all instance with threading with multiprocesser and suddenly I am no longer in GIL hell nor having issues with handling signals in my child processes. The only downside is that we require more resources to run the same test and slower initial start-up due to process creation. No one ever said it was light weight.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-09-30 00:00:00+00:00">September 30, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../../category/video/" class="md-meta__link">Video</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="xorg-19-versus-fglrx"><a class="toclink" href="../../2010/09/30/xorg-19-versus-fglrx/">xorg 1.9 versus fglrx</a></h2>
+<p>With the release of Ubuntu (Meerkat) 10.10 just 10 days away, the <a href="https://launchpad.net/~ubuntu-x-swat">ubuntu x-swat</a> people have been busy getting fglrx ready for release. The fglrx now compiles against latest Meerkat kernel and finally resolves the unknown symbol issue.</p>
+<p><img align="left" alt="xswat-64" src="../../../assets/images/2010/09/xswat-64.png" width="64" /></p>
+<p>In the laptop is a ATI Mobility Radeon HD 3670 and with the latest fglrx driver usability is awful. There is horrible tearing when using "Appearance -&gt; Visual Effects -&gt; Normal", which had to be set back to "None" just to be usable. Even on "None", scrolling down in documents, chrome, firefox and Skype all give blurred or stuttered graphics.</p>
+<p>These are for me "do not use" releases.</p>
+<p>There are so far two updates. The first one gets fglrx up to date to latest Meerkat.</p>
+<blockquote>
+<p>fglrx-installer (2:8.780-0ubuntu1) maverick; urgency=low
+* New upstream release.
+- Fix build issues with kernel fix for CVE-2010-3081 (LP: #642518).
+- Add compatibility with 2.6.35 kernels (LP: #573748).
+- Add compatibility with xserver 1.9 (LP: #630599).
+* Make the driver Depend on the appropriate xserver-xorg-video-$ABI
+(LP: #616215).</p>
+</blockquote>
+<p>The latest update adds 2.6.36 kernel support:</p>
+<blockquote>
+<p>fglrx-installer (2:8.780-0ubuntu2) maverick; urgency=low
+* debian/fglrx.postinst:
+- Call dpkg-trigger with "--by-package".
+* Add add-compatibility-with-2.6.36-kernels.patch:
+- Fix build issues with 2.6.36 kernels.
+* Add use-cflags_module-together-with-modflags.patch:
+- Fix build issues with kernels that don't have
+MODFLAGS and use CFLAGS_MODULE.</p>
+</blockquote>
+<p>There will hopefully be more releases soon that help to resolve these issues</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-09-23 00:00:00+00:00">September 23, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../../category/video/" class="md-meta__link">Video</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="ubuntu-1010-maverick-meerkat-on-dell-studio-xps-1640"><a class="toclink" href="../../2010/09/23/ubuntu-1010-maverick-meerkat-on-dell-studio-xps-1640/">Ubuntu 10.10 Maverick Meerkat on Dell Studio XPS 1640</a></h2>
+<p>After a brief time with Karmic (10.04), the laptop was upgraded to the beta of Maverick. Everything works out of the box with no additional tricks necessary in getting the Dell Studio XPS 1640 fully functional.</p>
+<p><img align="left" alt="ubuntu-maverick-meerakat" src="../../../assets/images/2010/09/ubuntu-maverick-meerakat.png" width="200" /></p>
+<p>The only drawback I found in upgrading from Karmic was the loss of fglrx as a xorg-server driver. Maverick is shipping with the 1.9 version of xorg-server which is ABI incompatible with what fglrx is compiled against.</p>
+<p>The exact error is:
+<code>undefined symbol: savedScreenInfo</code>
+which causes X not to start.</p>
+<p>The <a href="http://ubuntuforums.org/showthread.php?t=1549872">rumour</a> is that ATI will release a fglrx package that is compiled against 1.9 version of xorg-server when Maverick ships on Sunday, October 10th.</p>
+<p>Compiling the fglrx against the latest kernel is also not a problem if you follow the advice found <a href="http://aur.archlinux.org/packages.php?ID=29111">here</a>.</p>
+<p>This does not impact a good desktop experience with your "Visual Effects" set to "Normal". By default, Maverick ships with the latest radeon driver that xorg-server which is good enough to handle all those lovely desktop effects. I recommend this driver over fglrx because:</p>
+<ul>
+<li>it is opensource</li>
+<li>has acceptable 2d/3d performance</li>
+<li>it is not a resource hog</li>
+<li>the laptop will no longer burn your lap</li>
+</ul>
+<p>I will continue testing against fglrx and I look forward to the final release.</p>
+<p><a href="https://wiki.ubuntu.com/MaverickReleaseSchedule">Maverick Meerkat Release Schedule</a></p>
+<p>UPDATE: If you have upgraded to Maverick and switched to the radeon driver after first having fglrx, you will need to purge your fglrx drivers. What happens is that X will start with the radeon driver but load your fglrx glx libraries and cause a segmentation fault or garbled screen.</p>
+<p>To fix this:
+<code>aptitude purge fglrx fglrx-amdcccle fglrx-modaliases xorg-driver-fglrx fglrx-dev</code></p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-09-13 00:00:00+00:00">September 13, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/software/" class="md-meta__link">Software</a>, 
+              <a href="../../category/storage/" class="md-meta__link">Storage</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="xdd-is-not-extreme-dd"><a class="toclink" href="../../2010/09/13/xdd-is-not-extreme-dd/">xdd is not "extreme dd"</a></h2>
+<p>While the ladies and gentlemen at <a href="http://www.ioperformance.com/">IO Performance Inc.</a> are busy with their 7.0 "Phoenix" release, they have left their website in disrepair including the disappearance of their product, source code and documentation.</p>
+<p><img align="left" alt="phoenix" src="../../../assets/images/2010/09/phoenix.jpg" width="200" /></p>
+<p>Since I make heavy use of xdd and apparently I am not the only one that needed the documentation, source and binary; I have provided it here for everyone.</p>
+<p><a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2010/09/xdd65.013007.tar.gz">xdd65.013007.tar</a>
+<a href="https://web.archive.org/web/2015/https://mindwerks.net/wp-content/uploads/2010/09/xdd6.5.pdf">xdd6.5 documentation</a></p>
+<p>To explain what xdd is:</p>
+<blockquote>
+<p>Xdd is a tool for measuring and characterizing disk subsystem I/O on single systems and clusters of systems. It is a command-line based tool that grew out of the UNIX world and has been ported to run in Window’s environments as well. It is designed to provide consistent and reproducible performance measurements of disk I/O traffic. There are three basic components to xdd that include the xdd program itself, a timeserver program, and a gettime program. The timeserver and gettime programs are used to synchronize the clocks of xdd programs simultaneously running across multiple computer systems.</p>
+</blockquote>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-08-18 00:00:00+00:00">August 18, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/linux/" class="md-meta__link">Linux</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="make-your-external-screen-your-primary-screen"><a class="toclink" href="../../2010/08/18/make-your-external-screen-your-primary-screen/">Make your external screen your primary screen</a></h2>
+<p>Or how to move gnome panels to a different monitor in Ubuntu.</p>
+<p><img align="left" alt="multiMonitor setup" src="../../../assets/images/2010/08/multiMonitor.jpg" width="200" /></p>
+<p>In my particular setup, I have a laptop and a much larger external display. I like having my main Gnome panel on the external display and use the laptop display for other things like Skype and email.</p>
+<p>To make this change perminant, I use some gConf magic:</p>
+<p><code>#!/bin/bash
+gconftool-2 --set "/apps/panel/toplevels/top_panel_screen0/monitor" --type integer "1"
+gconftool-2 --set "/apps/panel/toplevels/bottom_panel_screen0/monitor" --type integer "1"</code></p>
+<p>To reverse this, you can run this:</p>
+<p><code>#!/bin/bash
+gconftool-2 --set "/apps/panel/toplevels/top_panel_screen0/monitor" --type integer "0"
+gconftool-2 --set "/apps/panel/toplevels/bottom_panel_screen0/monitor" --type integer "0"</code></p>
+<p>The beautiful thing about this is that when on the go, Gnome will put the panels on your laptop display when the external display is not available.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-04-09 00:00:00+00:00">April 9, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../category/laptop/" class="md-meta__link">Laptop</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="upgrading-the-cpu-in-a-dell-studio-xps-1640"><a class="toclink" href="../../2010/04/09/upgrading-the-cpu-in-a-dell-studio-xps-1640/">Upgrading the CPU in a Dell Studio XPS 1640</a></h2>
+<p>While the default Dell Studio XPS 1640 is fast and is a decent work laptop, it needed to do one extra thing, run virtual machines (VMs). I spend a lot of my time debugging, hacking and otherwise trying to make software behave in ways that the developers had not intended.</p>
+<p>Tools like VirtualBox, VMWare, Xen and QEMU make this job less tedious. The problem is that with the Intel T7350 CPU, I cannot run 64 bit VMs. Turns out that T7250 is a 64 capable chip, but without the VT-x extension which allows for hardware assisted virtualization.</p>
+<p>Look your <a href="http://en.wikipedia.org/wiki/X86_virtualization#Intel_Virtualization_Technology_for_x86_.28Intel_VT-x.29">Intel CPU</a> up to see if it supports the VT-x flag.
+It turns out upgrading your CPU is relatively easy as Dell did a good job in designing the laptop. The instructions are all in their online <a href="http://support.dell.com/support/edocs/systems/sxl1645/en/sm/index.htm">service manual</a>.</p>
+<p><a href="http://support.dell.com/support/edocs/systems/sxl1645/en/sm/cpucool.htm#wp1084976">Replacing CPU in a Dell Studio XPS 1640</a></p>
+<p>The only hard part is figuring out what CPU is compatible and then buying it. Thankfully my company had no problem ordering an upgrade and after the first successful attempt, they ordered more for my other colleagues as well.</p>
+<p>When picking an upgrade CPU, you must find one your motherboard supports. Your best and most compatible guess is to choose one in the same family as your own CPU, essentially a later model. Since the <a href="http://processorfinder.intel.com/details.aspx?sSpec=SLB53">T7350</a> has a 1066 front side bus (FSB) , 45nm process and takes 25W, it is then easy to find a similar CPU with those values but at a much higher clock rate and L2 cache, and most importantly, VT-x flag.</p>
+<p><a href="http://en.wikipedia.org/wiki/X86_virtualization#Intel_Virtualization_Technology_for_x86_.28Intel_VT-x.2">Wikipedia</a> has a list of all mobile processors that have the VT-x flag.</p>
+<blockquote>
+<ul>
+<li>Mobile Core 2 Duo T5500, T5600, T6670, T7100, T7200, T7250, T7300, T7400, T7500, T7600G, T7700, T7800, U7500, L7200, L7300, L7400, L7500, L7700, U7500, U7600, U7700 (Merom)</li>
+<li>Mobile Core 2 Duo SU7300, SU9300, SU9400, SU9600, SL9300, SL9380, SL9400, SL9600, SP9300, SP9400, SP9600, P7350 (mac),P7370, P7550 (confirmed), P7570, P8400, P8600, P8700, P8800, P9500, P9600, P9700, T8100, T8300, T9300, T9400, T9500, T9550, T9600, T9800, T9900 (Penryn)</li>
+</ul>
+</blockquote>
+<p>A successor of the T7350 (Merom-2M) is the P8700 (Penryn-3M) and fits all my requirements to fit in the laptop. It is faster and more importantly has the VT-x flag and is easily found online for very cheap.</p>
+<p>The installation went without incident and upon reboot I entered the BIOS and enabled the "Hardware Virtualization" option. Saved and rebooted, Virtualbox finally gave me the option to create and run 64-bit VMs.</p>
+<p><em>An additional note</em>: Updating (Flashing) the BIOS is not necessary. The BIOS checks to see if the CPU has the flag or not and will not display the "Hardware Virtualization" option if the CPU does not support it.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-03-31 00:00:00+00:00">March 31, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="../../category/ubuntu/" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="ubuntu-karmic-910-on-dell-studio-xps-1640"><a class="toclink" href="../../2010/03/31/ubuntu-karmic-910-on-dell-studio-xps-1640/">Ubuntu Karmic 9.10 on Dell Studio XPS 1640</a></h2>
+<p>The very first thing I did when the company I work for gave me a laptop, a Dell Studio XPS 1640, was to install Ubuntu Karmic on it. No need for windows on this thing, I plan on working, not playing.</p>
+<p><img align="left" alt="karmic 9.10" src="../../../assets/images/2010/03/karmic9-101.png" width="200" /></p>
+<p>Dell is very good about their laptops. Whenever I had a question, everything I ever needed to know about their hardware I could easily look up on the online. The 1640 is no exception with their <a href="http://support.dell.com/support/edocs/systems/sxl1645/en/sm/index.htm" title="Dell Studio XPS 16 Manual">manual</a>.
+<strong>The setup:</strong></p>
+<ul>
+<li>﻿Intel Core2 Duo: T7350</li>
+<li>4GB of DDR3 ram</li>
+<li>﻿﻿﻿Radeon Mobility HD 3670</li>
+<li>RV635 Audio device</li>
+<li>Intel Corporation Wireless WiFi Link 5100</li>
+<li>BCM5784M Gigabit Ethernet</li>
+<li>Intel 82801I (ICH9 Family) Chipset</li>
+<li>Intel ICH9M/M-E SATA AHCI Controller</li>
+<li>WesternDigital WD3200BJKT-7 320GB Harddriver</li>
+<li>TSSTcorp DVD+/-RW TS-T633A, D600</li>
+</ul>
+<p><strong>Key Elements:</strong></p>
+<ul>
+<li>Ubuntu Karmic 9.10</li>
+<li>typical development setup (build-essentials)</li>
+<li>Skype</li>
+<li>fglrx</li>
+<li>Virtualbox</li>
+<li>ext4 filesystem</li>
+</ul>
+<p>The install happened in September 2009, but I felt it best to share what I went through before going to Ubuntu Lucid 10.04. The install itself went without a problem, everything loaded up fine.
+At the time, I was using the 'ati' xorg driver. I attached a separate monitor (Dell 23") and configured it using the Display Preferences tool to be one big desktop. This gets a little weird with one monitor being 1920x1080 and the laptop LCD at 1366x768 but what happens is that it creates a virtual desktop size that covers both screens with a little cut-off at the bottom (or top) of the laptop LCD screen.
+I wanted to switch over to the fglrx driver for it's 3D acceleration but immediately came into a problem in that my screen setup above would just not work. I hunted through forums and documentation but eventually with some guess work, I managed to get the big virtual desktop setup and fglrx to work together.
+Here is my modified: /etc/X11/xorg.conf</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Section &quot;Monitor&quot;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    Identifier     &quot;Monitor0&quot;
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    VendorName     &quot;Unknown&quot;
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    ModelName      &quot;DELL S2309W&quot;
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    HorizSync       30.0 - 83.0
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    VertRefresh     50.0 - 76.0
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    Option         &quot;DPMS&quot;
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>EndSection
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>Section &quot;Monitor&quot;
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    Identifier     &quot;Monitor1&quot;
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    VendorName     &quot;Unknown&quot;
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    ModelName      &quot;LCD&quot;
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    HorizSync       30.0 - 83.0
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    VertRefresh     50.0 - 76.0
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    Option         &quot;DPMS&quot;
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>EndSection
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>Section &quot;Screen&quot;
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    Identifier  &quot;Configured Screen Device&quot;
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    Device  &quot;Configured Video Device&quot;
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    DefaultDepth    24
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    SubSection &quot;Display&quot;
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>        Virtual 3840 2160
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    EndSubSection
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>EndSection
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>Section &quot;Module&quot;
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    Load    &quot;glx&quot;
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>EndSection
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>Section &quot;Device&quot;
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>    Identifier  &quot;Configured Video Device&quot;
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>    Driver  &quot;fglrx&quot;
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    Option &quot;AccelMethod&quot; &quot;exa&quot;
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>EndSection
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>Section &quot;ServerFlags&quot;
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    Option &quot;RandR&quot; &quot;on&quot;
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>EndSection&gt;
+</code></pre></div>
+<p>The benefit of this setup is that I was then able to turn on compiz for a compositing windows manager. I use normal, I do not need the flashy effects.
+System-&gt;Preferences-&gt;Appearance-&gt;Visual Effects-&gt;Normal
+It worked seamlessly across the two screens and the openGL programs worked flawlessly.
+So there you are, everything worked out of the box on the laptop except for the ability to have an additional monitor. Even that was fixed with a bit of hacking.
+Aside from it's looks, it is a very nice desktop replacement. Everything just simply works.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-03-29 00:00:00+00:00">March 29, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../category/software/" class="md-meta__link">Software</a>, 
+              <a href="../../category/bash/" class="md-meta__link">Bash</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="vnes-for-j2me-on-your-mobile"><a class="toclink" href="../../2010/03/29/vnes-for-j2me-on-your-mobile/">vNES for J2ME on your mobile</a></h2>
+<p>If you have ever wanted to play a NES game on your mobile, then you might have heard about <a href="http://www.vampent.com/vnesdownload.htm" title="vNES">vNES</a>. There is a J2ME version which allows it to run on most mobiles available today.
+There are however a few rough edges to this application as it requires assembling the necessary files together and running a windows batch file. From a Linux point of view, I have created a replacement shell script that does a better job. It requires unix2dos, rename, and bash.</p>
+<p>Just place this file into your vNes directory: <strong><em>makejar.sh</em></strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>#!/bin/bash
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cd roms
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>#uppercase all our roms
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>rename &#39;y/a-z/A-Z/&#39; *.nes
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>#remove all spaces, shorten name
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>rename &quot;s/ *//g&quot; *.NES
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>#rename roms to png
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>rename &#39;s/\.NES$/\.png/&#39; *.NES
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>#create our list of roms
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>package=&quot;&quot;
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>for file in `dir -A` ; do
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    package=&quot;${package}${file%.png}\
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>&quot;
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>done
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>echo -e $package &gt; ../package.txt
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>cp *.png ../package
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>cd ..
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>#make sure list is with windows line breaks
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>unix2dos package.txt
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>cp package.txt package/2.txt
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>cd package
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>#package everything up
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>zip -r -9 ../vnes.jar *
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>cd ..
+</code></pre></div>
+<p>Be sure to set: <code>chmod +x makejar.sh</code></p>
+<h4 id="general-advice"><a class="toclink" href="../../2010/03/29/vnes-for-j2me-on-your-mobile/#general-advice">General advice:</a></h4>
+<p>The NES rom files must be in iNES format, and also be renamed from *.rom to *.png and copied into "package" directory. There is a file in "package" called 2.txt which is a list of all the roms you have.
+Rom names should be in capital letters, with .png at the end, not .rom nor .nes. Example: castlevania_3.nes --&gt; CASTLE3.png and in 2.txt add a new line with 'CASTLE3' without the '.</p>
+<h4 id="here-are-a-list-of-possible-problems"><a class="toclink" href="../../2010/03/29/vnes-for-j2me-on-your-mobile/#here-are-a-list-of-possible-problems">Here are a list of possible problems:</a></h4>
+<h6 id="menu-freezes-when-selecting-one-of-the-3-options-like-play"><a class="toclink" href="../../2010/03/29/vnes-for-j2me-on-your-mobile/#menu-freezes-when-selecting-one-of-the-3-options-like-play">Menu freezes when selecting one of the 3 options like 'play':</a></h6>
+<p>This usually means that something is not right with 2.txt, make sure this is an extra line at the end of list. Use a space if you have to and remember use Windows based EOL 'end of line' characters. It helps to use 'unix2dos' to convert your \
+to ^M.</p>
+<h6 id="you-get-the-application-is-invalid-error-message"><a class="toclink" href="../../2010/03/29/vnes-for-j2me-on-your-mobile/#you-get-the-application-is-invalid-error-message">You get the "application is invalid" error message:</a></h6>
+<p>Delete the line "MIDlet-Data-Size: 1024000" in the file "package\META-INF\MANIFEST.mf", this line tells the mobile how big the java application is. Problem is some mobiles just do not agree with that size and as a result will refuse to run a slightly dodgy application. It is best just to remove the line for maximum compatibility.</p>
+<h6 id="when-loading-a-rom-you-get-javalangnullpointerexception-error-message"><a class="toclink" href="../../2010/03/29/vnes-for-j2me-on-your-mobile/#when-loading-a-rom-you-get-javalangnullpointerexception-error-message">When loading a rom you get "java.lang.NullPointerException" error message:</a></h6>
+<p>This is because the rom file either does not exist in the package dir, the name is spelled incorrectly in the 2.txt file, or that there are wrong line endings. Verify that the files exist as *.png in the 'package' directory and to be safe, run unix2dos or todos on 2.txt file make sure the line endings are correct. The application expects dos ^M line endings.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-02-05 00:00:00+00:00">February 5, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/linux/" class="md-meta__link">Linux</a>, 
+              <a href="../../category/software/" class="md-meta__link">Software</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="ssh-multiplexing-a-faster-way-to-ssh"><a class="toclink" href="../../2010/02/05/ssh-multiplexing-a-faster-way-to-ssh/">SSH Multiplexing: a faster way to SSH</a></h2>
+<h3 id="how-it-works"><a class="toclink" href="../../2010/02/05/ssh-multiplexing-a-faster-way-to-ssh/#how-it-works">How it works:</a></h3>
+<p>By changing the way you ssh to a machine, you can reuse your initial ssh connection to save time when connecting.</p>
+<p><em>Edit your ~/.ssh/config file to have this:</em></p>
+<p><code>Host *
+ControlMaster auto
+ControlPath ~/.ssh/sockets/%r@%h:%p</code></p>
+<p>We avoid problems of reusing the default /tmp but storing our connections in their own directory.</p>
+<p><em>Be sure to create the directory:</em></p>
+<p><code>mkdir -m 700 -p ~/.ssh/sockets</code></p>
+<h3 id="when-was-it-available"><a class="toclink" href="../../2010/02/05/ssh-multiplexing-a-faster-way-to-ssh/#when-was-it-available">When was it available:</a></h3>
+<p>The functionality has been available since OpenSSH 3.9.</p>
+<h3 id="usefulness"><a class="toclink" href="../../2010/02/05/ssh-multiplexing-a-faster-way-to-ssh/#usefulness">Usefulness:</a></h3>
+<p>I has come in handy for those hard to type passwords. Once in, a repeat ssh on another (local) terminal to the same machine will take just a few miliseconds and you have a command prompt to work with.</p>
+<h3 id="security"><a class="toclink" href="../../2010/02/05/ssh-multiplexing-a-faster-way-to-ssh/#security">Security:</a></h3>
+<p>One caveat is that this is on a per-user basis, so if you want to connect with a different username then you will have to initialize a new connection. This also means that anyone using your machine can then reuse your connection to log into the remote machine. This could be a security issue for you.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2009-09-30 00:00:00+00:00">September 30, 2009</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/bash/" class="md-meta__link">Bash</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="batch-file-and-directory-rename"><a class="toclink" href="../../2009/09/30/batch-file-and-directory-rename/">Batch file and directory rename</a></h2>
+<p>I needed a quick way to go through a directory and rename some files and directories to remove a specific bit from the name. By using bash's parameter expansion feature we can accomplish that in just a few lines.</p>
+<p><code>#!/bin/bash
+for i in *something* ; do
+echo ${i/-*}
+mv $i ${i/-*}
+done</code></p>
+<p>This takes all files and directories with something somewhere in their name, and strips it out.</p>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  <a class="md-pagination__link" href="../../">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../4/">4</a> <a class="md-pagination__link" href="../5/">5</a> <span class="md-pagination__current">6</span> <a class="md-pagination__link" href="../7/">7</a>
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../category/bash/" class="md-footer__link md-footer__link--next" aria-label="Next: Bash">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Bash
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

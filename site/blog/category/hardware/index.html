@@ -1,0 +1,2716 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Mindwerks Network">
+      
+      
+        <meta name="author" content="Bret Curtis">
+      
+      
+      
+        <link rel="prev" href="../debian/">
+      
+      
+        <link rel="next" href="../laptop/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Hardware - Mindwerks.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hardware" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mindwerks.net" class="md-header__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindwerks.net
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Hardware
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mindwerks.net" class="md-nav__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mindwerks.net
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../cc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C/C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../debian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../laptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../raspberrypi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspberryPi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../thirdeye/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thirdeye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../txmongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TxMongo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wildmidi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WildMIDI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../worldsynth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Worldsynth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../online-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pro-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ip-calc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnet Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../conversions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurement Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../password-cracking-calculator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Cracking Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mindwerks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mindwerks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bret-curtis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bret Curtis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2015-05-07 00:00:00+00:00">May 7, 2015</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../operating-systems/" class="md-meta__link">Operating Systems</a>, 
+              <a href="../raspberrypi/" class="md-meta__link">RaspberryPi</a>, 
+              <a href="./" class="md-meta__link">Hardware</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="cross-compiling-for-raspberry-pi-on-ubuntu"><a class="toclink" href="../../2015/05/07/cross-compiling-for-raspberry-pi-on-ubuntu/">Cross-compiling for Raspberry Pi on Ubuntu</a></h2>
+<p><img align="left" alt="RaspberryPi Logo" src="../../../assets/images/2014/08/RaspberryPi_Logo.png" width="200" /></p>
+<p>While the Raspberry Pi 2 has four cores to churn through code, it still takes longer to compile than on most workstations and laptops. If you are feeling adventurous, you can try cross-compiling which has become easier to set up and get working.
+Cross-compiling is when binaries created are for another target architecture than the one you are compiling on. This kind of set up is very typical when creating Android applications. The end result is that you can take the resulting binary and place on its target platform, and it will run there.
+There are even tricks to getting the cross-compiled binary to also run on your native system!
+In this guide, I'll walk you through:</p>
+<ul>
+<li>Setting up a cross-compile toolchain in Ubuntu (15.04 Vivid)</li>
+<li>Setting up the proper exports</li>
+<li>Compiling a test program for your native and target armhf platform</li>
+<li>Compiling the latest Raspberry Pi 2 kernel with VC4 support.</li>
+</ul>
+<p>The first thing we need to do is set up your Ubuntu to be able to compile software for a Raspberry Pi (1 and 2). You'll need at least Ubuntu Vivid (15.04) installed. From there, you'll need to install the following packages.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>sudo apt-get install binutils-arm-linux-gnueabihf \
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>cpp-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>cpp-arm-linux-gnueabihf \
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>g++-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>g++-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>g++-arm-linux-gnueabihf \
+<a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>gcc-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>gcc-4.9-arm-linux-gnueabihf-base \
+<a id="__codelineno-40-9" name="__codelineno-40-9" href="#__codelineno-40-9"></a>gcc-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-40-10" name="__codelineno-40-10" href="#__codelineno-40-10"></a>gcc-arm-linux-gnueabihf \
+<a id="__codelineno-40-11" name="__codelineno-40-11" href="#__codelineno-40-11"></a>pkg-config-arm-linux-gnueabihf \
+<a id="__codelineno-40-12" name="__codelineno-40-12" href="#__codelineno-40-12"></a>binutils-arm-linux-gnueabihf \
+<a id="__codelineno-40-13" name="__codelineno-40-13" href="#__codelineno-40-13"></a>cmake \
+<a id="__codelineno-40-14" name="__codelineno-40-14" href="#__codelineno-40-14"></a>cpp-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-40-15" name="__codelineno-40-15" href="#__codelineno-40-15"></a>cross-gcc-dev \
+<a id="__codelineno-40-16" name="__codelineno-40-16" href="#__codelineno-40-16"></a>dpkg-cross \
+<a id="__codelineno-40-17" name="__codelineno-40-17" href="#__codelineno-40-17"></a>g++-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-40-18" name="__codelineno-40-18" href="#__codelineno-40-18"></a>g++-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-40-19" name="__codelineno-40-19" href="#__codelineno-40-19"></a>gcc-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-40-20" name="__codelineno-40-20" href="#__codelineno-40-20"></a>gcc-4.9-arm-linux-gnueabihf-base \
+<a id="__codelineno-40-21" name="__codelineno-40-21" href="#__codelineno-40-21"></a>gcc-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-40-22" name="__codelineno-40-22" href="#__codelineno-40-22"></a>libasan1-armhf-cross \
+<a id="__codelineno-40-23" name="__codelineno-40-23" href="#__codelineno-40-23"></a>libatomic1-armhf-cross \
+<a id="__codelineno-40-24" name="__codelineno-40-24" href="#__codelineno-40-24"></a>libc6-armel-armhf-cross \
+<a id="__codelineno-40-25" name="__codelineno-40-25" href="#__codelineno-40-25"></a>libc6-armel-cross \
+<a id="__codelineno-40-26" name="__codelineno-40-26" href="#__codelineno-40-26"></a>libc6-armhf-cross \
+<a id="__codelineno-40-27" name="__codelineno-40-27" href="#__codelineno-40-27"></a>libc6-dev-armel-armhf-cross \
+<a id="__codelineno-40-28" name="__codelineno-40-28" href="#__codelineno-40-28"></a>libc6-dev-armel-cross \
+<a id="__codelineno-40-29" name="__codelineno-40-29" href="#__codelineno-40-29"></a>libc6-dev-armhf-cross \
+<a id="__codelineno-40-30" name="__codelineno-40-30" href="#__codelineno-40-30"></a>libdebian-dpkgcross-perl \
+<a id="__codelineno-40-31" name="__codelineno-40-31" href="#__codelineno-40-31"></a>libfile-homedir-perl \
+<a id="__codelineno-40-32" name="__codelineno-40-32" href="#__codelineno-40-32"></a>libgcc-4.9-dev-armhf-cross \
+<a id="__codelineno-40-33" name="__codelineno-40-33" href="#__codelineno-40-33"></a>libgcc1-armhf-cross \
+<a id="__codelineno-40-34" name="__codelineno-40-34" href="#__codelineno-40-34"></a>libgomp1-armhf-cross \
+<a id="__codelineno-40-35" name="__codelineno-40-35" href="#__codelineno-40-35"></a>libsfasan1-armhf-cross \
+<a id="__codelineno-40-36" name="__codelineno-40-36" href="#__codelineno-40-36"></a>libsfatomic1-armhf-cross \
+<a id="__codelineno-40-37" name="__codelineno-40-37" href="#__codelineno-40-37"></a>libsfgcc-4.9-dev-armhf-cross \
+<a id="__codelineno-40-38" name="__codelineno-40-38" href="#__codelineno-40-38"></a>libsfgcc1-armhf-cross \
+<a id="__codelineno-40-39" name="__codelineno-40-39" href="#__codelineno-40-39"></a>libsfgomp1-armhf-cross \
+<a id="__codelineno-40-40" name="__codelineno-40-40" href="#__codelineno-40-40"></a>libsfstdc++-4.9-dev-armhf-cross \
+<a id="__codelineno-40-41" name="__codelineno-40-41" href="#__codelineno-40-41"></a>libsfstdc++6-armhf-cross \
+<a id="__codelineno-40-42" name="__codelineno-40-42" href="#__codelineno-40-42"></a>libsfubsan0-armhf-cross \
+<a id="__codelineno-40-43" name="__codelineno-40-43" href="#__codelineno-40-43"></a>libstdc++-4.9-dev-armhf-cross \
+<a id="__codelineno-40-44" name="__codelineno-40-44" href="#__codelineno-40-44"></a>libstdc++6-armhf-cross \
+<a id="__codelineno-40-45" name="__codelineno-40-45" href="#__codelineno-40-45"></a>libubsan0-armhf-cross \
+<a id="__codelineno-40-46" name="__codelineno-40-46" href="#__codelineno-40-46"></a>linux-libc-dev-armhf-cross \
+<a id="__codelineno-40-47" name="__codelineno-40-47" href="#__codelineno-40-47"></a>pdebuild-cross \
+<a id="__codelineno-40-48" name="__codelineno-40-48" href="#__codelineno-40-48"></a>xapt \
+</code></pre></div>
+<p>The last package in the list is xapt, a wrapper around apt so that we can install packages specifically for other architectures like <code>armhf</code>. This includes things like *-dev packages with headers which will likely be required if you compile other software.
+Once those are installed, you need to tell the terminal you are targeting the <code>armhf</code> architecture. The CROSS_COMPILE flag will make your toolchain (gcc and friends) and your software aware that you are using a cross-compiler.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>export $(dpkg-architecture -aarmhf) 
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>export CROSS_COMPILE=arm-linux-gnueabihf-
+</code></pre></div>
+<p>You might get this warning:</p>
+<blockquote>
+<p>dpkg-architecture: warning: specified GNU system type arm-linux-gnueabihf does not match gcc system type x86_64-linux-gnu, try setting a correct CC environment variable</p>
+</blockquote>
+<p>This message is harmless and you can ignore it.
+Now to test this, create a file called <code>main.c</code> and copy this Hello World code into it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>#include &lt;stdio .h&gt;
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>#include &lt;stdlib .h&gt;
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>int main(int argc, char **argv)
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>{
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>    printf(&quot;Hello world\
+<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>&quot;);
+<a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a>}
+</code></pre></div>
+<p>You'll then compile it twice, first natively and second for your target platform.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>gcc -o hello_x86 main.c -static
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>arm-linux-gnueabihf-gcc -o hello_arm main.c -static
+</code></pre></div>
+<p>You can then use <code>file</code> to test the resulting output and it should match below:</p>
+<blockquote>
+<p>bcurtis@Redqueen:~/workspace/RPi$ file hello_x86
+hello_x86: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID=217c28644cf5be3ea4d24bea79c3da3bbdd9a2a9, not stripped
+bcurtis@Redqueen:~/workspace/RPi$ file hello_arm
+hello_arm: ELF 32-bit LSB executable, ARM, EABI5 version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID=3a5e42174d6b72ddf8b0265a9b76b3cea0668623, not stripped</p>
+</blockquote>
+<p>Notice how the last one is <code>ARM, EABI5 version 1</code>, this indicates that the binary is compiled for armhf, your Raspberry Pi. Next we are going to try to run them:</p>
+<blockquote>
+<p>bcurtis@Redqueen:~/workspace/RPi$ ./hello_x86
+Hello world
+bcurtis@Redqueen:~/workspace/RPi$ ./hello_arm
+Hello world</p>
+</blockquote>
+<p>You might asking you how the <code>hello_arm</code> binary can run on an x86 system. This is thanks to <code>-static</code> flag during compilation that shoves all the required libraries into your binary. The ones that you included are specifically crafted multi-libs that can used on both your host and your target platform (both x86 and arm). The resulting binaries are larger as a result. You can remove the <code>-static</code> flag and see that it will no longer run on your host machine, but much smaller and will run on your target RPi2.
+Aiming higher, we will try to get Linux kernel built using Eric Anholt's VC4 branch. Go ahead and checkout Eric's branch: <a href="https://github.com/anholt/linux/tree/vc4-kms-v3d-rpi2">https://github.com/anholt/linux/tree/vc4-kms-v3d-rpi2</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>git clone git@github.com:anholt/linux.git -b vc4-kms-v3d-rpi2 --depth 10
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>cd linux
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>export $(dpkg-architecture -aarmhf); export CROSS_COMPILE=arm-linux-gnueabihf-
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>make ARCH=arm -j`nproc` bcm2709_defconfig
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>make ARCH=arm -j`nproc`
+</code></pre></div>
+<p>It will spawn a number of processes in parallel, <code>nproc</code> will return back how many cores you have. After a few minutes of tea sipping, you'll have your newly minted <code>arch/arm/boot/zImage</code> that you can then copy over to your sdcard. Take a moment to make sure your setup.cfg is pointing to the right kernel, then give it a try. You should now have your RPi2 online with Linux 4.0!
+Please note, at the time of this post, while the option to compile in VC4 support is there, it currently isn't functioning. Eric is still busy getting RPi2 back to the same state as the original RPi. Cheers!</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-03-05 00:00:00+00:00">March 5, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../bash/" class="md-meta__link">Bash</a>, 
+              <a href="./" class="md-meta__link">Hardware</a>, 
+              <a href="../servers/" class="md-meta__link">Servers</a>, 
+              <a href="../networking/" class="md-meta__link">Networking</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              6 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="latency-simulation-over-long-fat-network"><a class="toclink" href="../../2013/03/05/latency-simulation-over-long-fat-network/">Latency simulation over long fat network</a></h2>
+<p><img align="left" alt="World Network" src="../../../assets/images/2013/02/WorldNetwork.png" width="200" /></p>
+<p>One of our clients asked us how we handle latency, and not just a few ms across racks but 2 and even 3 digit ms latency that indicates geographically separate locations across continents, not just a country. Not only that, the "pipes" involved are 10Gbps and we had to fill them. We have the theories and made models of how it would work. We perhaps might not be able to fill a 10Gbps fully with one stream, we could fill it with multiple streams but we had to validate this conclusion.
+The question now becomes, how do we test this. We've done our research and there are only a few commercial solutions available like the <a href="http://www.apposite-tech.com/products/netropy-10G2.html">Netropy 10G2</a> which is a 4 port, 2 lane hardware latency simulator for $30,000 new. Not only is that outside my budget, it is still limited to simulating 2 10Gbps pipes while we need at least 3 lanes (6 ports) and possibility to expand to more as necessary. We decided it was cheaper in terms of total cost to put the research into creating our own Latency Simulator.
+We studied what we could from google, specifically the work done by NASA on a "<a href="http://channel-emulator.grc.nasa.gov/">Channel Emulator</a>". They used <a href="http://www.lartc.org/">traffic control</a> (<a href="http://linux.die.net/man/8/tc">tc</a>) to handle delay on the egress of an interface. This means that if a packet travels through, it is delayed but the return packet is not and goes right through. Our setup means that we have one 10Gbps card with 2 ports. We then link the two interfaces with bridge control (brctl) to create a layer2 bridge. We then split the "round trip time" or RTT delay and apply that to each 10Gbps interface. All packets going to and returning from a network then have the full simulated RTT delay. This type of machine does not need much in the way of RAM as the buffers necessary are not large, 4GiB is sufficient. What is important is the CPU operating frequency, all other aspects of the CPU is not important except that there should be 1 core per 10Gbps interface. This is required because part of the network stack is being simulated with the bridge then processed. For a 3 lane setup, that is 6 ports so we need at least a 6 core CPU @ &gt;= 2.2 Ghz to handle the load.</p>
+<p><img alt="Latency Simulator" src="../../../assets/images/2013/02/LatencySimulator.png" width="300" /></p>
+<p>You may be asking why just 3 and not 4 latency lanes, this is because for us there will always be a 'local' data center and the other 3 connect to it in a star like network layout like in the above diagram. Since this is a 'flat' network in the same subnet, any ping from one of the data centers to another data center will go through the 'local' data center. In reality, these 'data center' switches are connected to the Latency Simulator which then connects to the local data center switch.
+Realistic latency from the 'local' data center in New York:
+<strong>California</strong>: 32ms
+<strong>England</strong>: 80ms
+<strong>Japan</strong>: 346ms
+Source: <a href="http://www.verizonenterprise.com/about/network/latency/">Verizon's latency table</a>
+Going from California to Ireland would involve first a hop through New York, so the compound delay would be 112ms. With that in mind you can then compute your <a href="http://en.wikipedia.org/wiki/Bandwidth-delay_product">bandwidth delay product</a> (BDP)
+Once the machine is up and running with whatever Linux distribution you like, make sure that tc and brctl are installed. Here are the scripts that can be used to bring the bridges up and down, and apply latencies and remove the latencies for the four geographically seperate datacenters.
+<strong>Files:</strong></p>
+<ul>
+<li><a href="../../../assets/images/2013/02/bridgeUp.sh">bridgeUp.sh</a></li>
+<li><a href="../../../assets/images/2013/02/bridgeDown.sh">bridgeDown.sh</a></li>
+<li><a href="../../../assets/images/2013/02/latencyOn.sh">latencyOn.sh</a></li>
+<li><a href="../../../assets/images/2013/02/latencyOff.sh">latencyOff.sh</a></li>
+</ul>
+<p>Once in place, we could ping from one side to the other and see the latency being applied. It is now time for baseline testing. First we turned off the latency and used iperf to test end to end that we can fill the 10Gbps pipes and that the Latency Simulator isn't the bottleneck. We could get around 9.50Gbps point to point. Then we turn on the latency and see the impact directly. The first thing we noticed is that when running iperf for the default 10s that the <a href="http://en.wikipedia.org/wiki/Slow-start">slow start</a> and initial <a href="http://en.wikipedia.org/wiki/TCP_window_scale_option">TCP window size</a> has an impact how much data we can send over the wire. Because of the slow start, if you want better performance in your stream then you need to test for longer than 10s. We could not fill a pipe with 120ms latency until after 25s of running iperf which time we had transferred something like 15GiB of data. So trying to send a 1GiB file will <strong>not</strong> fill pipe.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>RTT in ms   MiB/s default   MiB/s MAX
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>0       1162        1157
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>2       1053        1136
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>4       513     1076
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>8       248     1075
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>16      103     691
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>22      91      366
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>32      47      358
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>44      31      208
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>64      8.2     64
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>128     0.8     26
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>130     0.7     26
+</code></pre></div>
+<p>The MAX settings I used is the MAX TCP Window Size of 1GiB. If you try to go above that, you will find that Linux gets mad and some networking services will just not work. The sweet spot for us to set the initial window size to 8MiB which gave the algorithm enough time to shrink to either 4096 bytes or to grow in the other direction. Below are two 'key' tunables where rmem is the read buffer and wmem is the write buffer of the TCP buffer.
+<code>sysctl -w net.ipv4.tcp_rmem='4096 8388608 33554432'
+sysctl -w net.ipv4.tcp_wmem='4096 8388608 33554432'</code>
+However even with an initial 8MiB TCP Window Size, you'll never reach this potential because the Initial Congestion Window (initcwnd) is set to 10 as of 2011 per this <a href="http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=442b9635c569fef038d5367a7acd906db4677ae1">git diff</a>. This "slow start" is a congestion avoidance mechanism with exponential growth, a feature not a bug. Below is the 'slow start' in action when downloading a linux source tarball from kernel.org.
+<a href="../../../assets/images/2013/03/xplot.png"><img alt="slow star congestion control" src="../../../assets/images/2013/03/xplot.png" /></a> slow star congestion control
+What you are seeing is the an exponential growth of the congestion window that eventually grows to allow the TCP Window Size to kick in which then scales up linearly. You can however changed this per route which makes sense because congestion control works on a per network/host level.
+Examples of setting the initial congestion and receive windows:
+<code>ip route change default via x.x.x.x initcwnd 20 initrwnd 20 # update your default gateway
+ip route change dev eth0 192.168.1.0/24 proto kernel src 192.168.0.1 initcwnd 20 initrwnd 20 # if you want to apply it just to one network</code>
+Do not think of this as just updating the values and expecting fantastic results, because if you enter packet loss into the equation or real network congestion, then you are in for a painful experience with values that are too large. You'll not be as agile to respond to the pitfalls of the Internet, but if you are on a long fat network then adjusting these values can be a real boon for your throughput.
+You should now the tools necessary to implement your own "Long Fat Network" simulator and various things you can look at and adjust to get the most out of your network and applications.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-08-17 00:00:00+00:00">August 17, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Hardware</a>, 
+              <a href="../servers/" class="md-meta__link">Servers</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="the-case-of-the-non-booting-usb-thumb-drive-and-the-dell-r620"><a class="toclink" href="../../2012/08/17/the-case-of-the-non-booting-usb-thumb-drive-and-the-dell-r620/">The case of the non-booting USB thumb-drive and the Dell R620</a></h2>
+<p><img align="left" alt="dell_poweredge_r620" src="../../../assets/images/2012/06/dell_poweredge_r620.jpg" width="200" /></p>
+<p>Awhile back I wrote about '<a href="https://mindwerks.net/2012/06/doing-battle-with-a-dell-r620-and-ubuntu/" title="Doing battle with a Dell R620 and Ubuntu">Doing battle with a Dell R620 and Ubuntu</a>' where I touched on the fact that booting from USB thumb-drive was a painful problem. In short, the same USB thumb-drive that would work in the R610 would not work in the R620.</p>
+<p>It comes down BIOS support for USB and how it is handled. On the R610 there are 3 options: 'auto-detect', 'floppy emulation' and 'hard drive'. Auto was hit-or-miss, floppy would not work but 'hard drive' worked every time. On the R620 there are no options so I can only suppose that it supports 'floppy emulation' upon detection of a USB thumb-drive.</p>
+<p>To try to find the cause of this problem we tried using the 'standard' method of taking Precise 12.04 ISO from Ubuntu's website and using UNetbootin to create a USB thumb-drive that did boot on the R620. It turns out there was something wrong with our process that prevented it from booting. In comparing the partition table (with parted) of our USB thumb-drive and the Precise thumb-drive we noticed that the starting position of the first (and only) partition were different!</p>
+<p>Non-booting USB:</p>
+<blockquote>
+<p>Model: TDKMedia Trans-It Drive (scsi)
+Disk /dev/sdc: 3999MB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos</p>
+</blockquote>
+<p>Number Start End Size Type File system Flags
+1 1049kB 3998MB 3997MB primary ext4 boot</p>
+<p>Booting USB:</p>
+<blockquote>
+<p>Model: TDKMedia Trans-It Drive (scsi)
+Disk /dev/sdc: 3999MB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos</p>
+</blockquote>
+<p>Number Start End Size Type File system Flags
+1 32.9kB 3998MB 3997MB primary ext4 boot</p>
+<p>The choice to do 1MiB was to increase the lifespan of the thumb-drive by aligning the partition to the erase-block size of the thumb-drive. Doing this however renders 'floppy emulation' a non-option on both the Dell R620 and R610. Setting it to 32.9KiB also means that the drive is not properly aligned and you will get bad performance when writing, reading and health of the thumb-drive itself.</p>
+<p>In the interest of getting bootable thumbdrive we ended up doing this:
+<code>parted -a none /dev/sdb 'mkpart primary 0 -1 set 1 boot on'</code>
+What this does is create a primary partition at the start of the thumb-drive that goes all the way to the end. We ignore the alignment problems and set the partition to bootable. After that, it was easy enough to through our ext4 filesystem on top and syslinux/casper to get our custom installer working.</p>
+<p>The end result is that we now have a USB thumb-drive that boots on a R620 every time.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-08 00:00:00+00:00">June 8, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Hardware</a>, 
+              <a href="../servers/" class="md-meta__link">Servers</a>, 
+              <a href="../networking/" class="md-meta__link">Networking</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../ubuntu/" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="doing-battle-with-a-dell-r620-and-ubuntu"><a class="toclink" href="../../2012/06/08/doing-battle-with-a-dell-r620-and-ubuntu/">Doing battle with a Dell R620 and Ubuntu</a></h2>
+<p><img align="left" alt="dell_poweredge_r620" src="../../../assets/images/2012/06/dell_poweredge_r620.jpg" width="200" /></p>
+<p>We recently got sent a <a href="http://www.dell.com/us/enterprise/p/poweredge-r620/pd">Dell R620</a> to evaluate and while its technical specification is amazing there are a few things that need to be handled first.</p>
+<p>As far as Ubuntu and the Dell R620 go, Precise (12.04) is the only way to go here. Every release before Precise has issues with this hardware in one way or another. This is new hardware of after all.</p>
+<p>For our "use case" we downgraded the PERC H710P controller to a H310 controller so we can have direct access to the drives via pass-through. The H310 allows TRIM support for SSDs and SMART data via smartctl to be used without any problems. If you are interested in SMART information and PERC H700 series RAID controller, I posted about possible workarounds at <a href="http://en.community.dell.com/support-forums/disk-drives/f/3534/p/19431245/20029690.aspx">Dell's customer support site</a>.</p>
+<p>Let's begin:
+<strong>USB Booting</strong>: try as we might, we could not get any usb stick to boot on the R620. We've gone through the iDRAC to do virtual drives and looked at BIOS/UEFI methods. The usb stick is recognized, but the R620 just shows us a blank screen. The same stick works in the R610, VM and other machines. We have a ticket with Dell support and they have yet to resolve the problem. Booting over PXE or CD/DVD are our only options at this point.</p>
+<p><img align="left" alt="Bad MAC Addresses" src="../../../assets/images/2012/06/Date2012-06-06-time14-18-10-0969.jpg" width="200" /></p>
+<p><strong>Intel® Ethernet Server Adapter I350-T4</strong>: The igb kernel module for 2.6.35 and 2.6.38 will detect this card and it will get you connectivity, but it will behave funny. For example, 3 to 4 ports will have the same MAC address. You need download, compile, and install the latest sources for the <a href="http://sourceforge.net/projects/e1000/files/igb%20stable/">igb</a> from Intel before you get full functionality out of your I350-T4. The other option is to install Ubuntu Precise (12.04) as the 3.2 kernel has the updated drivers from Intel.</p>
+<p><strong>DRHD: handling fault status reg</strong>: at some point during booting of a freshly installed Ubuntu with the 2.6.35 kernel, we ran into this error that would effectively loop endlessly and cause the R620 to become unresponsive. We got this:</p>
+<p><img align="left" alt="DRHD INTR-REMAP problems" src="../../../assets/images/2012/06/Date2012-06-06-time16-57-03-0407.jpg" width="200" /></p>
+<blockquote>
+<p>DRHD: handling fault status reg 502
+INTR-REMAP: Request device[[42:00.1] fault index b0
+INTR-REMAP:[] Present field in the IRTE entry is clear</p>
+</blockquote>
+<p>and it would endlessly print that to the console. This apparently has something to do with the IO-MMU part of the kernel dealing with interrupt remapping. Whatever the problem was, it was fixed in the 2.6.38 kernel and caused no more problems.</p>
+<p><strong>Dell SSD</strong>: the SSDs are rebranded Samsung drives which do not support TRIM but are at least over provisioned. These drives have a problem with smartctl in that while there is SMART information, the drive itself doesn't (yet) exist in the drivedb.h file. You have to use the latest <a href="http://sourceforge.net/projects/smartmontools/files/smartmontools/">smartctl</a> version (5.42) to get anything usefull out of the drive. Older versions give you things like this:</p>
+<blockquote>
+<p>Log Sense failed, IE page</p>
+</blockquote>
+<p><strong>hdparm</strong>: and other tools like smartctl, lshw and others have issues when getting the required data from over the PERC H310, even if it is pass-through. You have to use the latest versions of each to even read the serial number off a HDD or SSD. <a href="http://sourceforge.net/projects/hdparm/files/hdparm/">Hdparm</a> versions &gt;= 9.37 work, otherwise you get this:</p>
+<blockquote>
+<p>root@node:~# hdparm -I /dev/sda</p>
+</blockquote>
+<p>/dev/sda:
+HDIO_DRIVE_CMD(identify) failed: Invalid exchange</p>
+<p>Once we got all the little inconveniences out of the way, we got down to benchmarking and performance testing. In comparison to the Dell R610's 2x Xeon(R) E5606, the R620's 2x Xeon(R) CPU E5-2643 has double the CPU performance in our testing. The obvious bottleneck here are the 2x 2port 10Gbps NICs in that even at a theoretical max of 40Gbps, for our purposes, we would be network bound. Thankfully there is another PCI-Express available, just in case.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-05-07 00:00:00+00:00">May 7, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Hardware</a>, 
+              <a href="../networking/" class="md-meta__link">Networking</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="switch-your-switch-with-switches"><a class="toclink" href="../../2012/05/07/switch-your-switch-with-switches/">Switch your switch with switches</a></h2>
+<p><img align="left" alt="Switch" src="../../../assets/images/2012/04/S4810_lg.jpg" width="200" /></p>
+<p>It is not unusual for me to find 10,000 Euro worth of networking equipment on my desk one day. It usually means that I have a long week of reading and testing ahead of me as I am the only person in the company, let alone building, that has ever seen or worked with these devices before. That means I am on my own aside from an Internet connection.</p>
+<p>While your mileage may very, I've had the joy (and horror) of testing these devices as 'drop in replacements' to the test environment that we are using. In some instances, things just worked out of the box, however there are a few devices that needed to be poked a few times to get things moving.</p>
+<p>Manufactures of routers and switches I have tested are:</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Arista_Networks">Arista</a>: We where able to test the Arista 7000 to validate it against our setup. Painless to install and without tweaking, handed Cisco's 3560-X it's hat. The latency (cut through as opposed to store and forward) helped and the overall throughput was great.</li>
+<li><a href="http://en.wikipedia.org/wiki/Brocade_Communications_Systems">Brocade</a>: SSE-X24S was a interesting 24 port 10Gbps switch, we where however unable to capture the same level of performance as the Arista.</li>
+<li><a href="http://en.wikipedia.org/wiki/Cisco">Cisco</a>: Tried and tested Cisco and their IOS that every switch tries to emulate. Everything we've tried to do with Cisco devices just worked. What is better is that they abandoned their serial and have gone USB. That cannot be said for the rest of the devices we've tested. We where limited to just 2 10G ports per 3560 switch, which is a shame.</li>
+<li><a href="http://en.wikipedia.org/wiki/Extreme_Networks">Extreme Networks</a>: After meeting with their technical sales people, they (twice) gave us the wrong equipment. We ask for 48 port 1Gbit (Cat5) with 4 10Gbps SFP+ switch and we received a 48 prt 1Gbit SFP which was later replaced with what we needed but with only 2 10Gbit SFP+. After a month of being unable to test their product(s) in our environment, we stopped dealing with Extreme Networks and their purple hardware.</li>
+<li><a href="http://en.wikipedia.org/wiki/Force10">Force10</a>: lived up to its expectations as a force to be reckoned with. Nothing worked at first as all the ports are shutdown by default. You must first use a usb-&gt;serial-&gt;rollover cable to get in, 'no shutdown' your ports and then tell them they are 'switchports', at which point they should start switching packets. Same level of performance as the Arista, meaning that we could saturate our 10Gbps nics.</li>
+<li>Interface Masters: the Niagara 2924-24TG switch was the latest to be tested and there isn't much information about them online. Their switches (24x 1Gbps and 24x 10Gbps) where comparable if slightly less performant than Force10. Their plus point was that they allow you to re-brand their products. We experienced hardware fault in their 10Gbps port, we used another port and continued testing. Their technical support was good but we never got to deep dive into why that one port had so many problems. They sent us a new switch to test and everything worked out.</li>
+</ul>
+<p>There is also an issue with SFP+ cable length and Intel cards:</p>
+<blockquote>
+<p>This issue has been witnessed at Intel's POC using 10Gbps Intel NIC and Arista DCS-7048T-A switch.</p>
+</blockquote>
+<p>The INTEL LAN department has analyzed that there is a known issue with short SFP+ cables, leading to a flicker in the network signal. Apparently there needs to be a minimum length of 3m.</p>
+<p>Replacing all 0.5 m cables with 3m cables solves the issue.</p>
+<p>For those looking for some numbers and benchmarks, I'm not allowed to post the results. Needless to say, they are not far off from my experiences that I've listed above. I'm now a fan of Force10 being reliable and performant. Arista ranks up there as well and Interface Masters (a total unknown) can be competitive and allow for re-branding which is interesting for some companies.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2011-02-28 00:00:00+00:00">February 28, 2011</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="./" class="md-meta__link">Hardware</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="infiniband-on-ubuntu-1010-meerkat"><a class="toclink" href="../../2011/02/28/infiniband-on-ubuntu-1010-meerkat/">Infiniband on Ubuntu 10.10 Meerkat</a></h2>
+<p><img align="left" alt="ts" src="../../../assets/images/2011/02/ts.jpg" width="250" /></p>
+<p>My current project that involves hundreds of mini-ITX Atom machines and we are testing the performance difference between Infiniband and Intel Gigabit NICs.</p>
+<p>In my testing the overhead of processing TCP is too high for a dual-core Atom. There is simply not enough processing power to handle the capabilities of the Intel NICs.</p>
+<p>A possible solution is to replace TCP by using SDP (RDMA and Zerocopy) over Infiniband. Infiniband equipment has come down significantly in price (<a href="http://www.memoryx.net/mhea28xtc.html">dual port 4xSDR card</a> for around $50), which makes it attractive to high-performance and cost-sensitive applications like mine.</p>
+<p>In theory we can get 4xSDR speeds (8 Gigabit/s), but the tested result is 1.5 Gigabit/s speeds because of TCP processing over Infiniband. This is almost exactly the performance we achieved using the Intel NICs. We then replaced TCP with SDP over Infiniband. With the switch we saw 4.2 Gigabits/s performance on one process. With two processes, one for each core of the Atom, we saw 7.8 Gigabit/s which is close to the theoretical limit of the Infiniband NIC.
+It is a significant improvement over the Intel NICs. The limiting factor is number of context switches and interrupts, as a single process would take up 100 % CPU usage. By running two processes we used both cores of the Atom and the full bandwidth of Infiniband.</p>
+<p>Unfortunately Ubuntu does not ship SDP in its kernel yet and there is no way to compile just SDP. Our only option was "to throw the baby out with the bath water" by compiling from scratch and overwriting Ubuntu's kernel modules.</p>
+<p><strong>Steps for a working Infiniband stack:</strong></p>
+<ol>
+<li>Download OpenFabricAlliance (OFA) source package:
+   <code>http://www.openfabrics.org/downloads/OFED/ofed-1.5.3/OFED-1.5.3.1.tgz</code></li>
+<li>Extract and look into srpm directory for the kernel package:
+   <code>rpm2cpio ofa_kernel-*.rpm | cpio -idmv</code></li>
+<li>Extract it and step into the directory:
+   <code>tar xf ofa_kernel-.tgz; cd ofa_kernel*</code></li>
+<li>Configure what modules to compile:
+   <code>./configure --with-sdp-mod --with-core-mod --with-ipoib-mod --with-ipoib-cm --with-iser-mod --with-mlx4_inf-mod --with-mlx4_en-mod --with-mlx4_core-mod --with-mlx4-mod --with-mthca-mod --with-addr_trans-mod --with-user_access-mod --with-user_mad-mod</code></li>
+<li>Compile and install modules:
+   <code>make; sudo make install</code></li>
+<li>add these to your /etc/modules file:
+   <code>ib_mthca
+   ib_ipoib
+   ib_sdp</code></li>
+<li>Unload all running ib_* modules then load them again or reboot. The reason for this is to make sure you no longer running Ubuntu's IB modules, which will cause symbol conflicts.</li>
+</ol>
+<p>Normal TCP usage:
+<code>iperf -s</code></p>
+<p>To allow seamless SDP usage:
+<code>LD_PRELOAD=libsdp.so iperf -s</code></p>
+<p>Please note that the shared library overrides the normal creation of sockets, but if SDP cannot be negotiated, then it defaults to TCP. That is why both ends need to LD_PRELOAD libsdp.so in order for SDP to be used.</p>
+<p>UPDATE: OFA changed their directory download directory structure and removed the stand-alone kernel source. You now have to download the whole package to get the kernel sources. Instructions are updated above.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2010-11-26 00:00:00+00:00">November 26, 2010</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Hardware</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="usb-console-cable-for-cisco-catalyst"><a class="toclink" href="../../2010/11/26/usb-console-cable-for-cisco-catalyst/">USB console cable for Cisco Catalyst</a></h2>
+<p><img align="left" alt="usb a mini b" src="../../../assets/images/2010/11/usb-a-mini-b.jpg" width="200" /></p>
+<p>Cisco’s new line of equipment now use a mini-USB cable for console configuration. There is no longer a need for a USB to serial adapter or a <a href="http://en.wikipedia.org/wiki/Rollover_cable">roll-over cable</a>.</p>
+<p>Connecting the USB cable on Linux should give you a new <a href="http://www.mjmwired.net/kernel/Documentation/usb/acm.txt">ACM</a> device that looks something like this: “/dev/ttyACM0″.</p>
+<p>To verify, you can also look through your dmesg or /var/log/messages :</p>
+<p><code>[265430.720082] usb 4-1: new full speed USB device using uhci_hcd and address 4
+[265430.914246] cdc_acm 4-1:1.0: This device cannot do calls on its own. It is not a modem.
+[265430.914305] cdc_acm 4-1:1.0: ttyACM0: USB ACM device</code></p>
+<p>The easiest way to connect to an USB capable Cisco device is to use screen, however you can still use minicom.</p>
+<p>Screen command:
+<code>screen 9600 /dev/ttyACM0</code></p>
+<p>The USB cable from Cisco is pin for pin the exact USB A to mini-B that you can find at your local electronics store.</p>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../debian/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Debian">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Debian
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../laptop/" class="md-footer__link md-footer__link--next" aria-label="Next: Laptop">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Laptop
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,11 @@
+--- wl_linux.orig	2012-06-18 12:44:36.396684755 +0200
++++ wl_linux.c	2012-06-18 12:45:01.936811391 +0200
+@@ -40,7 +40,7 @@
+ #include <linux/pci_ids.h>
+ #define WLC_MAXBSSCFG		1	
+ 
+-#include <asm/system.h>
++#include <asm/switch_to.h>
+ #include <asm/io.h>
+ #include <asm/irq.h>
+ #include <asm/pgtable.h>

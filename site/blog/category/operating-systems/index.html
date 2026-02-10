@@ -1,0 +1,2472 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Mindwerks Network">
+      
+      
+        <meta name="author" content="Bret Curtis">
+      
+      
+      
+        <link rel="prev" href="../networking/">
+      
+      
+        <link rel="next" href="../python/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Operating Systems - Mindwerks.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#operating-systems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mindwerks.net" class="md-header__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindwerks.net
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Operating Systems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mindwerks.net" class="md-nav__button md-logo" aria-label="Mindwerks.net" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mindwerks.net
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/psi29a/mindwerks.net" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    psi29a/mindwerks.net
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2010
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../cc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C/C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../debian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../laptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../raspberrypi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspberryPi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../servers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../thirdeye/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thirdeye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../txmongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TxMongo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wildmidi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WildMIDI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../worldsynth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Worldsynth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../online-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pro-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ip-calc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnet Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../conversions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measurement Conversions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../password-cracking-calculator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Cracking Calculator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mindwerks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mindwerks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bret-curtis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bret Curtis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="operating-systems">Operating Systems<a class="headerlink" href="#operating-systems" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2015-05-07 00:00:00+00:00">May 7, 2015</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../ubuntu/" class="md-meta__link">Ubuntu</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="./" class="md-meta__link">Operating Systems</a>, 
+              <a href="../raspberrypi/" class="md-meta__link">RaspberryPi</a>, 
+              <a href="../hardware/" class="md-meta__link">Hardware</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="cross-compiling-for-raspberry-pi-on-ubuntu"><a class="toclink" href="../../2015/05/07/cross-compiling-for-raspberry-pi-on-ubuntu/">Cross-compiling for Raspberry Pi on Ubuntu</a></h2>
+<p><img align="left" alt="RaspberryPi Logo" src="../../../assets/images/2014/08/RaspberryPi_Logo.png" width="200" /></p>
+<p>While the Raspberry Pi 2 has four cores to churn through code, it still takes longer to compile than on most workstations and laptops. If you are feeling adventurous, you can try cross-compiling which has become easier to set up and get working.
+Cross-compiling is when binaries created are for another target architecture than the one you are compiling on. This kind of set up is very typical when creating Android applications. The end result is that you can take the resulting binary and place on its target platform, and it will run there.
+There are even tricks to getting the cross-compiled binary to also run on your native system!
+In this guide, I'll walk you through:</p>
+<ul>
+<li>Setting up a cross-compile toolchain in Ubuntu (15.04 Vivid)</li>
+<li>Setting up the proper exports</li>
+<li>Compiling a test program for your native and target armhf platform</li>
+<li>Compiling the latest Raspberry Pi 2 kernel with VC4 support.</li>
+</ul>
+<p>The first thing we need to do is set up your Ubuntu to be able to compile software for a Raspberry Pi (1 and 2). You'll need at least Ubuntu Vivid (15.04) installed. From there, you'll need to install the following packages.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>sudo apt-get install binutils-arm-linux-gnueabihf \
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>cpp-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>cpp-arm-linux-gnueabihf \
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>g++-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>g++-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>g++-arm-linux-gnueabihf \
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>gcc-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>gcc-4.9-arm-linux-gnueabihf-base \
+<a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a>gcc-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a>gcc-arm-linux-gnueabihf \
+<a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a>pkg-config-arm-linux-gnueabihf \
+<a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a>binutils-arm-linux-gnueabihf \
+<a id="__codelineno-35-13" name="__codelineno-35-13" href="#__codelineno-35-13"></a>cmake \
+<a id="__codelineno-35-14" name="__codelineno-35-14" href="#__codelineno-35-14"></a>cpp-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-35-15" name="__codelineno-35-15" href="#__codelineno-35-15"></a>cross-gcc-dev \
+<a id="__codelineno-35-16" name="__codelineno-35-16" href="#__codelineno-35-16"></a>dpkg-cross \
+<a id="__codelineno-35-17" name="__codelineno-35-17" href="#__codelineno-35-17"></a>g++-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-35-18" name="__codelineno-35-18" href="#__codelineno-35-18"></a>g++-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-35-19" name="__codelineno-35-19" href="#__codelineno-35-19"></a>gcc-4.9-arm-linux-gnueabihf \
+<a id="__codelineno-35-20" name="__codelineno-35-20" href="#__codelineno-35-20"></a>gcc-4.9-arm-linux-gnueabihf-base \
+<a id="__codelineno-35-21" name="__codelineno-35-21" href="#__codelineno-35-21"></a>gcc-4.9-multilib-arm-linux-gnueabihf \
+<a id="__codelineno-35-22" name="__codelineno-35-22" href="#__codelineno-35-22"></a>libasan1-armhf-cross \
+<a id="__codelineno-35-23" name="__codelineno-35-23" href="#__codelineno-35-23"></a>libatomic1-armhf-cross \
+<a id="__codelineno-35-24" name="__codelineno-35-24" href="#__codelineno-35-24"></a>libc6-armel-armhf-cross \
+<a id="__codelineno-35-25" name="__codelineno-35-25" href="#__codelineno-35-25"></a>libc6-armel-cross \
+<a id="__codelineno-35-26" name="__codelineno-35-26" href="#__codelineno-35-26"></a>libc6-armhf-cross \
+<a id="__codelineno-35-27" name="__codelineno-35-27" href="#__codelineno-35-27"></a>libc6-dev-armel-armhf-cross \
+<a id="__codelineno-35-28" name="__codelineno-35-28" href="#__codelineno-35-28"></a>libc6-dev-armel-cross \
+<a id="__codelineno-35-29" name="__codelineno-35-29" href="#__codelineno-35-29"></a>libc6-dev-armhf-cross \
+<a id="__codelineno-35-30" name="__codelineno-35-30" href="#__codelineno-35-30"></a>libdebian-dpkgcross-perl \
+<a id="__codelineno-35-31" name="__codelineno-35-31" href="#__codelineno-35-31"></a>libfile-homedir-perl \
+<a id="__codelineno-35-32" name="__codelineno-35-32" href="#__codelineno-35-32"></a>libgcc-4.9-dev-armhf-cross \
+<a id="__codelineno-35-33" name="__codelineno-35-33" href="#__codelineno-35-33"></a>libgcc1-armhf-cross \
+<a id="__codelineno-35-34" name="__codelineno-35-34" href="#__codelineno-35-34"></a>libgomp1-armhf-cross \
+<a id="__codelineno-35-35" name="__codelineno-35-35" href="#__codelineno-35-35"></a>libsfasan1-armhf-cross \
+<a id="__codelineno-35-36" name="__codelineno-35-36" href="#__codelineno-35-36"></a>libsfatomic1-armhf-cross \
+<a id="__codelineno-35-37" name="__codelineno-35-37" href="#__codelineno-35-37"></a>libsfgcc-4.9-dev-armhf-cross \
+<a id="__codelineno-35-38" name="__codelineno-35-38" href="#__codelineno-35-38"></a>libsfgcc1-armhf-cross \
+<a id="__codelineno-35-39" name="__codelineno-35-39" href="#__codelineno-35-39"></a>libsfgomp1-armhf-cross \
+<a id="__codelineno-35-40" name="__codelineno-35-40" href="#__codelineno-35-40"></a>libsfstdc++-4.9-dev-armhf-cross \
+<a id="__codelineno-35-41" name="__codelineno-35-41" href="#__codelineno-35-41"></a>libsfstdc++6-armhf-cross \
+<a id="__codelineno-35-42" name="__codelineno-35-42" href="#__codelineno-35-42"></a>libsfubsan0-armhf-cross \
+<a id="__codelineno-35-43" name="__codelineno-35-43" href="#__codelineno-35-43"></a>libstdc++-4.9-dev-armhf-cross \
+<a id="__codelineno-35-44" name="__codelineno-35-44" href="#__codelineno-35-44"></a>libstdc++6-armhf-cross \
+<a id="__codelineno-35-45" name="__codelineno-35-45" href="#__codelineno-35-45"></a>libubsan0-armhf-cross \
+<a id="__codelineno-35-46" name="__codelineno-35-46" href="#__codelineno-35-46"></a>linux-libc-dev-armhf-cross \
+<a id="__codelineno-35-47" name="__codelineno-35-47" href="#__codelineno-35-47"></a>pdebuild-cross \
+<a id="__codelineno-35-48" name="__codelineno-35-48" href="#__codelineno-35-48"></a>xapt \
+</code></pre></div>
+<p>The last package in the list is xapt, a wrapper around apt so that we can install packages specifically for other architectures like <code>armhf</code>. This includes things like *-dev packages with headers which will likely be required if you compile other software.
+Once those are installed, you need to tell the terminal you are targeting the <code>armhf</code> architecture. The CROSS_COMPILE flag will make your toolchain (gcc and friends) and your software aware that you are using a cross-compiler.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>export $(dpkg-architecture -aarmhf) 
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>export CROSS_COMPILE=arm-linux-gnueabihf-
+</code></pre></div>
+<p>You might get this warning:</p>
+<blockquote>
+<p>dpkg-architecture: warning: specified GNU system type arm-linux-gnueabihf does not match gcc system type x86_64-linux-gnu, try setting a correct CC environment variable</p>
+</blockquote>
+<p>This message is harmless and you can ignore it.
+Now to test this, create a file called <code>main.c</code> and copy this Hello World code into it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>#include &lt;stdio .h&gt;
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>#include &lt;stdlib .h&gt;
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>int main(int argc, char **argv)
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>{
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>    printf(&quot;Hello world\
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>&quot;);
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a>}
+</code></pre></div>
+<p>You'll then compile it twice, first natively and second for your target platform.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>gcc -o hello_x86 main.c -static
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>arm-linux-gnueabihf-gcc -o hello_arm main.c -static
+</code></pre></div>
+<p>You can then use <code>file</code> to test the resulting output and it should match below:</p>
+<blockquote>
+<p>bcurtis@Redqueen:~/workspace/RPi$ file hello_x86
+hello_x86: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID=217c28644cf5be3ea4d24bea79c3da3bbdd9a2a9, not stripped
+bcurtis@Redqueen:~/workspace/RPi$ file hello_arm
+hello_arm: ELF 32-bit LSB executable, ARM, EABI5 version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID=3a5e42174d6b72ddf8b0265a9b76b3cea0668623, not stripped</p>
+</blockquote>
+<p>Notice how the last one is <code>ARM, EABI5 version 1</code>, this indicates that the binary is compiled for armhf, your Raspberry Pi. Next we are going to try to run them:</p>
+<blockquote>
+<p>bcurtis@Redqueen:~/workspace/RPi$ ./hello_x86
+Hello world
+bcurtis@Redqueen:~/workspace/RPi$ ./hello_arm
+Hello world</p>
+</blockquote>
+<p>You might asking you how the <code>hello_arm</code> binary can run on an x86 system. This is thanks to <code>-static</code> flag during compilation that shoves all the required libraries into your binary. The ones that you included are specifically crafted multi-libs that can used on both your host and your target platform (both x86 and arm). The resulting binaries are larger as a result. You can remove the <code>-static</code> flag and see that it will no longer run on your host machine, but much smaller and will run on your target RPi2.
+Aiming higher, we will try to get Linux kernel built using Eric Anholt's VC4 branch. Go ahead and checkout Eric's branch: <a href="https://github.com/anholt/linux/tree/vc4-kms-v3d-rpi2">https://github.com/anholt/linux/tree/vc4-kms-v3d-rpi2</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>git clone git@github.com:anholt/linux.git -b vc4-kms-v3d-rpi2 --depth 10
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>cd linux
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>export $(dpkg-architecture -aarmhf); export CROSS_COMPILE=arm-linux-gnueabihf-
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>make ARCH=arm -j`nproc` bcm2709_defconfig
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>make ARCH=arm -j`nproc`
+</code></pre></div>
+<p>It will spawn a number of processes in parallel, <code>nproc</code> will return back how many cores you have. After a few minutes of tea sipping, you'll have your newly minted <code>arch/arm/boot/zImage</code> that you can then copy over to your sdcard. Take a moment to make sure your setup.cfg is pointing to the right kernel, then give it a try. You should now have your RPi2 online with Linux 4.0!
+Please note, at the time of this post, while the option to compile in VC4 support is there, it currently isn't functioning. Eric is still busy getting RPi2 back to the same state as the original RPi. Cheers!</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2013-02-04 00:00:00+00:00">February 4, 2013</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="./" class="md-meta__link">Operating Systems</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../ubuntu/" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="wireless-bcm4312-with-the-36-37-and-38-kernel"><a class="toclink" href="../../2013/02/04/wireless-bcm4312-with-the-36-37-and-38-kernel/">Wireless BCM4312 with the 3.6, 3.7 and 3.8 kernel</a></h2>
+<p><img align="left" alt="Broadcom Chipset BCM4312" src="../../../assets/images/2011/03/BCM4312s.jpg" width="200" /></p>
+<p>As a follow up to , I've also tested the Broadcom hybrid driver with the 3.6, 3.7 and the soon to be released 3.8 kernels with success. There have been no major changes that should effect the operation of this driver.</p>
+<p>To verify that everything is working as expected on the software side, when modprobe or insmod wl, you should get a similar dmesg output:</p>
+<blockquote>
+<p>[ 307.560347] lib80211: common routines for IEEE802.11 drivers
+[ 307.560353] lib80211_crypt: registered algorithm 'NULL'
+[ 307.564524] wl: module license 'unspecified' taints kernel.
+[ 307.564529] Disabling lock debugging due to kernel taint</p>
+</blockquote>
+<p>The only real issue at this point is this:</p>
+<blockquote>
+<p>WARNING: modpost: missing MODULE_LICENSE() in /home/bcurtis/workspace/wl/wl.o
+see include/linux/module.h for more information
+WARNING: modpost: Found 1 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+CC /home/bcurtis/workspace/wl/wl.mod.o
+LD /home/bcurtis/workspace/wl/wl.ko</p>
+</blockquote>
+<p>While these aren't errors, they are problems to be addressed upstream by Broadcom if they wish to see their driver to be used in the future. They will also need to incorporate my patch sets from my previous post. They haven't updated their driver in about two years now.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2012-06-18 00:00:00+00:00">June 18, 2012</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../laptop/" class="md-meta__link">Laptop</a>, 
+              <a href="./" class="md-meta__link">Operating Systems</a>, 
+              <a href="../linux/" class="md-meta__link">Linux</a>, 
+              <a href="../ubuntu/" class="md-meta__link">Ubuntu</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="wireless-bcm4312-with-the-34-and-35-kernel"><a class="toclink" href="../../2012/06/18/wireless-bcm4312-with-the-34-and-35-kernel/">Wireless BCM4312 with the 3.4 and 3.5 kernel</a></h2>
+<p><img align="left" alt="Broadcom Chipset BCM4312" src="../../../assets/images/2011/03/BCM4312s.jpg" width="200" /></p>
+<p>The hybrid driver from Broadcom is still a bit behind in terms of support for the latest kernels but there are workarounds. This particular issue also effects other kernel modules such as the out of tree Nvidia and ATI blobs that require the <strong><em>asm/system.h</em></strong> file in their includes.</p>
+<p>I've had success with replacing it with <strong><em>asm/switch_to.h</em></strong> which seems to have fixed things for now. The cause for this can be found on the <a href="https://lkml.org/lkml/2012/3/29/360">LKML</a>.</p>
+<p>Chipsets supported by "Broadcom’s IEEE 802.11a/b/g/n hybrid Linux® device driver" are: BCM4311, BCM4312, BCM4313, BCM4321, BCM4322, BCM43224, and BCM43225, BCM43227 and BCM43228.</p>
+<p><strong>Errors:</strong></p>
+<blockquote>
+<p>bcurtis@ronin:~/workspace/wl$ make
+KBUILD_NOPEDANTIC=1 make -C /lib/modules/<code>uname -r</code>/build M=<code>pwd</code>
+make[1]: Entering directory <code>/usr/src/linux-headers-3.5.0-030500rc3-generic'
+Wireless Extension is the only possible API for this kernel version
+Using Wireless Extension API
+LD /home/bcurtis/workspace/wl/built-in.o
+CC /home/bcurtis/workspace/wl/src/shared/linux\_osl.o
+CC /home/bcurtis/workspace/wl/src/wl/sys/wl\_linux.o
+/home/bcurtis/workspace/wl/src/wl/sys/wl\_linux.c:43:24: fatal error: asm/system.h: No such file or directory
+compilation terminated.
+make[2]: \*\*\* Error 1
+make[1]: \*\*\* Error 2
+make[1]: Leaving directory</code>/usr/src/linux-headers-3.5.0-030500rc3-generic'
+make: *** Error 2</p>
+</blockquote>
+<p><strong>The rundown:</strong></p>
+<ol>
+<li>Download the 32 or 64-bit version:
+   <code>http://www.broadcom.com/support/802.11/linux_sta.php</code></li>
+<li>Download my patches: <a href="../../../assets/images/2011/11/bc_wl_abiupdate.patch">bc_wl_abiupdate.patch</a> and <a href="../../../assets/images/2012/06/switch_to.patch">switch_to.patch</a></li>
+<li>Extract the sources:
+   <code>cd ~/Downloads; mkdir -p wl; cd wl; tar xf ../hybrid-portsrc*.tar.gz</code></li>
+<li>Patch and compile the sources:
+   <code>patch -p0 src/wl/sys/wl_linux.c &lt; ~/Downloads/switch_to.patch; patch -p0 src/wl/sys/wl_linux.c &lt; ~/Downloads/bc_wl_abiupdate.patch;
+   make; sudo make install; sudo depmod; sudo modprobe wl</code></li>
+</ol>
+<p>Give Ubuntu a few seconds after loading the "wl" kernel module, then eventually the Network Manager will start looking for wireless networks.</p>
+<p>TL;DR: These patches are required for a working wl kernel module for the 3.4 and 3.5 kernel series.</p>
+<p><strong>Update:</strong> Also verified to work with Linux 3.6 series.</p>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../networking/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Networking">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Networking
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../python/" class="md-footer__link md-footer__link--next" aria-label="Next: Python">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Python
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

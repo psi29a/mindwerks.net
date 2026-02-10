@@ -1,9 +1,13 @@
 site_name: Mindwerks.net
+site_description: The Mindwerks Network
+site_author: Bret Curtis
 dev_addr: 127.0.0.1:8080
 repo_url: https://github.com/psi29a/mindwerks.net
 repo_name: psi29a/mindwerks.net
+
 theme:
     name: material
+    favicon: assets/images/favicon.ico
     palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -28,7 +32,50 @@ theme:
     features:
         - navigation.sections
         - navigation.footer
+        - navigation.indexes
         - search.suggest
         - search.highlight
         - content.code.copy
         - content.code.annotate
+
+plugins:
+    - search
+    - blog:
+        blog_dir: blog
+        post_date_format: long
+        archive: true
+        categories: true
+
+nav:
+    - Home: index.md
+    - Blog:
+        - blog/index.md
+    - Projects:
+        - Exita: exita.md
+        - Thirdeye: thirdeye.md
+        - TxMongo: txmongo.md
+        - WildMIDI: wildmidi.md
+        - Worldsynth: worldsynth.md
+    - Tools:
+        - online-tools.md
+        - IT Tips: pro-tips.md
+        - Subnet Calculator: ip-calc.md
+        - Measurement Conversions: conversions.md
+        - Password Cracking Calculator: password-cracking-calculator.md
+    - About:
+        - Mindwerks: mindwerks.md
+        - Bret Curtis: bret-curtis.md
+        - Contact: contact.md
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - attr_list
+    - md_in_html
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
+    - admonition
+    - pymdownx.details
