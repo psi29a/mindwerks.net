@@ -112,6 +112,12 @@ plugins:
             '2016/07/wildmidi-0-4-is-here-with-support-for-other-formats.md': 'https://mindwerks.net/blog/2016/07/08/wildmidi-04-is-here-with-support-for-other-formats/'
             '2017/06/using-qemu-and-chroot-to-replace-your-cross-compile-toolchain.md': 'https://mindwerks.net/blog/2017/06/21/using-qemu-and-chroot-to-replace-your-cross-compile-toolchain/'
             '2017/07/running-webex-on-ubuntu.md': 'https://mindwerks.net/blog/2017/07/17/running-webex-on-ubuntu/'
+            # Project page aliases
+            'projects/exita.md': 'exita.md'
+            'projects/thirdeye.md': 'thirdeye.md'
+            'projects/txmongo.md': 'txmongo.md'
+            'projects/wildmidi.md': 'wildmidi.md'
+            'projects/worldsynth.md': 'worldsynth.md'
 
 nav:
     - Home: index.md
