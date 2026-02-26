@@ -1,6 +1,6 @@
 # Exita: Export Image to Ascii
 
-![running exita](assets/images/2011/04/exita.jpg){ align=left width="200" }
+![running exita](../assets/images/2011/04/exita.jpg){ align=left width="200" }
 
 *Exita* is a data export tool that functions like an [OCR](http://en.wikipedia.org/wiki/Optical_character_recognition) application but for a specific character set.
 

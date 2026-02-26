@@ -1,6 +1,6 @@
 # WildMIDI: A Software Synthesizer
 
-![WildMIDI](assets/images/2014/01/WildMIDI.png){ align=left width="200" }
+![WildMIDI](../assets/images/2014/01/WildMIDI.png){ align=left width="200" }
 
 WildMIDI is a simple software midi player which has a core software synthesizer (softsynth) library that can be use with other applications.
 

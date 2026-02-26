@@ -1,6 +1,6 @@
 # Thirdeye: An AESOP Replacement Engine
 
-![ThirdEye_003](assets/images/2013/10/ThirdEye_003.png){ align=left width="200" }
+![ThirdEye_003](../assets/images/2013/10/ThirdEye_003.png){ align=left width="200" }
 
 **Thirdeye** is an attempt at recreating the AESOP (An Extensible State-Object Processor) engine which was most popularly used by the RPGs "Eye of the Beholder: 3" and "Dungeon Hack" of the early 90s. John Miles created AESOP as a high level scripting language and the supporting 16-bit real-mode interpreter and state engine in the early 90s but due to the hardware requirements at the time, it ran poorly. You could be waiting up to 10 seconds for the next update. It seemed like a nice fit to try to try to implement a working binary replacement for AESOP and make it open-source in the process.
 

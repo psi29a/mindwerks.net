@@ -1,6 +1,6 @@
 # Worldsynth: A World Synthesizer
 
-![Rivers](assets/images/2013/02/Rivers.png){ align=left width="200" }
+![Rivers](../assets/images/2013/02/Rivers.png){ align=left width="200" }
 
 *WorldSynth* is a program that uses [procedural](http://en.wikipedia.org/wiki/Procedural_generation "Procedural Generation") techniques to simulate real world phenomenon and render them as usable maps which synthesize a living and breathing world.
 

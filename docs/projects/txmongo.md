@@ -1,6 +1,6 @@
 # TxMongo
 
-![2000px-Twisted_Logo_(software).svg](assets/images/2014/12/2000px-Twisted_Logo_software.svg_.png){ align=left width="200" }
+![2000px-Twisted_Logo_(software).svg](../assets/images/2014/12/2000px-Twisted_Logo_software.svg_.png){ align=left width="200" }
 
 TxMongo is a MongoDB client for Python Twisted that implements the wire protocol on non-blocking sockets. The API derives from the original PyMongo.
 

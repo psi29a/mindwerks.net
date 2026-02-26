@@ -112,23 +112,23 @@ plugins:
             '2016/07/wildmidi-0-4-is-here-with-support-for-other-formats.md': 'https://mindwerks.net/blog/2016/07/08/wildmidi-04-is-here-with-support-for-other-formats/'
             '2017/06/using-qemu-and-chroot-to-replace-your-cross-compile-toolchain.md': 'https://mindwerks.net/blog/2017/06/21/using-qemu-and-chroot-to-replace-your-cross-compile-toolchain/'
             '2017/07/running-webex-on-ubuntu.md': 'https://mindwerks.net/blog/2017/07/17/running-webex-on-ubuntu/'
-            # Project page aliases
-            'projects/exita.md': 'exita.md'
-            'projects/thirdeye.md': 'thirdeye.md'
-            'projects/txmongo.md': 'txmongo.md'
-            'projects/wildmidi.md': 'wildmidi.md'
-            'projects/worldsynth.md': 'worldsynth.md'
+            # Old project page URLs -> new locations
+            'exita.md': 'projects/exita.md'
+            'thirdeye.md': 'projects/thirdeye.md'
+            'txmongo.md': 'projects/txmongo.md'
+            'wildmidi.md': 'projects/wildmidi.md'
+            'worldsynth.md': 'projects/worldsynth.md'
 
 nav:
     - Home: index.md
     - Blog:
         - blog/index.md
     - Projects:
-        - Exita: exita.md
-        - Thirdeye: thirdeye.md
-        - TxMongo: txmongo.md
-        - WildMIDI: wildmidi.md
-        - Worldsynth: worldsynth.md
+        - Exita: projects/exita.md
+        - Thirdeye: projects/thirdeye.md
+        - TxMongo: projects/txmongo.md
+        - WildMIDI: projects/wildmidi.md
+        - Worldsynth: projects/worldsynth.md
     - Tools:
         - online-tools.md
         - IT Tips: pro-tips.md
