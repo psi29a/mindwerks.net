@@ -1,4 +1,5 @@
 site_name: Mindwerks.net
+site_url: https://mindwerks.net/
 site_description: The Mindwerks Network
 site_author: Bret Curtis
 dev_addr: 127.0.0.1:8080
@@ -45,6 +46,72 @@ plugins:
         post_date_format: long
         archive: true
         categories: true
+    - redirects:
+        redirect_maps:
+            '2006/08/ssh-tidbits.md': 'https://mindwerks.net/blog/2006/08/12/ssh-with-public-key-authentication/'
+            '2007/06/usb-not-showing-up-in-vmware.md': 'https://mindwerks.net/blog/2007/06/01/usb-not-showing-up-in-vmware/'
+            '2007/08/apache2-with-ssl-on-debian.md': 'https://mindwerks.net/blog/2007/08/02/apache2-with-ssl-on-debian/'
+            '2008/02/debian-40-on-dell-latitude-d505.md': 'https://mindwerks.net/blog/2008/02/27/debian-40-on-dell-latitude-d505/'
+            '2009/09/batch-file-and-directory-rename.md': 'https://mindwerks.net/blog/2009/09/30/batch-file-and-directory-rename/'
+            '2010/02/ssh-multiplexing-a-faster-way-to-ssh.md': 'https://mindwerks.net/blog/2010/02/05/ssh-multiplexing-a-faster-way-to-ssh/'
+            '2010/03/ubuntu-karmic-9-10-on-dell-studio-xps-1640.md': 'https://mindwerks.net/blog/2010/03/31/ubuntu-karmic-910-on-dell-studio-xps-1640/'
+            '2010/03/vnes-for-j2me-on-your-mobile.md': 'https://mindwerks.net/blog/2010/03/29/vnes-for-j2me-on-your-mobile/'
+            '2010/04/upgrading-the-cpu-in-a-dell-studio-xps-1640.md': 'https://mindwerks.net/blog/2010/04/09/upgrading-the-cpu-in-a-dell-studio-xps-1640/'
+            '2010/08/make-your-external-screen-your-primary-screen.md': 'https://mindwerks.net/blog/2010/08/18/make-your-external-screen-your-primary-screen/'
+            '2010/09/ubuntu-10-10-maverick-meerkat-on-dell-studio-xps-1640.md': 'https://mindwerks.net/blog/2010/09/23/ubuntu-1010-maverick-meerkat-on-dell-studio-xps-1640/'
+            '2010/09/xdd-is-not-extreme-dd.md': 'https://mindwerks.net/blog/2010/09/13/xdd-is-not-extreme-dd/'
+            '2010/09/xorg-1-9-versus-fglrx.md': 'https://mindwerks.net/blog/2010/09/30/xorg-19-versus-fglrx/'
+            '2010/10/threading-thread-vs-multiprocessing-process.md': 'https://mindwerks.net/blog/2010/10/07/threadingthread-vs-multiprocessingprocess/'
+            '2010/11/ubuntu-10-10-maverick-with-2-6-37-kernel.md': 'https://mindwerks.net/blog/2010/11/24/ubuntu-1010-maverick-with-2637-kernel/'
+            '2010/11/usb-console-cable-for-catalyst.md': 'https://mindwerks.net/blog/2010/11/26/usb-console-cable-for-cisco-catalyst/'
+            '2011/02/infiniband-on-ubuntu-10-10-meerkat.md': 'https://mindwerks.net/blog/2011/02/28/infiniband-on-ubuntu-1010-meerkat/'
+            '2011/02/ubuntu-10-10-maverick-with-2-6-38-kernel-and-fglrx.md': 'https://mindwerks.net/blog/2011/02/23/ubuntu-1010-maverick-with-2638-kernel-and-fglrx-8812/'
+            '2011/03/broadcom-ubuntu.md': 'https://mindwerks.net/blog/2011/03/28/wireless-bcm4312-on-ubuntu-with-2638-and-2639-kernel/'
+            '2011/03/ubuntu-2-6-39-kernel-and-fglrx-8-831.md': 'https://mindwerks.net/blog/2011/03/30/ubuntu-2639-kernel-and-fglrx-8831/'
+            '2011/04/ubuntu-11-04-natty-with-fglrx-and-2-6-39.md': 'https://mindwerks.net/blog/2011/04/28/ubuntu-1104-natty-with-fglrx-and-2639/'
+            '2011/06/wireless-bcm4312-3-0-kernel.md': 'https://mindwerks.net/blog/2011/06/01/wireless-bcm4312-30-kernel/'
+            '2011/08/kabouter-a-gnome-terminal-based-multi-ssh-connector.md': 'https://mindwerks.net/blog/2011/08/11/kabouter-a-gnome-terminal-based-multi-ssh-connector/'
+            '2011/09/build-environments-using-chroot.md': 'https://mindwerks.net/blog/2011/09/30/build-environments-using-chroot/'
+            '2011/09/skype-on-ubuntu-11-10-oneiric-ocelot.md': 'https://mindwerks.net/blog/2011/09/01/skype-on-ubuntu-1110-oneiric-ocelot/'
+            '2011/11/asymmetric-networking-using-linux.md': 'https://mindwerks.net/blog/2011/11/17/asymmetric-networking-using-linux/'
+            '2011/11/better-password-security-through-length.md': 'https://mindwerks.net/blog/2011/11/24/better-password-security-through-length/'
+            '2011/11/wireless-bcm4312-3-2-kernel.md': 'https://mindwerks.net/blog/2011/11/14/wireless-bcm4312-32-kernel/'
+            '2011/12/a-poor-mans-https-using-ssh-to-secure-web-traffic.md': 'https://mindwerks.net/blog/2011/12/15/a-poor-mans-https-using-ssh-to-secure-web-traffic/'
+            '2011/12/ssh-as-a-socks-proxy.md': 'https://mindwerks.net/blog/2011/12/08/ssh-as-a-socks-proxy/'
+            '2012/04/ubuntu-12-04-precise-and-amd-catalyst-12-4.md': 'https://mindwerks.net/blog/2012/04/27/ubuntu-1204-precise-and-amd-catalyst-124/'
+            '2012/05/switchornot.md': 'https://mindwerks.net/blog/2012/05/07/switch-your-switch-with-switches/'
+            '2012/06/doing-battle-with-a-dell-r620-and-ubuntu.md': 'https://mindwerks.net/blog/2012/06/08/doing-battle-with-a-dell-r620-and-ubuntu/'
+            '2012/06/finding-and-making-a-network-subnet-calculator.md': 'https://mindwerks.net/blog/2012/06/04/finding-and-making-a-network-subnet-calculator/'
+            '2012/06/skype-4-0-on-ubuntu-precise-12-04-64-bit-2.md': 'https://mindwerks.net/blog/2012/06/18/skype-40-on-ubuntu-precise-1204-64-bit/'
+            '2012/06/wireless-bcm4312-with-the-3-4-and-3-5-kernel.md': 'https://mindwerks.net/blog/2012/06/18/wireless-bcm4312-with-the-34-and-35-kernel/'
+            '2012/08/dell-dset-on-ubuntu.md': 'https://mindwerks.net/blog/2012/08/16/dell-dset-on-ubuntu-1004-and-1204/'
+            '2012/08/the-case-of-the-non-booting-usb-thumb-drive-and-the-dell-r620.md': 'https://mindwerks.net/blog/2012/08/17/the-case-of-the-non-booting-usb-thumb-drive-and-the-dell-r620/'
+            '2012/08/upgrade-samsung-galaxy-gio.md': 'https://mindwerks.net/blog/2012/08/09/upgrade-samsung-galaxy-gio-from-22x-froyo-to-23x-gingerbread/'
+            '2013/01/properly-ripping-dvds-and-adding-subtitles-in-ubuntu.md': 'https://mindwerks.net/blog/2013/01/30/properly-ripping-dvds-and-adding-subtitles-in-ubuntu/'
+            '2013/01/upgrade-samsung-galaxy-gio-to-cyanogenmod-7-2.md': 'https://mindwerks.net/blog/2013/01/17/upgrade-samsung-galaxy-gio-to-cyanogenmod-72/'
+            '2013/02/introducing-worldsynth-for-your-world-building-needs.md': 'https://mindwerks.net/blog/2013/02/11/introducing-worldsynth-for-your-world-generation-and-building-needs/'
+            '2013/02/wireless-bcm4312-with-the-3-6-3-7-and-3-8-kernel.md': 'https://mindwerks.net/blog/2013/02/04/wireless-bcm4312-with-the-36-37-and-38-kernel/'
+            '2013/03/latency-simulation-over-long-fat-network.md': 'https://mindwerks.net/blog/2013/03/05/latency-simulation-over-long-fat-network/'
+            '2013/03/worldsynth-0-10-0-released.md': 'https://mindwerks.net/blog/2013/03/07/worldsynth-0100-released/'
+            '2013/05/upgrade-samsung-galaxy-gio-to-cyanogenmod-10-1.md': 'https://mindwerks.net/blog/2013/05/06/upgrade-samsung-galaxy-gio-to-cyanogenmod-101/'
+            '2013/06/worldsynth-0-11-0-released.md': 'https://mindwerks.net/blog/2013/06/23/worldsynth-0110-released/'
+            '2013/08/transcoding-for-mobile.md': 'https://mindwerks.net/blog/2013/08/13/transcoding-for-mobiles/'
+            '2013/10/debian-package-maintenance.md': 'https://mindwerks.net/blog/2013/10/23/debian-package-maintenance/'
+            '2013/10/wireless-bcm4312-with-the-3-10-and-3-11-kernels.md': 'https://mindwerks.net/blog/2013/10/03/wireless-bcm4312-with-the-310-311-312-and-313-kernels/'
+            '2014/01/introducing-wildmidi-version-0-3-2.md': 'https://mindwerks.net/blog/2014/01/26/introducing-wildmidi-version-032/'
+            '2014/03/wildmidi-0-3-5.md': 'https://mindwerks.net/blog/2014/03/20/wildmidi-035-has-been-released/'
+            '2014/06/wildmidi-0-3-7-has-been-released.md': 'https://mindwerks.net/blog/2014/06/13/wildmidi-037-has-been-released/'
+            '2014/09/development-on-the-raspberry-pi.md': 'https://mindwerks.net/blog/2014/09/26/development-on-the-raspberry-pi/'
+            '2014/09/videocoreiv-glamor-on-your-raspberry-pi.md': 'https://mindwerks.net/blog/2014/09/29/videocoreiv-glamor-on-your-raspberry-pi/'
+            '2014/12/enterprise-all-your-twisted-applications-with-ldaptor.md': 'https://mindwerks.net/blog/2014/12/22/enterprise-all-your-twisted-applications-with-ldaptor/'
+            '2015/01/txmongo-your-asynchronous-mongodb-twisted-client.md': 'https://mindwerks.net/blog/2015/01/30/txmongo---your-asynchronous-mongodb-twisted-client/'
+            '2015/05/cross-compiling-for-raspberry-pi-on-ubuntu.md': 'https://mindwerks.net/blog/2015/05/07/cross-compiling-for-raspberry-pi-on-ubuntu/'
+            '2015/11/deadlines-and-timeouts-for-realtime-mongodb-access-with-txmongo.md': 'https://mindwerks.net/blog/2015/11/06/deadlines-and-timeouts-for-realtime-mongodb-access-with-txmongo/'
+            '2015/11/vagrant-virtualbox-and-ubuntu-wily-weerwolf-getting-them-to-play-along.md': 'https://mindwerks.net/blog/2015/11/05/vagrant-virtualbox-and-ubuntu-wily-weerwolf-getting-them-to-play-along/'
+            '2016/04/new-releases-of-worldengine-openmw-and-tesannwyn.md': 'https://mindwerks.net/blog/2016/04/08/new-releases-of-worldengine-openmw-and-tesannwyn/'
+            '2016/07/wildmidi-0-4-is-here-with-support-for-other-formats.md': 'https://mindwerks.net/blog/2016/07/08/wildmidi-04-is-here-with-support-for-other-formats/'
+            '2017/06/using-qemu-and-chroot-to-replace-your-cross-compile-toolchain.md': 'https://mindwerks.net/blog/2017/06/21/using-qemu-and-chroot-to-replace-your-cross-compile-toolchain/'
+            '2017/07/running-webex-on-ubuntu.md': 'https://mindwerks.net/blog/2017/07/17/running-webex-on-ubuntu/'
 
 nav:
     - Home: index.md
