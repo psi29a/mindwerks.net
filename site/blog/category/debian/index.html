@@ -2574,39 +2574,47 @@ make -j8</code></p>
   <div class="md-post__content md-typeset">
     <h2 id="debian-package-maintenance"><a class="toclink" href="../../2013/10/23/debian-package-maintenance/">Debian Package Maintenance</a></h2>
 <p><img align="left" alt="debian" src="../../../assets/images/2013/10/debian.png" width="128" /></p>
+<div class="admonition note">
+<p class="admonition-title">Updated 2026-08-18</p>
+<p>Debian's infrastructure has moved on since this was written. Alioth and
+git.debian.org were retired in 2018 and replaced by
+<a href="https://salsa.debian.org/" title="Salsa">Salsa</a>, Debian's GitLab instance, and the
+old <code>git-*</code> wrappers are now subcommands of <code>gbp</code>. The commands and URLs
+below have been updated to match.</p>
+</div>
 <p>I've been there before with <a href="http://en.wikipedia.org/wiki/Gentoo_Linux" title="Gentoo">Gentoo</a>, as a developer, but times and situations have changed. Over the years I've been deeply involved with <a href="http://en.wikipedia.org/wiki/Ubuntu_(operating_system)" title="Ubuntu">Ubuntu</a> for my work and at its heart, <a href="http://en.wikipedia.org/wiki/Debian" title="Debian">Debian</a>. I've become a Debian Developer to help get closer to the development process, package management and maintenance to do my share of the heavy lifting.
-The first thing I did was sign up at <a href="http://alioth.debian.org/" title="Alioth Fusion Forge">Alioth</a>, a software 'forge' used by Debian for collaboration. Create a 'New Account' and just be aware that whatever login name you use, it will be appended with '-guest'. This will go away once you've officially joined Debian. At this point, it is also a good idea join a <a href="http://www.debian.org/MailingLists/subscribe" title="Debian Mailing List">Debian mailing list</a> and/or join IRC at irc.debian.org and have a nice chat with the folks in #Debian or their various sub-channels where you would like to help. It is important to have a sponsor/mentor that can help you out if you a problem. You will need them when getting accepted into the Debian community in order to start working.
-If you want to help but don't know where to begin, have a look at the "<a href="http://www.debian.org/devel/wnpp/" title="Work-Needing and Prospective Packages">Work-Needing and Prospective Packages</a>" page. There are a few packages up for adoption, orphaned and others looking for someone to take over. Go to the appropriate group and ask about supporting your package of choice.
-I am currently interested in introducing a new bit of software into Debian. If accepted, it will eventually show up in Ubuntu which is an added bonus. Once accepted on Alioth, upload your public key (SSH access) in your account page and you should now have ssh/git access to git.debian.org, which gets you on your way.
+The first thing I did was sign up at <a href="https://salsa.debian.org/" title="Salsa">Salsa</a>, the GitLab instance Debian uses for collaboration. Create an account and request guest access; you can then be added to the relevant packaging team. At this point, it is also a good idea join a <a href="https://www.debian.org/MailingLists/subscribe" title="Debian Mailing List">Debian mailing list</a> and/or join IRC at irc.oftc.net and have a nice chat with the folks in #debian or their various sub-channels where you would like to help. It is important to have a sponsor/mentor that can help you out if you a problem. You will need them when getting accepted into the Debian community in order to start working.
+If you want to help but don't know where to begin, have a look at the "<a href="https://www.debian.org/devel/wnpp/" title="Work-Needing and Prospective Packages">Work-Needing and Prospective Packages</a>" page. There are a few packages up for adoption, orphaned and others looking for someone to take over. Go to the appropriate group and ask about supporting your package of choice.
+I am currently interested in introducing a new bit of software into Debian. If accepted, it will eventually show up in Ubuntu which is an added bonus. Once your Salsa account is set up, upload your public key (SSH access) in your account page and you should now have ssh/git access to salsa.debian.org, which gets you on your way.
 Once signed in, set your .gitconfig with your name and email address:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>[user]
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    name = Bret Curtis
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    email = bret@your.box
 </code></pre></div>
-<p>From there, we should create your new git repository:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>cd /git/pkg-fonts/; ./setup-repository fonts-ebgaramond &#39;EB Garamond OpenType and TrueType fonts&#39;
+<p>From there, we should create your new git repository. On Salsa this is done through the web interface of the team you belong to, or with <code>gbp create-remote-repo</code> once you have a local repository:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>gbp create-remote-repo --remote-url-pattern=&#39;git@salsa.debian.org:fonts-team/%(pkg)s.git&#39;
 </code></pre></div>
 <p>We can no do the rest on our local machine. We create our build environment and pull in our newly created git repo then push into that our first release.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo apt-get install debian-archive-keyring git-buildpackage
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo apt install debian-archive-keyring git-buildpackage pbuilder
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a># on Ubuntu
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>git-pbuilder create --distribution sid --mirror ftp://ftp.us.debian.org/debian/ --debootstrapopts &quot;--keyring=/usr/share/keyrings/debian-archive-keyring.gpg&quot;
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a># on Debian 
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>git-pbuilder create --distribution sid --mirror http://deb.debian.org/debian/ --debootstrapopts &quot;--keyring=/usr/share/keyrings/debian-archive-keyring.gpg&quot;
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a># on Debian
 <a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>git-pbuilder create
 </code></pre></div>
 <p>Some extra commands that help to update the environment to the latest packages or add custom packages similar to having your own chroot envrionment.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git-pbuilder update
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>git-pbuilder login --save-after-login
 </code></pre></div>
-<p>From here on, we are pulling in our git repo, which should be empty. We do an git-import-orig with a release of the project. This isn't the full repo history, just the release. We'll be asked questions about the import to validate the version number. This will create master and upstream branches. Each new release goes into the upstream branch with a tag. In master we will keep our /debian directory which should contain our control files.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git clone git+ssh://username@git.debian.org/git/pkg-fonts/fonts-ebgaramond.git fonts-ebgaramond
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>git-import-orig --pristine-tar ../v0.015.tar.gz
+<p>From here on, we are pulling in our git repo, which should be empty. We do a <code>gbp import-orig</code> with a release of the project. This isn't the full repo history, just the release. We'll be asked questions about the import to validate the version number. This will create master and upstream branches. Each new release goes into the upstream branch with a tag. In master we will keep our /debian directory which should contain our control files.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git clone git@salsa.debian.org:fonts-team/fonts-ebgaramond.git fonts-ebgaramond
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>gbp import-orig --pristine-tar ../v0.015.tar.gz
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>git commit -a -m &#39;Setting up the first release.&#39;
 <a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>git push --all
 </code></pre></div>
-<p>Once you have a working /debian control files in place, let's try to get it to build and produce Debian packages. We run litian afterwards to try to catch any errors in our control files.</p>
+<p>Once you have a working /debian control files in place, let's try to get it to build and produce Debian packages. We run lintian afterwards to try to catch any errors in our control files.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>export DEB_BUILD_OPTIONS=&quot;parallel=8&quot; # or how many cores you wish to use
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>git-buildpackage --git-ignore-new --git-pbuilder
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>gbp buildpackage --git-ignore-new --git-pbuilder
 <a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>lintian --pedantic -I
 </code></pre></div>
 <p>From here on, talk to your mentor and when you think you are ready, it is then time to "Intent to Package" (ITP) and file a bug report. Make sure you can send email first with:</p>
@@ -2621,8 +2629,8 @@ Once signed in, set your .gitconfig with your name and email address:</p>
 </code></pre></div>
 <p>This will get you on your way to maintaining your own package. This will file a bug and put it on the mailing list so that the appropriate people see this. Prepare for push-back and questions, this is normal. They will give advice to make sure your package is ready to be added to Debian. Good luck!
 <strong>Update: 20141024 -</strong> When there is a new release, here are the additional steps. First clone the repo if you don't already done so, then setup your branches.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>git clone git+ssh://username@git.debian.org/git/pkg-fonts/fonts-ebgaramond.git fonts-ebgaramond
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>fonts-ebgaramond
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>git clone git@salsa.debian.org:fonts-team/fonts-ebgaramond.git fonts-ebgaramond
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>cd fonts-ebgaramond
 <a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>git branch -a
 <a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>* master
 <a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>  remotes/origin/HEAD -&gt; origin/master
@@ -2640,9 +2648,14 @@ Once signed in, set your .gitconfig with your name and email address:</p>
 <a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>  remotes/origin/master
 <a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>  remotes/origin/upstream
 <a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>git checkout master
-<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>git-import-orig --pristine-tar ../v0.015d.tar.gz
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>gbp import-orig --pristine-tar ../v0.015d.tar.gz
 </code></pre></div>
 <p>Here you follow prompts, then when finished, give it a spin with building. Be sure to update your changelog and any version related issues.</p>
+<hr />
+<p><em>Last updated 18 August 2026: refreshed for Salsa, which replaced Alioth and
+git.debian.org in 2018, and for the <code>gbp</code> subcommands that superseded the old
+<code>git-import-orig</code> and <code>git-buildpackage</code> wrappers. The original post dates from
+23 October 2013, with a follow-up on 24 October 2014.</em></p>
     
     
   </div>

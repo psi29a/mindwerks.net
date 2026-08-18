@@ -2109,14 +2109,19 @@
 <p><img align="left" alt="WildMIDI" src="../../assets/images/2014/01/WildMIDI.png" width="200" /></p>
 <p>WildMIDI is a simple software midi player which has a core software synthesizer (softsynth) library that can be use with other applications.</p>
 <p><strong>A bit of history</strong></p>
-<p>WildMIDI was originally conceived in December 2001 as an experiment to see if MIDI files could be played using the same samples as existing software but with much less overhead. The first versions of the CLI player in 2002 were so successful in reducing the overhead that developers from Quakeforge suggested that WildMIDI could be turned into a library. 2003 saw the first implementations of the WildMIDI library with Quakeforge being used as the test application. The 1st official release of WildMIDI was in 2004. Original develop stopped in 2012 at version 0.2.3.5 but was later forked and refactored in 2013 with version 0.3.0 being released in 2014.</p>
+<p>WildMIDI was originally conceived in December 2001 as an experiment to see if MIDI files could be played using the same samples as existing software but with much less overhead. The first versions of the CLI player in 2002 were so successful in reducing the overhead that developers from Quakeforge suggested that WildMIDI could be turned into a library. 2003 saw the first implementations of the WildMIDI library with Quakeforge being used as the test application. The 1st official release of WildMIDI was in 2004. Original development stopped in 2012 at version 0.2.3.5 but was later forked and refactored in 2013 with version 0.3.0 being released in 2014. Development has continued since, with version 0.5.0 released in 2026.</p>
 <p><strong>What it does</strong></p>
-<p>The WildMIDI library uses Gravis Ultrasound patch files to convert MIDI files into audio which is then passed back to the calling application for further processing or output. The API of the library is designed so that it is easy to include WildMIDI into applications that wish to include MIDI file playback. With multiple MIDI file support you can develop applications to mix several midi files together at the same time and use a different patch set for each MIDI file.</p>
+<p>The WildMIDI library converts MIDI files into audio which is then passed back to the calling application for further processing or output. Instruments can come from Gravis Ultrasound patch files, SoundFont2 (SF2) files, GENMIDI (OP2) FM banks, or the built-in OPL3 FM synthesizer. The API of the library is designed so that it is easy to include WildMIDI into applications that wish to include MIDI file playback. With multiple MIDI file support you can develop applications to mix several midi files together at the same time and use a different patch set for each MIDI file.</p>
 <p><strong>Library Features</strong></p>
 <ul>
+<li>Gravis Ultrasound patch file support</li>
+<li>SoundFont2 (SF2) rendering via TinySoundFont</li>
+<li>Built-in OPL3 FM softsynth using the Nuked OPL3 emulator, with an embedded GM voice bank — no patches or soundfont required</li>
+<li>GENMIDI (OP2) FM bank support, such as the bank shipped with Doom</li>
 <li>RIFF MIDI file support</li>
 <li>MIDI format 0 and 1 support</li>
-<li>Cross Platform: Linux, Windows, OSX, FreeBSD and etc.</li>
+<li>XMI, MUS, HMP and HMI conversion to MIDI</li>
+<li>Cross Platform: Linux, Windows, macOS, FreeBSD, OpenBSD, NetBSD, DOS, OS/2, AmigaOS and etc.</li>
 <li>Thread safe</li>
 <li>WAV file output</li>
 <li>Linear and gauss re-sampling</li>
@@ -2125,15 +2130,20 @@
 </ul>
 <p><strong>Player Features</strong></p>
 <ul>
-<li>OSS and Alsa Output (Linux/FreeBSD)</li>
+<li>ALSA and OSS Output (Linux/FreeBSD)</li>
 <li>Windows Sound System support (Windows)</li>
-<li>OpenAL (OSX/Others)</li>
+<li>CoreAudio output (macOS)</li>
+<li>sndio output (OpenBSD), netbsd output (NetBSD)</li>
+<li>Sound Blaster and compatibles (DOS), DART (OS/2), AHI (AmigaOS)</li>
+<li>OpenAL (optional, cross-platform)</li>
 </ul>
+<p>Version 0.5.0 is API/ABI compatible with the 0.4.x series.</p>
 <p><strong>Downloads, Milestones and Issues</strong>
-<em>Releases:</em>  <a href="https://github.com/psi29a/wildmidi/releases" title="WildMIDI Source Releases">https://github.com/psi29a/wildmidi/releases</a>
-<em>Source Code:</em>  <a href="https://github.com/psi29a/wildmidi" title="WildMIDI Source">https://github.com/psi29a/wildmidi</a>
-<em>Milestones and Planner:</em>  <a href="https://github.com/psi29a/wildmidi/issues/milestones" title="WildMIDI Milestones">https://github.com/psi29a/wildmidi/issues/milestones</a>
-<em>Bug / Issue Tracker:</em>  <a href="https://github.com/psi29a/wildmidi/issues?state=open" title="WildMIDI Issue Traker">https://github.com/psi29a/wildmidi/issues?state=open</a></p>
+<em>Releases:</em>  <a href="https://github.com/Mindwerks/wildmidi/releases" title="WildMIDI Source Releases">https://github.com/Mindwerks/wildmidi/releases</a>
+<em>Source Code:</em>  <a href="https://github.com/Mindwerks/wildmidi" title="WildMIDI Source">https://github.com/Mindwerks/wildmidi</a>
+<em>Milestones and Planner:</em>  <a href="https://github.com/Mindwerks/wildmidi/milestones" title="WildMIDI Milestones">https://github.com/Mindwerks/wildmidi/milestones</a>
+<em>Bug / Issue Tracker:</em>  <a href="https://github.com/Mindwerks/wildmidi/issues" title="WildMIDI Issue Tracker">https://github.com/Mindwerks/wildmidi/issues</a></p>
+<p>Precompiled binaries are available for Windows, macOS, DOS and OS/2.</p>
 <p><strong>The FAQ:</strong>
 <em>Is this related to Timidity or some other project?</em></p>
 <blockquote>

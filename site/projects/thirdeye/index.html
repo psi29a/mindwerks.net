@@ -2106,38 +2106,44 @@
 
 
 <h1 id="thirdeye-an-aesop-replacement-engine">Thirdeye: An AESOP Replacement Engine<a class="headerlink" href="#thirdeye-an-aesop-replacement-engine" title="Permanent link">&para;</a></h1>
-<p><img align="left" alt="ThirdEye_003" src="../../assets/images/2013/10/ThirdEye_003.png" width="200" /></p>
-<p><strong>Thirdeye</strong> is an attempt at recreating the AESOP (An Extensible State-Object Processor) engine which was most popularly used by the RPGs "Eye of the Beholder: 3" and "Dungeon Hack" of the early 90s. John Miles created AESOP as a high level scripting language and the supporting 16-bit real-mode interpreter and state engine in the early 90s but due to the hardware requirements at the time, it ran poorly. You could be waiting up to 10 seconds for the next update. It seemed like a nice fit to try to try to implement a working binary replacement for AESOP and make it open-source in the process.</p>
+<p><img align="left" alt="Thirdeye" src="../../assets/images/2026/08/thirdeye-combat.png" width="200" /></p>
+<p><strong>Thirdeye</strong> is a from-scratch C++ reimplementation of SSI/Westwood's AESOP (An Extensible State-Object Processor) engine — both AESOP/16 and AESOP/32 — the bytecode VM behind the early-90s RPGs "Eye of the Beholder 3" and "Dungeon Hack". John Miles created AESOP as a high level scripting language and the supporting 16-bit real-mode interpreter and state engine in the early 90s but due to the hardware requirements at the time, it ran poorly. You could be waiting up to 10 seconds for the next update. It seemed like a nice fit to try to implement a working binary replacement for AESOP and make it open-source in the process.</p>
+<p>The goal is to play both games natively from the original game data. Thirdeye ships no game assets, so you must own the original games.</p>
 <p><strong>Reason:</strong> I am interested in old file formats, those created or used by old programs that no longer run on modern operating systems and hardware. Their documentation no longer exists and the original designers are either enjoying retirement or have passed on. In this particular case, there was already bits of reverse engineering occurring on the file formats and in this case, John released his documentation and some of the AESOP code (that was his) to the public domain. This is partially porting and reverse engineering 20 year old code and resources which seems a bit more digital archaeology.</p>
-<p><strong>What works:</strong></p>
+<p><strong>Current state:</strong></p>
+<p>Both games are playable. Eye of the Beholder 3 boots, fights, loots and saves; Dungeon Hack runs end to end from its own menus, with MAZE.EXE reimplemented natively so dungeons are generated in-process. Save files stay byte-compatible with the DOS originals.</p>
 <ul>
-<li>Reading RES and GFF files</li>
-<li>Rendering of BMP files</li>
-<li>Rendering of FNT (fonts)</li>
-<li>Playback of SND and XMI files</li>
-<li>Basic playback of BMA files</li>
-<li>DAESOP fully ported</li>
-<li>ARC partially ported</li>
+<li>Full AESOP bytecode VM, state engine and opcode dispatch</li>
+<li>Combat, monster AI, item pickup and inventory</li>
+<li>Character generation and save/load, including EOB2 party transfer</li>
+<li>3D dungeon view with occlusion, HUD, cutscenes and chargen screens</li>
+<li>Dungeon Hack maze generation, including its R250 PRNG and all five layout algorithms</li>
 </ul>
-<p><strong>What doesn't:</strong></p>
+<p><strong>Quality-of-life additions beyond the DOS release:</strong></p>
 <ul>
-<li>MAZ decoding</li>
-<li>OPCODE decoding</li>
-<li>Chargen support</li>
-<li>CPS rendering</li>
-<li>State engine/interpreter</li>
+<li>Automap (press M) with fog of war, persisted per save slot</li>
+<li>WASD/QE movement alongside the original arrow keys and mouse</li>
+<li>Windowed play at any integer scale</li>
+<li><code>--skip-intro</code> / <code>--skip-menu</code> / <code>--load-save=N</code> to jump straight in</li>
+<li>A Qt6 launcher that picks the game folder, sets options, checks for updates and can download and install the game data</li>
+<li>Built-in OPL3 synth for authentic AdLib/SB16 music with no soundfont or patch setup</li>
+<li>Atomic, crash-safe saving</li>
 </ul>
 <p><strong>Screenshots:</strong></p>
+<p>Eye of the Beholder 3 running natively in Thirdeye — the party in the dungeon view with dropped loot on the floor, and Sir Mikeal's inventory screen.</p>
+<p><img alt="Thirdeye gameplay: the party in the dungeon view with an item on the ground" src="../../assets/images/2026/08/thirdeye-gameplay.png" /></p>
+<p><img alt="Thirdeye inventory: Sir Mikeal's equipment and item slots" src="../../assets/images/2026/08/thirdeye-inventory.png" /></p>
+<p><strong>Requirements to build:</strong></p>
+<p>CMake &gt;= 3.15 and a C++20 compiler (GCC 10+, Clang 12+, or MSVC 2019+)</p>
+<p>Libs: SDL3, OpenAL and <a href="../wildmidi/" title="WildMIDI">WildMidi</a></p>
 <p><strong>Issues, Bugs, Todo and Wiki:</strong>
-<a href="https://github.com/psi29a/thirdeye/issues/milestones" title="Milestones">Milestones</a>
+<a href="https://github.com/psi29a/thirdeye/milestones" title="Milestones">Milestones</a>
 <a href="https://github.com/psi29a/thirdeye/issues" title="https://github.com/psi29a/thirdeye/issues">Issue Tracker</a>
 <a href="https://github.com/psi29a/thirdeye/wiki" title="https://github.com/psi29a/thirdeye/wiki">Wiki</a></p>
-<p><strong>Requirements to build:</strong>
-VC2012 or GCC
-Libs: SDL2, <a href="http://www.mindwerks.net/projects/wildmidi/" title="WildMIDI">WildMidi</a> and OpenAL</p>
 <p><strong>Downloads</strong>
 Source: <a href="https://github.com/psi29a/thirdeye" title="Thirdeye">https://github.com/psi29a/thirdeye</a>
-Releases: <a href="https://github.com/psi29a/thirdeye/tags" title="Thirdeye Releases">https://github.com/psi29a/thirdeye/tags</a></p>
+Releases: <a href="https://github.com/psi29a/thirdeye/releases" title="Thirdeye Releases">https://github.com/psi29a/thirdeye/releases</a></p>
+<p>Packaged builds are available for Linux (.AppImage and .deb), macOS (.dmg) and Windows (NSIS installer).</p>
 
 
 
