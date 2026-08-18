@@ -9,11 +9,16 @@ I have been in IT/ICT professionally since 2001, mostly as a Linux specialist, a
 In my spare time I have also contributed to many Free and Open Source Software projects.
 
 - [OpenMW](https://openmw.org/ "OpenMW"): Project lead for the open-source engine reimplementation of [Morrowind](https://en.wikipedia.org/wiki/OpenMW "OpenMW"), developed on [GitLab](https://gitlab.com/OpenMW/openmw "OpenMW on GitLab").
-- My own [projects](projects/worldsynth.md "Projects")
+- My own projects:
+    - [Thirdeye](projects/thirdeye.md "Thirdeye"): an open-source reimplementation of the AESOP engine behind "Eye of the Beholder 3" and "Dungeon Hack"
+    - [WildMIDI](projects/wildmidi.md "WildMIDI"): a software MIDI player and softsynth library
+    - [Worldsynth](projects/worldsynth.md "Worldsynth"): a procedural world generator that renders simulated worlds as usable maps
+    - [TxMongo](projects/txmongo.md "TxMongo"): an asynchronous MongoDB client for Python Twisted
+    - [Exita](projects/exita.md "Exita"): a data export tool that reads a specific character set, much like OCR
 - [Gentoo Linux](https://en.wikipedia.org/wiki/Gentoo_Linux "Gentoo Linux"): Testing and porting software to work on [MIPS](https://en.wikipedia.org/wiki/MIPS_architecture "MIPS") based hardware from [Silicon Graphics Inc](https://en.wikipedia.org/wiki/Silicon_Graphics "Silicon Graphics") and [Cobalt Networks](https://en.wikipedia.org/wiki/Cobalt_Networks).
 - [Debian Linux](https://en.wikipedia.org/wiki/Debian "Debian/Linux"): [Package maintainer](https://qa.debian.org/developer.php?login=psi29a@gmail.com "Package Maintainer") and cross-platform specialist.
 - My [Github](https://github.com/psi29a "Github") page
 
-Currently I live and work in [Gent](https://en.wikipedia.org/wiki/Ghent), Belgium as a Software Engineer for [DoubleVerify](https://doubleverify.com/company/locations/belgium "DoubleVerify"). While not at work, I'm a family man who loves playing board-games with my children and friends.
+Currently I live and work in [Gent](https://en.wikipedia.org/wiki/Ghent), Belgium as a Software Engineering Manager for [DoubleVerify](https://doubleverify.com/company/locations/belgium "DoubleVerify"). While not at work, I'm a family man who loves playing board-games with my children and friends.
 
 You can contact me professionally via my linkedin [Bret Curtis](https://www.linkedin.com/in/bretecurtis) profile.
