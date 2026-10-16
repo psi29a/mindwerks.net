@@ -10,6 +10,7 @@ In my spare time I have also contributed to many Free and Open Source Software p
 
 - [OpenMW](https://openmw.org/ "OpenMW"): Project lead for the open-source engine reimplementation of [Morrowind](https://en.wikipedia.org/wiki/OpenMW "OpenMW"), developed on [GitLab](https://gitlab.com/OpenMW/openmw "OpenMW on GitLab").
 - My own projects:
+    - [D2Decomp](projects/d2decomp.md "D2Decomp"): a cross-platform reimplementation of the Diablo II: Lord of Destruction game engine
     - [Thirdeye](projects/thirdeye.md "Thirdeye"): an open-source reimplementation of the AESOP engine behind "Eye of the Beholder 3" and "Dungeon Hack"
     - [WildMIDI](projects/wildmidi.md "WildMIDI"): a software MIDI player and softsynth library
     - [Worldsynth](projects/worldsynth.md "Worldsynth"): a procedural world generator that renders simulated worlds as usable maps

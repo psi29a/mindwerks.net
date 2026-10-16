@@ -124,6 +124,7 @@ nav:
     - Blog:
         - blog/index.md
     - Projects:
+        - D2Decomp: projects/d2decomp.md
         - Exita: projects/exita.md
         - Thirdeye: projects/thirdeye.md
         - TxMongo: projects/txmongo.md
