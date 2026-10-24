@@ -1,12 +1,12 @@
 # WildMIDI: A Software Synthesizer
 
-![WildMIDI](../assets/images/2014/01/WildMIDI.png){ align=left width="200" }
+![WildMIDI](../assets/images/2026/10/wildmidi-0.5.0-player.png){ align=left width="200" }
 
-WildMIDI is a simple software midi player which has a core software synthesizer (softsynth) library that can be use with other applications.
+WildMIDI is a simple software midi player which has a core software synthesizer (softsynth) library that can be used with other applications.
 
 **A bit of history**
 
-WildMIDI was originally conceived in December 2001 as an experiment to see if MIDI files could be played using the same samples as existing software but with much less overhead. The first versions of the CLI player in 2002 were so successful in reducing the overhead that developers from Quakeforge suggested that WildMIDI could be turned into a library. 2003 saw the first implementations of the WildMIDI library with Quakeforge being used as the test application. The 1st official release of WildMIDI was in 2004. Original development stopped in 2012 at version 0.2.3.5 but was later forked and refactored in 2013 with version 0.3.0 being released in 2014. Development has continued since, with version 0.5.0 released in 2026.
+WildMIDI was originally conceived in December 2001 as an experiment to see if MIDI files could be played using the same samples as existing software but with much less overhead. The first versions of the CLI player in 2002 were so successful in reducing the overhead that developers from Quakeforge suggested that WildMIDI could be turned into a library. 2003 saw the first implementations of the WildMIDI library with Quakeforge being used as the test application. The 1st official release of WildMIDI was in 2004. Original development stopped in 2012 at version 0.2.3.5 but was later forked and refactored in 2013 with version 0.3.0 being released in 2014. Development has continued since, with version 0.5.0 released in July 2026.
 
 **What it does**
 
@@ -21,7 +21,12 @@ The WildMIDI library converts MIDI files into audio which is then passed back to
 - RIFF MIDI file support
 - MIDI format 0 and 1 support
 - XMI, MUS, HMP and HMI conversion to MIDI
-- Cross Platform: Linux, Windows, macOS, FreeBSD, OpenBSD, NetBSD, DOS, OS/2, AmigaOS and etc.
+- Yamaha SMAF (`.mmf`) ringtone playback and conversion, covering the HandyPhone (MA-1/MA-2) and Mobile Standard (MA-3/MA-5) score formats
+- Yamaha MA-series FM synthesis, so SMAF files with custom FM voices sound like the phone instead of a General MIDI approximation
+- CC1 modulation wheel (vibrato) support
+- Player playlists, with shuffle, and a new `-L/--loop` switch to repeat a file or a whole playlist
+- Parser hardening against malformed files, and SoundFont volume, note-release and sparse-bank fixes
+- Cross Platform: Linux, Windows, macOS, FreeBSD, OpenBSD, NetBSD, GNU/Hurd, DOS, OS/2, AmigaOS, Nintendo 3DS, Wii, Switch, PS Vita and more
 - Thread safe
 - WAV file output
 - Linear and gauss re-sampling
@@ -49,10 +54,10 @@ Precompiled binaries are available for Windows, macOS, DOS and OS/2.
 
 **The FAQ:**
 *Is this related to Timidity or some other project?*
-> No, WildMIDI was written from scratch by Chris Ison with input from the team at Quakeforge and the assistance of Eric A Welsh. It was further developed by Bret Curtis after the project was abandoned. To of our knowledge there is no shared code between the 2 projects but we may have had similar ideas and influences.
+> No, WildMIDI was written from scratch by Chris Ison with input from the team at Quakeforge and the assistance of Eric A Welsh. It was further developed by Bret Curtis after the project was abandoned. To our knowledge there is no shared code between the 2 projects but we may have had similar ideas and influences.
 
 *Can I use WildMIDI in my projects?*
 > Yes, providing you follow the Lesser General Public License version 3 for the library, and General Public License version 3 for the demo player.
 
 *Who developed WildMIDI?*
-> WildMIDI is a work of love but many have helped to develop concepts and ideas contained within WildMIDI. Chris Ison is the founder and sole developer for over 10 years. There where many from the Quakeforge community that assisted in working out the details of the library. Eric A Welsh developed several re-samplers to experiment with, one of which still remains in the library. There are also many people who have tested, found bugs and submitted patches.
+> WildMIDI is a work of love but many have helped to develop concepts and ideas contained within WildMIDI. Chris Ison is the founder and was the sole developer for over 10 years. There were many from the Quakeforge community that assisted in working out the details of the library. Eric A Welsh developed several re-samplers to experiment with, one of which still remains in the library. There are also many people who have tested, found bugs and submitted patches.

@@ -1,6 +1,6 @@
 # Thirdeye: An AESOP Replacement Engine
 
-![Thirdeye](../assets/images/2026/08/thirdeye-combat.png){ align=left width="200" }
+![Thirdeye](../assets/images/2026/10/thirdeye-logo.png){ align=left width="200" }
 
 **Thirdeye** is a from-scratch C++ reimplementation of SSI/Westwood's AESOP (An Extensible State-Object Processor) engine — both AESOP/16 and AESOP/32 — the bytecode VM behind the early-90s RPGs "Eye of the Beholder 3" and "Dungeon Hack". John Miles created AESOP as a high level scripting language and the supporting 16-bit real-mode interpreter and state engine in the early 90s but due to the hardware requirements at the time, it ran poorly. You could be waiting up to 10 seconds for the next update. It seemed like a nice fit to try to implement a working binary replacement for AESOP and make it open-source in the process.
 
@@ -10,7 +10,9 @@ The goal is to play both games natively from the original game data. Thirdeye sh
 
 **Current state:**
 
-Both games are playable. Eye of the Beholder 3 boots, fights, loots and saves; Dungeon Hack runs end to end from its own menus, with MAZE.EXE reimplemented natively so dungeons are generated in-process. Save files stay byte-compatible with the DOS originals.
+The latest release is 0.89.0. Eye of the Beholder 3 is playable: it boots, fights, loots and saves, and save files stay byte-compatible with the DOS original.
+
+Dungeon Hack support has landed on `main` since then and will ship with 0.90.0. It boots through its own intro and menus, creates a character and generates a fresh dungeon, with MAZE.EXE reimplemented natively so the maze is built in-process. The dungeon renderer is still being brought up.
 
 - Full AESOP bytecode VM, state engine and opcode dispatch
 - Combat, monster AI, item pickup and inventory
@@ -30,25 +32,32 @@ Both games are playable. Eye of the Beholder 3 boots, fights, loots and saves; D
 
 **Screenshots:**
 
-Eye of the Beholder 3 running natively in Thirdeye — the party in the dungeon view with dropped loot on the floor, and Sir Mikeal's inventory screen.
+Eye of the Beholder 3 running natively in Thirdeye: the party in the dungeon view with dropped loot on the floor, and Sir Mikeal's inventory screen.
 
 ![Thirdeye gameplay: the party in the dungeon view with an item on the ground](../assets/images/2026/08/thirdeye-gameplay.png)
 
 ![Thirdeye inventory: Sir Mikeal's equipment and item slots](../assets/images/2026/08/thirdeye-inventory.png)
 
+![Thirdeye combat in Eye of the Beholder 3](../assets/images/2026/08/thirdeye-combat.png)
+
+Dungeon Hack's DreamForge intro, played by Thirdeye from the original game data.
+
+![Thirdeye running the Dungeon Hack intro](../assets/images/2026/10/thirdeye-dungeon-hack-intro.png)
+
 **Requirements to build:**
 
 CMake >= 3.15 and a C++20 compiler (GCC 10+, Clang 12+, or MSVC 2019+)
 
-Libs: SDL3, OpenAL and [WildMidi](wildmidi.md "WildMIDI")
+Libs: SDL3, OpenAL and [WildMIDI](wildmidi.md "WildMIDI"), plus Qt 6.5+ if you build the launcher
 
 **Issues, Bugs, Todo and Wiki:**
 [Milestones](https://github.com/psi29a/thirdeye/milestones "Milestones")
 [Issue Tracker](https://github.com/psi29a/thirdeye/issues "https://github.com/psi29a/thirdeye/issues")
-[Wiki](https://github.com/psi29a/thirdeye/wiki "https://github.com/psi29a/thirdeye/wiki")
+[Roadmap](https://github.com/psi29a/thirdeye/blob/main/docs/roadmap.md "Thirdeye Roadmap")
+[Documentation](https://github.com/psi29a/thirdeye/tree/main/docs "Thirdeye Documentation")
 
 **Downloads**
 Source: [https://github.com/psi29a/thirdeye](https://github.com/psi29a/thirdeye "Thirdeye")
 Releases: [https://github.com/psi29a/thirdeye/releases](https://github.com/psi29a/thirdeye/releases "Thirdeye Releases")
 
-Packaged builds are available for Linux (.AppImage and .deb), macOS (.dmg) and Windows (NSIS installer).
+Packaged builds are available for Linux (.AppImage), macOS (.dmg) and Windows (NSIS installer).
